@@ -1,0 +1,433 @@
+/* ==========================================================================
+	#Transitions
+========================================================================== */
+#pjWrapper .btn,
+#pjWrapper .pjMrBNav .dropdown-toggle .caret,
+#pjWrapper .pjMrBNav .dropdown-menu a,
+#pjWrapper .pjMrBForm .form-control,
+#pjWrapper .pjMrBPaging .pagination a,
+#pjWrapper .pjMrBPaging .pagination span,
+#pjWrapper .pjMrBDatePicker .input-group-addon,
+#pjWrapper .pjMrBCustomCheckboxFake .glyphicon,
+#pjWrapper .pjMrBCustomCheckboxFake,
+#pjWrapper .pjMrBCustomCheckbox label { -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none; }
+
+/* ==========================================================================
+	#General
+========================================================================== */
+#pjWrapper a[href^=tel] { color: inherit; }
+#pjWrapper a:focus,
+#pjWrapper button:focus { outline: unset; outline: none; }
+
+#pjWrapper .pjMrBContainer { padding: 15px; }
+
+/* ==========================================================================
+	#Buttons
+========================================================================== */
+#pjWrapper .btn-default { height: 44px; padding: 0 50px; border: 1px solid #5c5f63; font-size: 18px; line-height: 42px; font-weight: 400; }
+
+#pjWrapper .btn-primary { height: 44px; padding: 0 50px; border: 1px solid #1c5ba7; font-size: 18px; line-height: 42px; font-weight: 400; }
+
+#pjWrapper .btn-link { margin: 0; padding: 0; font-size: 14px; line-height: 1.4; font-weight: 400; }
+#pjWrapper .btn-link:hover,
+#pjWrapper .btn-link:focus { text-decoration: none; }
+
+/* ==========================================================================
+	#pjMrBPaging
+========================================================================== */
+#pjWrapper .pjMrBPaging { padding: 20px 0 10px; }
+#pjWrapper .pjMrBPaging .pagination { margin: 0; padding: 0; font-size: 0; }
+#pjWrapper .pjMrBPaging .pagination li { display: inline-block; padding: 0 3px; }
+#pjWrapper .pjMrBPaging .pagination a,
+#pjWrapper .pjMrBPaging .pagination span { height: 40px; margin: 0; padding: 0 15px; line-height: 38px; font-size: 16px; border-radius: 4px; text-transform: capitalize; }
+#pjWrapper .pjMrBPaging .pagination span { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
+#pjWrapper .pjMrBPaging .pagination .separator { padding: 0; border-color: transparent; }
+
+/* ==========================================================================
+	#Forms
+========================================================================== */
+#pjWrapper .pjMrBForm .form-group { margin-bottom: 30px; }
+#pjWrapper .pjMrBForm .form-control { height: 40px; padding: 0 15px; font-size: 15px; font-weight: 400; -webkit-box-shadow: none; box-shadow: none; }
+#pjWrapper .pjMrBForm select.form-control { cursor: pointer; }
+#pjWrapper .pjMrBForm textarea.form-control { height: 110px; padding: 15px; }
+#pjWrapper .pjMrBForm label,
+#pjWrapper .pjMrBForm .control-label { font-size: 15px; line-height: 1.73; font-weight: 600; }
+
+#pjWrapper .pjMrBForm .pjMrBFormCaptcha label { display: block; width: 100%; }
+#pjWrapper .pjMrBForm .pjMrBFormCaptcha .form-control,
+#pjWrapper .pjMrBForm .pjMrBFormCaptcha img { display: inline-block; vertical-align: middle; }
+#pjWrapper .pjMrBForm .pjMrBFormCaptcha .form-control { width: 270px; margin-right: 10px; }
+
+/* ==========================================================================
+	#pjMrBSpinner
+========================================================================== */
+#pjWrapper .pjMrBSpinner { position: relative; width: 90px; }
+#pjWrapper .pjMrBSpinner .form-control { z-index: 1; }
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtn { position: absolute; right: 0; z-index: 2; width: 30px; height: 50%; }
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtnUp { top: 0; }
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtnDown { bottom: 0; }
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtn span { position: absolute; left: 50%; margin-left: -5px; border-top: 5px solid rgba(112, 112, 112, .5); }
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtnUp span { bottom: 3px; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtnDown span { top: 3px; }
+
+/* ==========================================================================
+	#Custom Checkbox and Radio
+========================================================================== */
+#pjWrapper .pjMrBCustomCheckbox input { position: absolute; opacity: 0; filter: alpha(opacity=0); }
+#pjWrapper .pjMrBCustomCheckbox label { margin: 0; font-size: 15px; line-height: 1.4; font-weight: 600; }
+#pjWrapper .pjMrBCustomCheckboxFake { position: relative; display: inline-block; width: 22px; height: 22px; margin: -3px 5px 0 0; border: 1px solid #d9d9db; vertical-align: middle; border-radius: 4px; }
+#pjWrapper .pjMrBCustomCheckboxFake .glyphicon { position: absolute; top: 50%; left: 50%; margin: -7px 0 0 -7px; font-size: 13px; -webkit-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0); }
+#pjWrapper .pjMrBCustomInputChecked .pjMrBCustomCheckboxFake .glyphicon { -webkit-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+#pjWrapper .pjMrBCustomInputDisabled .pjMrBCustomCheckboxFake { opacity: .5; filter: alpha(opacity=50); }
+
+#pjWrapper .pjMrBCustomRadio input { position: absolute; opacity: 0; filter: alpha(opacity=0); }
+#pjWrapper .pjMrBCustomRadioFake { float: left; width: 14px; height: 14px; margin-right: 5px; border: 2px solid #000; border-radius: 50%; }
+#pjWrapper .pjMrBCustomInputChecked .pjMrBCustomRadioFake { background: #000; }
+#pjWrapper .pjMrBCustomInputDisabled .pjMrBCustomRadioFake { opacity: .5; filter: alpha(opacity=50); }
+
+#pjWrapper .pjMrBCheckbox label,
+#pjWrapper .pjMrBCheckbox input,
+#pjWrapper .pjMrBCRadio input,
+#pjWrapper .pjMrBCRadio label { cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
+
+#pjWrapper .pjMrBCustomInputDisabled input,
+#pjWrapper .pjMrBCustomInputDisabled label { cursor: default; }
+
+/* ==========================================================================
+	#pjMrBDatePicker
+========================================================================== */
+#pjWrapper .pjMrBDatePicker { position: relative; }
+#pjWrapper .pjMrBDatePicker .input-group-addon,
+#pjWrapper .pjMrBDatePicker .form-control { display: block; }
+#pjWrapper .pjMrBDatePicker .form-control { position: relative; z-index: 1; border-radius: 4px; }
+#pjWrapper .pjMrBDatePicker .input-group-addon { position: absolute; top: 12px; right: 15px; z-index: 2; width: auto; margin: 0; padding: 0; border: 0; font-size: 16px; cursor: pointer; }
+#pjWrapper .pjMrBDatePicker .input-group-addon .glyphicon { color: inherit; }
+
+#pjWrapper .pjMrBDatePicker .form-control { -webkit-box-shadow: none; box-shadow: none; }
+
+/* ==========================================================================
+	#Modals
+========================================================================== */
+#pjWrapper .pjMrBModal .modal-title { font-size: 20px; line-height: 1.3; font-weight: 700; text-transform: uppercase; }
+
+/* ==========================================================================
+	#pjMrBFormFilters
+========================================================================== */
+#pjWrapper .pjMrBFormFilters { padding: 0px; }
+#pjWrapper .pjMrBFormFilters .form-group { margin-bottom: 0; font-size: 0; }
+#pjWrapper .pjMrBFormFilters .form-control,
+#pjWrapper .pjMrBFormFilters label { display: inline-block; width: auto; vertical-align: middle; }
+#pjWrapper .pjMrBFormFilters label { padding-right: 10px; }
+
+/* ==========================================================================
+	#pjMrBHeader
+========================================================================== */
+#pjWrapper .pjMrBHeader { margin: 0 0 7px; padding: 20px 15px; font-size: 0; border-radius: 4px 4px 0 0; }
+#pjWrapper .pjMrBHeader .pjMrBHome { height: 40px; padding: 0 12px; border: 1px solid #d9d9db; font-size: 16px; line-height: 38px; }
+
+#pjWrapper .pjMrBNav { margin-left: 10px; }
+#pjWrapper .pjMrBNav .dropdown-toggle { position: relative; z-index: 1001; min-width: 260px; height: 40px; padding: 0 25px 0 15px; border: 1px solid #d9d9db; font-size: 16px; line-height: 38px; font-weight: 400; text-align: left; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none; }
+#pjWrapper .pjMrBNav .dropdown-toggle:focus,
+#pjWrapper .pjMrBNav .dropdown-toggle:active,
+#pjWrapper .pjMrBNav.open .dropdown-toggle { -webkit-box-shadow: none; box-shadow: none; }
+#pjWrapper .pjMrBNav.open .dropdown-toggle { border-bottom-width: 0; border-radius: 4px 4px 0 0; }
+#pjWrapper .pjMrBNav .dropdown-toggle .caret { position: absolute; top: 50%; right: 10px; margin-top: -2px; border-top-width: 7px; border-right-width: 6px; border-left-width: 6px; -webkit-transform: rotate(0); -ms-transform: rotate(0); -o-transform: rotate(0); transform: rotate(0); }
+#pjWrapper .pjMrBNav.open .dropdown-toggle .caret { margin-top: -3px; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
+#pjWrapper .pjMrBNav .dropdown-menu { margin: -1px 0 0; min-width: 100%; border-radius: 0 0 4px 4px; }
+#pjWrapper .pjMrBNav .dropdown-menu li { padding: 1px 0; }
+#pjWrapper .pjMrBNav .dropdown-menu a { padding: 0 10px 1px; font-size: 15px; line-height: 1.5; }
+#pjWrapper .pjMrBNav .dropdown-menu .pjMrBDdisabled a { opacity: .7; cursor: default; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
+
+/* ==========================================================================
+	#pjMrBBody
+========================================================================== */
+#pjWrapper .pjMrBBody { padding: 7px 0 0; }
+
+/* ==========================================================================
+	#pjMrBRooms
+========================================================================== */
+#pjWrapper .pjMrBRooms { margin: 0; }
+#pjWrapper .pjMrBRooms .pjMrBRoom { margin: 0 0 30px; padding: 25px; border-radius: 4px; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomImage { padding-bottom: 20px; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomImage img { max-width: 100%; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomMeta { font-size: 0; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomMeta dl { display: inline-block; margin: 0; padding-right: 25px; vertical-align: top; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomMeta dt { font-size: 16px; line-height: 1.5; font-weight: 400; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomMeta dd { font-size: 18px; line-height: 1.33; font-weight: 600; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomContent { padding-top: 5px; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomContent p { margin: 0; font-size: 15px; line-height: 1.73; font-weight: 300; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomContent .pjMrBRoomTitle { margin: 0; padding-bottom: 10px; font-size: 24px; line-height: 1.2; font-weight: 700; text-transform: capitalize; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomContent .pjMrBRoomTitle a { color: inherit; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomActions { padding-top: 20px; }
+
+/* ==========================================================================
+	#pjMrBRoomInner
+========================================================================== */
+#pjWrapper .pjMrBRoomInner { margin: 0; padding: 25px; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerImage { padding-bottom: 15px; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerImage img { width: 100%; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerContent { padding-top: 5px; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerTitle { margin: 0; padding-bottom: 10px; font-size: 24px; line-height: 1.2; font-weight: 700; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerMeta { margin: 0; padding: 5px 0; font-size: 0; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerMeta dt,
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerMeta dd { display: inline-block; float: none; width: auto; min-width: 1px; margin: 0; font-size: 16px; line-height: 1.4; vertical-align: middle; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerMeta dt { padding-right: 5px; font-weight: 400; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerMeta dd { font-weight: 600; }
+#pjWrapper .pjMrBRoomInner .pjMrBFormProduct .pjMrBFormBody { padding-top: 20px; }
+#pjWrapper .pjMrBRoomInner .pjMrBFormProduct .form-group { margin-bottom: 15px; }
+#pjWrapper .pjMrBRoomInner .pjMrBFormProduct label { text-align: left; }
+
+#pjWrapper .pjMrBCustomCheckboxesDuration { margin: 0; font-size: 0; }
+#pjWrapper .pjMrBCustomCheckboxesDuration li { display: inline-block; padding: 0 10px 10px 0; vertical-align: middle; }
+#pjWrapper .pjMrBCustomCheckboxesDuration .pjMrBCustomCheckbox label { display: inline-block; min-width: 82px; height: 40px; padding: 0 10px; border: 1px solid #d9d9db; font-size: 15px; line-height: 38px; font-weight: 400; text-align: center; border-radius: 4px; }
+
+/* ==========================================================================
+	#pjMrBMain
+========================================================================== */
+#pjWrapper .pjMrBMain { position: relative; overflow: hidden; margin: 0; border: 1px solid #d9d9db; border-radius: 4px; }
+#pjWrapper .pjMrBMain:before,
+#pjWrapper .pjMrBMain:after { position: absolute; top: 0; bottom: 0; left: 33.3333%; display: block; content: ''; }
+#pjWrapper .pjMrBMain:before { right: 0; z-index: 1; }
+#pjWrapper .pjMrBMain:after { z-index: 3; width: 1px; }
+#pjWrapper .pjMrBMain .pjMrBAside,
+#pjWrapper .pjMrBMain .pjMrBContent { position: relative; z-index: 2; background-color: transparent; }
+
+#pjWrapper .pjMrBMain .pjMrBMainTitle { margin: 0; font-size: 20px; line-height: 1.3; font-weight: 700; text-transform: uppercase; }
+
+/* ==========================================================================
+	#pjMrBAside
+========================================================================== */
+#pjWrapper .pjMrBMain .pjMrBAside { padding: 30px 20px; }
+#pjWrapper .pjMrBAsideProduct { padding: 20px 0 50px; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductImage { padding-bottom: 25px; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductImage img { max-width: 100%; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductTitle { margin: 0; padding-bottom: 20px; font-size: 18px; line-height: 1.2; font-weight: 600; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductTitle a { color: inherit; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductMeta { margin: 0; padding-bottom: 5px; font-size: 0; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductMeta dt,
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductMeta dd { display: inline-block; float: none; width: auto; min-width: 1px; margin: 0; font-size: 15px; line-height: 1.4; vertical-align: middle; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductMeta dt { padding-right: 5px; font-weight: 400; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductMeta dd { font-weight: 700; }
+
+/* ==========================================================================
+	#pjMrBContent
+========================================================================== */
+#pjWrapper .pjMrBMain .pjMrBContent { padding: 30px 20px; }
+
+#pjWrapper .pjMrBFormRoomSetup .pjMrBFormSection { padding: 20px 0; }
+#pjWrapper .pjMrBFormRoomSetup .pjMrBFormSectionTitle { margin: 0; font-size: 20px; line-height: 1.2; font-weight: 300; }
+
+/* ==========================================================================
+	#pjMrBCustomRadiosLayout
+========================================================================== */
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio { display: block; width: 100%; padding: 10px 0; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio label { display: block; overflow: hidden; margin: 0; border: 1px solid #d9d9db; font-size: 0; cursor: pointer; border-radius: 4px; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioInner { display: inline-block; overflow: hidden; width: 100%; vertical-align: middle; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioImage { float: left; width: 70px; height: 83px; text-align: center; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioImage:before { display: inline-block; height: 100%; margin-left: -0.25em; vertical-align: middle; content: ''; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioImage img { display: inline-block; max-width: 100%; vertical-align: middle; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioImageNotChecked { display: inline-block; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio.pjMrBCustomInputChecked .pjMrBCustomRadioImageNotChecked { display: none; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioImageChecked { display: none; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio.pjMrBCustomInputChecked .pjMrBCustomRadioImageChecked { display: inline-block; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioContent { overflow: hidden; display: block; height: 83px; font-size: 0; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioContent:before { display: inline-block; height: 100%; margin-left: -0.25em; vertical-align: middle; content: ''; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioContentInner { display: inline-block; vertical-align: middle; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioContent strong { display: block; font-size: 15px; line-height: 1.4; font-weight: 600; }
+
+/* ==========================================================================
+	#pjMrBCustomCheckboxesExtras
+========================================================================== */
+#pjWrapper .pjMrBCustomCheckboxesExtras { padding-top: 10px; }
+#pjWrapper .pjMrBCustomCheckboxesExtras li { padding: 10px 0; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox .row { font-size: 0; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox .row > * { display: inline-block; float: none; padding-right: 5px; vertical-align: middle; }
+#pjWrapper .pjMrBCustomCheckboxesExtras label { width: 100%; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckboxFake { width: 40px; height: 40px; margin-right: 10px; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckboxFake + span { display: inline-block; max-width: calc(100% - 55px); vertical-align: middle; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckboxFake .glyphicon { margin: -10px 0 0 -10px; font-size: 19px; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox p { margin: 0; font-size: 14px; line-height: 1.4; font-weight: 400; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox p strong { font-weight: 600; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox .form-control { position: static; opacity: 1; filter: alpha(opacity=1); }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox .pjMrBSpinner,
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox .pjMrBSpinner + p { display: inline-block; vertical-align: middle; opacity: .4; pointer-events: none; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox.pjMrBCustomInputChecked .pjMrBSpinner,
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox.pjMrBCustomInputChecked .pjMrBSpinner + p { opacity: 1; pointer-events: auto; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox .pjMrBSpinner + p { padding-left: 5px; }
+
+/* ==========================================================================
+	#pjMrBCheckout
+========================================================================== */
+#pjWrapper .pjMrBCheckout .panel-heading { padding: 40px 30px; }
+#pjWrapper .pjMrBCheckout .pjMrBCheckoutTitle { margin: 0; padding-bottom: 20px; font-size: 20px; line-height: 1.3; font-weight: 700; text-transform: uppercase; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection p { margin: 0; padding-bottom: 5px; font-size: 14px; line-height: 1.4; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection p strong { font-weight: 600; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection p .btn-link { margin-top: -3px; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .pjMrBPrice { font-size: 18px; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection { padding: 15px 0; }
+
+#pjWrapper .pjMrBCheckout .panel-body { padding: 40px 30px; }
+#pjWrapper .pjMrBCheckout .panel-body .pjMrBFormSection { padding-bottom: 30px; }
+#pjWrapper .pjMrBCheckout .pjMrBCustomCheckbox ~ .btn-link { margin: 5px 0 0 30px; }
+#pjWrapper .pjMrBCheckout .panel-body dl { margin: 0; padding-bottom: 20px; }
+#pjWrapper .pjMrBCheckout .panel-body dt,
+#pjWrapper .pjMrBCheckout .panel-body dd { line-height: 1.4; }
+#pjWrapper .pjMrBCheckout .panel-body dt { font-size: 15px; font-weight: 700; }
+#pjWrapper .pjMrBCheckout .panel-body dd { font-size: 14px; font-weight: 600; }
+#pjWrapper .pjMrBCheckout .panel-body .pjMrBFormActions p { margin: 0; padding-bottom: 20px; font-size: 15px; line-height: 1.4; font-weight: 600; }
+
+/* ==========================================================================
+	.Modal
+========================================================================== */
+.modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.modal-backdrop.fade.in {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+/* ==========================================================================
+	#Responsive
+========================================================================== */
+@media only screen and (max-width: 991px) {
+	/* ==========================================================================
+		#pjMrBCustomCheckboxesExtras
+	========================================================================== */
+	#pjWrapper .pjMrBCustomCheckboxesExtras label { padding-bottom: 5px; }
+}
+
+@media only screen and (max-width: 767px) {
+	/* ==========================================================================
+		#pjMrBRoomInner
+	========================================================================== */
+	#pjWrapper .pjMrBRoomInner { padding: 15px; }
+	#pjWrapper .pjMrBCustomCheckboxesDuration li { padding-right: 5px; }
+
+	/* ==========================================================================
+		#pjMrBMain
+	========================================================================== */
+	#pjWrapper .pjMrBMain:before,
+	#pjWrapper .pjMrBMain:after { display: none; }
+	#pjWrapper .pjMrBMain .pjMrBAside { padding: 15px; }
+	#pjWrapper .pjMrBAsideProduct { padding-bottom: 0; }
+	#pjWrapper .pjMrBMain .pjMrBContent { border-top: 1px solid #d9d9db; }
+
+	/* ==========================================================================
+		#pjMrBCustomRadiosLayout
+	========================================================================== */
+	#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioImage { width: 55px; padding: 0 5px; }
+	#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioContent strong { font-size: 14px; }
+
+	/* ==========================================================================
+		#pjMrBCheckout
+	========================================================================== */
+	#pjWrapper .pjMrBCheckout .panel-body { padding: 15px; }
+
+	#pjWrapper .pjMrBForm.pjMrBFormFilters.pull-right { float: none!important; text-align: left; padding-top: 15px; }
+}
+
+@media only screen and (max-width: 540px) {
+	/* ==========================================================================
+		#Forms
+	========================================================================== */
+	#pjWrapper .pjMrBForm .pjMrBFormCaptcha .form-control { width: 160px; }
+
+	/* ==========================================================================
+		#pjMrBNav
+	========================================================================== */
+	#pjWrapper .pjMrBNav .dropdown-toggle { overflow: hidden; min-width: 1px; max-width: 230px; padding-right: 30px; white-space: nowrap; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
+
+	/* ==========================================================================
+		#pjMrBRooms
+	========================================================================== */
+	#pjWrapper .pjMrBRooms .pjMrBRoom { margin-bottom: 15px; padding: 10px; }
+
+	/* ==========================================================================
+		#pjMrBPaging
+	========================================================================== */
+	#pjWrapper .pjMrBPaging { padding-top: 0; }
+	#pjWrapper .pjMrBPaging .pagination li { padding: 0 1px; }
+	#pjWrapper .pjMrBPaging .pagination a,
+	#pjWrapper .pjMrBPaging .pagination span { padding: 0 6px; height: 28px; font-size: 14px; line-height: 26px; }
+	#pjWrapper .pjMrBNav { margin-left: 5px; }
+
+	/* ==========================================================================
+		#pjMrBRoomInner
+	========================================================================== */
+	#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerImage,
+	#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerContent { width: 100%; }
+	#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerImage img { width: auto; max-width: 100%; }
+	#pjWrapper .pjMrBCustomCheckboxesDuration .pjMrBCustomCheckbox label { min-width: 80px; padding: 0 5px; }
+
+	/* ==========================================================================
+		#pjMrBMain
+	========================================================================== */
+	#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductImage,
+	#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent { width: 100%; }
+	#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductImage { padding-bottom: 10px; }
+	#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductTitle { padding-bottom: 5px; }
+
+	/* ==========================================================================
+		#pjMrBCustomRadiosLayout
+	========================================================================== */
+	#pjWrapper .pjMrBCustomRadiosLayout > .col-xs-4 { width: 50%; }
+
+	/* ==========================================================================
+		#pjMrBCustomCheckboxesExtras
+	========================================================================== */
+	#pjWrapper .pjMrBCustomCheckboxesExtras .row .col-xs-5 { width: 100%; }
+	#pjWrapper .pjMrBCustomCheckboxesExtras .row .col-xs-4,
+	#pjWrapper .pjMrBCustomCheckboxesExtras .row .col-xs-3 { width: 50%; }
+
+	/* ==========================================================================
+		#pjMrBCheckout
+	========================================================================== */
+	#pjWrapper .pjMrBCheckout .panel-heading { padding: 10px; }
+	#pjWrapper .pjMrBCheckout .pjMrBFormCheckout .pjMrBFormSection .col-xs-6 { width: 100%; }
+	#pjWrapper .pjMrBCheckout .pjMrBFormCheckout .pjMrBFormSection .col-xs-6 .col-xs-6 { width: 50%; }
+
+	#pjWrapper .pjMrBCheckout .panel-body .pjMrBFormSection { padding: 0; }
+	#pjWrapper .pjMrBCheckout .panel-body .pjMrBFormSection .pjMrBCheckoutTitle { padding-bottom: 5px; }
+	#pjWrapper .pjMrBCheckout .pjMrBFormCheckout .pjMrBFormActions .btn { padding: 0 15px; }
+}
+
+@media only screen and (max-width: 380px) {
+	/* ==========================================================================
+		#pjMrBDatePicker
+	========================================================================== */
+	#pjWrapper .pjMrBDatePicker .bootstrap-datetimepicker-widget.pull-right { right: auto !important; left: 0 !important; }
+	#pjWrapper .pjMrBDatePicker .bootstrap-datetimepicker-widget.pull-right:before,
+	#pjWrapper .pjMrBDatePicker .bootstrap-datetimepicker-widget.pull-right:after { right: auto !important; left: 6px !important; }
+
+	/* ==========================================================================
+		#pjMrBNav
+	========================================================================== */
+	#pjWrapper .pjMrBNav .dropdown-toggle { max-width: 210px; padding-right: 25px; }
+
+	/* ==========================================================================
+		#pjMrBCustomRadiosLayout
+	========================================================================== */
+	#pjWrapper .pjMrBCustomRadiosLayout > .col-xs-4 { width: 100%; }
+	#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioContent strong { font-size: 16px; }
+
+	/* ==========================================================================
+		#pjMrBCustomCheckboxesExtras
+	========================================================================== */
+	#pjWrapper .pjMrBCustomCheckboxesExtras .row .col-xs-4 { width: 60%; }
+	#pjWrapper .pjMrBCustomCheckboxesExtras .row .col-xs-3 { width: 40%; }
+
+	/* ==========================================================================
+		#pjMrBCheckout
+	========================================================================== */
+	#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection { padding: 0; }
+	#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .row > .col-xs-3,
+	#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .row > .col-xs-4,
+	#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .row > .col-xs-5,
+	#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .row > .col-xs-6 { width: 100%; }
+	#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .text-right { text-align: left; }
+	#pjWrapper .pjMrBCheckout .pjMrBCustomCheckbox ~ .btn-link { margin: 0; }
+
+	#pjWrapper .pjMrBCheckout .pjMrBFormCheckout .pjMrBFormActions .btn { display: block; width: 100%; margin: 5px 0; text-align: center; }
+}

@@ -1,0 +1,210 @@
+/* ==========================================================================
+	#General
+========================================================================== */
+#pjWrapper { color: #919191; }
+#pjWrapper * { font-family: 'Source Sans Pro', sans-serif; }
+#pjWrapper .fa { font-family: 'FontAwesome'; }
+#pjWrapper .glyphicon { font-family: 'Glyphicons Halflings'; }
+
+#pjWrapper .pjMrBContainer { background: #222; }
+
+/* ==========================================================================
+	#Buttons
+========================================================================== */
+#pjWrapper .btn-default { border-color: #f1f2ed; background: #f1f2ed; color: #222; }
+#pjWrapper .btn-default:hover,
+#pjWrapper .btn-default:focus { border-color: #fff; background: #fff; color: #0f0d0e; }
+
+#pjWrapper .btn-primary { border-color: #000; background: #0f0d0e; color: #fff; }
+#pjWrapper .btn-primary:hover,
+#pjWrapper .btn-primary:focus { border-color: #000; background: #000; color: #fff; }
+
+#pjWrapper .btn-link { color: #f1f2ed; }
+#pjWrapper .btn-link:hover,
+#pjWrapper .btn-link:focus { color: #fff; }
+
+/* ==========================================================================
+	#pjMrBPaging
+========================================================================== */
+#pjWrapper .pjMrBPaging .pagination a,
+#pjWrapper .pjMrBPaging .pagination a span { border-color: #0f0d0e; background: #0f0d0e; color: #f1f2ed; }
+#pjWrapper .pjMrBPaging .pagination span { border: 0; background: none; color: #f1f2ed; }
+#pjWrapper .pjMrBPaging .pagination a:hover,
+#pjWrapper .pjMrBPaging .pagination a:focus,
+#pjWrapper .pjMrBPaging .pagination a:hover span,
+#pjWrapper .pjMrBPaging .pagination a:focus span { border-color: #000; background: #000; color: #fff; }
+#pjWrapper .pjMrBPaging .pagination .active a,
+#pjWrapper .pjMrBPaging .pagination .active span { border-color: #f1f2ed; background: #f1f2ed; color: #222; }
+
+/* ==========================================================================
+	#Forms
+========================================================================== */
+#pjWrapper .pjMrBForm .form-control { border-color: #565455; background: #565455; color: #fff; }
+#pjWrapper .pjMrBForm .form-control:focus { border-color: #fff; -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, .3); box-shadow: 0 0 10px rgba(255, 255, 255, .3); }
+#pjWrapper .pjMrBForm label,
+#pjWrapper .pjMrBForm .control-label { color: #f1f2ed; }
+
+/* ==========================================================================
+	#pjMrBSpinner
+========================================================================== */
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtn span { border-top-color: #f1f2ed; }
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtn:hover span { border-top-color: #fff; }
+
+/* ==========================================================================
+	#Custom Checkbox and Radio
+========================================================================== */
+#pjWrapper .pjMrBCustomCheckbox label { color: #f1f2ed; }
+#pjWrapper .pjMrBCustomInputChecked label { color: #fff; }
+#pjWrapper .pjMrBCustomCheckboxFake { border-color: #565455; background: #565455; }
+#pjWrapper .pjMrBCustomInputChecked .pjMrBCustomCheckboxFake { border-color: #fff; }
+#pjWrapper .pjMrBCustomCheckboxFake .glyphicon { color: #f1f2ed; }
+
+/* ==========================================================================
+	#pjMrBDatePicker
+========================================================================== */
+#pjWrapper .pjMrBDatePicker .input-group-addon { background: none; color: #f1f2ed; }
+#pjWrapper .pjMrBDatePicker .input-group-addon:hover,
+#pjWrapper .pjMrBDatePicker .form-control:focus ~ .input-group-addon { color: #000; }
+#pjWrapper .pjMrBDatePicker td.disabled,
+#pjWrapper .pjMrBDatePicker td.disabled:hover { background: none; color: #ded8d8; }
+#pjWrapper .pjMrBDatePicker .today:before { border-bottom-color: #000 !important; }
+#pjWrapper .pjMrBDatePicker .day:hover,
+#pjWrapper .pjMrBDatePicker .month:hover,
+#pjWrapper .pjMrBDatePicker .year:hover,
+#pjWrapper .pjMrBDatePicker .decade:hover,
+#pjWrapper .pjMrBDatePicker .hour:hover,
+#pjWrapper .pjMrBDatePicker .minute:hover,
+#pjWrapper .pjMrBDatePicker .active { background: #f1f2ed; color: #222; }
+#pjWrapper .pjMrBDatePicker .prev span,
+#pjWrapper .pjMrBDatePicker .next span { color: #fff; }
+#pjWrapper .pjMrBDatePicker .prev:hover,
+#pjWrapper .pjMrBDatePicker .next:hover { background: #f1f2ed; }
+#pjWrapper .pjMrBDatePicker .prev:hover span,
+#pjWrapper .pjMrBDatePicker .next:hover span { color: #fff; }
+#pjWrapper .pjMrBDatePicker .picker-switch { color: #f1f2ed; }
+#pjWrapper .pjMrBDatePicker .picker-switch:hover,
+#pjWrapper .pjMrBDatePicker .bootstrap-datetimepicker-widget .active,
+#pjWrapper .pjMrBDatePicker .bootstrap-datetimepicker-widget .active:hover { background: #fff; color: #222; }
+#pjWrapper .bootstrap-datetimepicker-widget { border-color: #222; background: #222; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.bottom:before { border-bottom-color: #222; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.bottom:after { border-bottom-color: #222; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.top:before { border-top-color: #222; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.top:after { border-top-color: #222; }
+
+/* ==========================================================================
+	#Modals
+========================================================================== */
+#pjWrapper .pjMrBModal .modal-content,
+#pjWrapper .pjMrBModal .modal-header,
+#pjWrapper .pjMrBModal .modal-body,
+#pjWrapper .pjMrBModal .modal-footer { border-color: #222; }
+#pjWrapper .pjMrBModal .modal-body { background: #353334; }
+#pjWrapper .pjMrBModal .modal-header,
+#pjWrapper .pjMrBModal .modal-footer { background: #595758; }
+#pjWrapper .pjMrBModal .modal-title { color: #f1f2ed; }
+
+/* ==========================================================================
+	#pjMrBFormFilters
+========================================================================== */
+#pjWrapper .pjMrBFormFilters .form-control { border-color: #565455; background: #565455; color: #fff; }
+
+/* ==========================================================================
+	#pjMrBHeader
+========================================================================== */
+#pjWrapper .pjMrBHeader { border-color: #222; background: #595758; }
+#pjWrapper .pjMrBHeader .pjMrBHome { border-color: #f1f2ed; background: #f1f2ed; color: #222; }
+#pjWrapper .pjMrBHeader .pjMrBHome:hover,
+#pjWrapper .pjMrBHeader .pjMrBHome:focus { border-color: #fff; background: #fff; color: #222; }
+#pjWrapper .pjMrBNav .dropdown-toggle { border-color: #f1f2ed; background: #f1f2ed; color: #222; }
+#pjWrapper .pjMrBNav .dropdown-toggle:hover,
+#pjWrapper .pjMrBNav .dropdown-toggle:focus { border-color: #fff; background: #fff; color: #222; -webkit-box-shadow: none; box-shadow: none; }
+#pjWrapper .pjMrBNav.open .dropdown-toggle { border-color: #f1f2ed; background: #f1f2ed; color: #222; }
+#pjWrapper .pjMrBNav .dropdown-toggle .caret { border-top-color: #222; }
+#pjWrapper .pjMrBNav.open .dropdown-toggle .caret,
+#pjWrapper .pjMrBNav .dropdown-toggle:hover .caret { border-top-color: #222; }
+#pjWrapper .pjMrBNav.open .dropdown-toggle .caret { border-top-color: #222; }
+#pjWrapper .pjMrBNav .dropdown-menu { border-color: #f1f2ed; background: #f1f2ed; }
+#pjWrapper .pjMrBNav .dropdown-menu a { color: #222; }
+#pjWrapper .pjMrBNav .dropdown-menu a:hover,
+#pjWrapper .pjMrBNav .dropdown-menu a:focus { background: #222; color: #fff; }
+#pjWrapper .pjMrBNav .dropdown-menu .active a { background: #000; color: #fff; }
+
+/* ==========================================================================
+	#pjMrBRooms
+========================================================================== */
+#pjWrapper .pjMrBRooms .pjMrBRoom { border-color: #222; background: #413f40; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomMeta dt { color: #f1f2ed; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomMeta dd { color: #fff; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomContent p { color: #919191; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomContent .pjMrBRoomTitle { color: #f1f2ed; }
+
+/* ==========================================================================
+	#pjMrBRoomInner
+========================================================================== */
+#pjWrapper .pjMrBRoomInner { border-color: #222; background: #413f40; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerTitle { color: #fff; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerMeta dt { color: #919191; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerMeta dd { color: #f1f2ed; }
+#pjWrapper .pjMrBCustomCheckboxesDuration .pjMrBCustomCheckbox label { border-color: #565455; background: #565455; color: #f1f2ed; }
+#pjWrapper .pjMrBCustomCheckboxesDuration .pjMrBCustomInputChecked label { border-color: #fff; background: #fff; color: #222; }
+#pjWrapper .pjMrBCustomCheckboxesDuration .pjMrBCustomInputDisabled label { border-color: #919191; background: #919191; color: #f1f2ed; }
+
+/* ==========================================================================
+	#pjMrBMain
+========================================================================== */
+#pjWrapper .pjMrBMain { border-color: #222; background: #353334; }
+#pjWrapper .pjMrBMain:before { background: #413f40; }
+#pjWrapper .pjMrBMain:after { background: #222; }
+#pjWrapper .pjMrBMain .pjMrBMainTitle { color: #f1f2ed; }
+
+/* ==========================================================================
+	#pjMrBAside
+========================================================================== */
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductTitle { color: #f1f2ed; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductMeta dt { color: #919191; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductMeta dd { color: #fff; }
+
+/* ==========================================================================
+	#pjMrBContent
+========================================================================== */
+#pjWrapper .pjMrBFormRoomSetup .pjMrBFormSectionTitle { color: #fff; }
+
+/* ==========================================================================
+	#pjMrBCustomRadiosLayout
+========================================================================== */
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio label { border-color: #565455; background: #565455; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio.pjMrBCustomInputChecked label { border-color: #222; background: #222; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioContent strong { color: #f1f2ed; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio.pjMrBCustomInputChecked .pjMrBCustomRadioContent strong { color: #fff; }
+
+/* ==========================================================================
+	#pjMrBCustomCheckboxesExtras
+========================================================================== */
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox p { color: #fff; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox p strong { color: #f1f2ed; }
+
+/* ==========================================================================
+	#pjMrBCheckout
+========================================================================== */
+#pjWrapper .pjMrBCheckout,
+#pjWrapper .pjMrBCheckout .panel-heading,
+#pjWrapper .pjMrBCheckout .panel-body,
+#pjWrapper .pjMrBCheckout .panel-footer { border-color: #222; background: #222; }
+#pjWrapper .pjMrBCheckout .panel-heading { background: #353334; }
+#pjWrapper .pjMrBCheckout .pjMrBCheckoutTitle { color: #fff; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection p { color: #919191; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection p strong { color: #f1f2ed; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .pjMrBPrice,
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .pjMrBPrice strong { color: #fff; }
+#pjWrapper .pjMrBCheckout .panel-body { background: #413f40; }
+#pjWrapper .pjMrBCheckout .panel-body dt { color: #919191; }
+#pjWrapper .pjMrBCheckout .panel-body dd { color: #f1f2ed; }
+#pjWrapper .pjMrBCheckout .panel-body .pjMrBFormActions p { color: #fff; }
+
+@media only screen and (max-width: 767px) {
+	/* ==========================================================================
+		#pjMrBMain
+	========================================================================== */
+	#pjWrapper .pjMrBMain .pjMrBAside { background: #353334; }
+	#pjWrapper .pjMrBMain .pjMrBContent { border-top-color: #222; background: #413f40; }
+}

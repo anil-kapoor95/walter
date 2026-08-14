@@ -1,0 +1,251 @@
+/* ==========================================================================
+	#General
+========================================================================== */
+#pjWrapper { color: #555d5f; }
+#pjWrapper * { font-family: 'Oxygen', sans-serif; }
+#pjWrapper .fa { font-family: 'FontAwesome'; }
+#pjWrapper .glyphicon { font-family: 'Glyphicons Halflings'; }
+
+#pjWrapper .pjMrBContainer { background: #f7f7f7; }
+
+/* ==========================================================================
+	#Buttons
+========================================================================== */
+#pjWrapper .btn-default { border-color: #bebabb; color: #6889b2; 
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(253,253,253,1) 27%, rgba(250,248,249,1) 43%, rgba(245,241,240,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(253,253,253,1) 27%,rgba(250,248,249,1) 43%,rgba(245,241,240,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(253,253,253,1) 27%,rgba(250,248,249,1) 43%,rgba(245,241,240,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f1f0',GradientType=0 );
+}
+#pjWrapper .btn-default:hover,
+#pjWrapper .btn-default:focus { border-color: #bebabb; color: #6889b2; 
+	background: rgb(245,241,240);
+	background: -moz-linear-gradient(top,  rgba(245,241,240,1) 0%, rgba(250,248,249,1) 57%, rgba(253,253,253,1) 73%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(245,241,240,1) 0%,rgba(250,248,249,1) 57%,rgba(253,253,253,1) 73%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(245,241,240,1) 0%,rgba(250,248,249,1) 57%,rgba(253,253,253,1) 73%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f1f0', endColorstr='#ffffff',GradientType=0 );
+}
+
+#pjWrapper .btn-primary { border-color: #073163; color: #fff; 
+	background: rgb(25,70,127);
+	background: -moz-linear-gradient(top,  rgba(25,70,127,1) 0%, rgba(25,71,123,1) 3%, rgba(24,69,126,1) 5%, rgba(23,68,125,1) 13%, rgba(20,66,118,1) 37%, rgba(17,58,110,1) 66%, rgba(13,55,105,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(25,70,127,1) 0%,rgba(25,71,123,1) 3%,rgba(24,69,126,1) 5%,rgba(23,68,125,1) 13%,rgba(20,66,118,1) 37%,rgba(17,58,110,1) 66%,rgba(13,55,105,1) 100%);
+	background: linear-gradient(to bottom,  rgba(25,70,127,1) 0%,rgba(25,71,123,1) 3%,rgba(24,69,126,1) 5%,rgba(23,68,125,1) 13%,rgba(20,66,118,1) 37%,rgba(17,58,110,1) 66%,rgba(13,55,105,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19467f', endColorstr='#0d3769',GradientType=0 );
+}
+#pjWrapper .btn-primary:hover,
+#pjWrapper .btn-primary:focus { border-color: #073163; color: #fff; 
+	background: rgb(13,55,105);
+	background: -moz-linear-gradient(top,  rgba(13,55,105,1) 0%, rgba(17,58,110,1) 34%, rgba(20,66,118,1) 63%, rgba(23,68,125,1) 87%, rgba(24,69,126,1) 95%, rgba(25,71,123,1) 97%, rgba(25,70,127,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(13,55,105,1) 0%,rgba(17,58,110,1) 34%,rgba(20,66,118,1) 63%,rgba(23,68,125,1) 87%,rgba(24,69,126,1) 95%,rgba(25,71,123,1) 97%,rgba(25,70,127,1) 100%);
+	background: linear-gradient(to bottom,  rgba(13,55,105,1) 0%,rgba(17,58,110,1) 34%,rgba(20,66,118,1) 63%,rgba(23,68,125,1) 87%,rgba(24,69,126,1) 95%,rgba(25,71,123,1) 97%,rgba(25,70,127,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d3769', endColorstr='#19467f',GradientType=0 );
+}
+
+#pjWrapper .btn-link { color: #d31f1e; }
+#pjWrapper .btn-link:hover,
+#pjWrapper .btn-link:focus { color: #073163; }
+
+/* ==========================================================================
+	#pjMrBPaging
+========================================================================== */
+#pjWrapper .pjMrBPaging .pagination a,
+#pjWrapper .pjMrBPaging .pagination a span { border-color: #c1cedf; background: #edf0f5; color: #073163; }
+#pjWrapper .pjMrBPaging .pagination span { border: 0; background: none; color: #073163; }
+#pjWrapper .pjMrBPaging .pagination a:hover,
+#pjWrapper .pjMrBPaging .pagination a:focus,
+#pjWrapper .pjMrBPaging .pagination a:hover span,
+#pjWrapper .pjMrBPaging .pagination a:focus span { border-color: #d31f1e; background: #d31f1e; color: #fff; }
+#pjWrapper .pjMrBPaging .pagination .active a,
+#pjWrapper .pjMrBPaging .pagination .active span { border-color: #073163; background: #073163; color: #fff; }
+
+/* ==========================================================================
+	#Forms
+========================================================================== */
+#pjWrapper .pjMrBForm .form-control { border-color: #c1cedf; background: #edf0f5; color: #35393a; }
+#pjWrapper .pjMrBForm .form-control:focus { border-color: #073163; -webkit-box-shadow: 0 0 10px rgba(7, 49, 99, .3); box-shadow: 0 0 10px rgba(7, 49, 99, .3); }
+#pjWrapper .pjMrBForm label,
+#pjWrapper .pjMrBForm .control-label { color: #35393a; }
+
+/* ==========================================================================
+	#pjMrBSpinner
+========================================================================== */
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtn span { border-top-color: #073163; }
+#pjWrapper .pjMrBSpinner .pjMrBSpinnerBtn:hover span { border-top-color: #d31f1e; }
+
+/* ==========================================================================
+	#Custom Checkbox and Radio
+========================================================================== */
+#pjWrapper .pjMrBCustomCheckbox label { color: #35393a; }
+#pjWrapper .pjMrBCustomInputChecked label { color: #073163; }
+#pjWrapper .pjMrBCustomCheckboxFake { border-color: #c1cedf; background: #edf0f5; color: #35393a; }
+#pjWrapper .pjMrBCustomInputChecked .pjMrBCustomCheckboxFake { border-color: #073163; }
+#pjWrapper .pjMrBCustomCheckboxFake .glyphicon { color: #d31f1e; }
+
+/* ==========================================================================
+	#pjMrBDatePicker
+========================================================================== */
+#pjWrapper .pjMrBDatePicker .input-group-addon { background: none; color: #d31f1e; }
+#pjWrapper .pjMrBDatePicker .input-group-addon:hover,
+#pjWrapper .pjMrBDatePicker .form-control:focus ~ .input-group-addon { color: #073163; }
+#pjWrapper .pjMrBDatePicker td.disabled,
+#pjWrapper .pjMrBDatePicker td.disabled:hover { background: none; color: #ded8d8; }
+#pjWrapper .pjMrBDatePicker .today:before { border-bottom-color: #343839 !important; }
+#pjWrapper .pjMrBDatePicker .day:hover,
+#pjWrapper .pjMrBDatePicker .month:hover,
+#pjWrapper .pjMrBDatePicker .year:hover,
+#pjWrapper .pjMrBDatePicker .decade:hover,
+#pjWrapper .pjMrBDatePicker .hour:hover,
+#pjWrapper .pjMrBDatePicker .minute:hover,
+#pjWrapper .pjMrBDatePicker .active { background: #073163; color: #fff; }
+#pjWrapper .pjMrBDatePicker .prev span,
+#pjWrapper .pjMrBDatePicker .next span { color: #d31f1e; }
+#pjWrapper .pjMrBDatePicker .prev:hover,
+#pjWrapper .pjMrBDatePicker .next:hover { background: #d31f1e; }
+#pjWrapper .pjMrBDatePicker .prev:hover span,
+#pjWrapper .pjMrBDatePicker .next:hover span { color: #fff; }
+#pjWrapper .pjMrBDatePicker .picker-switch { color: #6889b2; }
+#pjWrapper .pjMrBDatePicker .picker-switch:hover,
+#pjWrapper .pjMrBDatePicker .bootstrap-datetimepicker-widget .active,
+#pjWrapper .pjMrBDatePicker .bootstrap-datetimepicker-widget .active:hover { background: #d31f1e; color: #fff; }
+#pjWrapper .bootstrap-datetimepicker-widget { border-color: #ccc; background: #fff; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.bottom:before { border-bottom-color: #ccc; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.bottom:after { border-bottom-color: #fff; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.top:before { border-top-color: #ccc; }
+#pjWrapper .bootstrap-datetimepicker-widget.dropdown-menu.top:after { border-top-color: #fff; }
+
+/* ==========================================================================
+	#Modals
+========================================================================== */
+#pjWrapper .pjMrBModal .modal-title { color: #6889b2; }
+
+/* ==========================================================================
+	#pjMrBFormFilters
+========================================================================== */
+#pjWrapper .pjMrBFormFilters .form-control { border-color: #c1cedf; background: #edf0f5; color: #35393a; }
+
+/* ==========================================================================
+	#pjMrBHeader
+========================================================================== */
+#pjWrapper .pjMrBHeader { border-color: #c1cedf; background: #fff; }
+#pjWrapper .pjMrBHeader .pjMrBHome { border-color: #bebabb; color: #6889b2; 
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(253,253,253,1) 27%, rgba(250,248,249,1) 43%, rgba(245,241,240,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(253,253,253,1) 27%,rgba(250,248,249,1) 43%,rgba(245,241,240,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(253,253,253,1) 27%,rgba(250,248,249,1) 43%,rgba(245,241,240,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f1f0',GradientType=0 );
+}
+#pjWrapper .pjMrBHeader .pjMrBHome:hover,
+#pjWrapper .pjMrBHeader .pjMrBHome:focus { border-color: #bebabb; color: #6889b2; 
+	background: rgb(245,241,240);
+	background: -moz-linear-gradient(top,  rgba(245,241,240,1) 0%, rgba(250,248,249,1) 57%, rgba(253,253,253,1) 73%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(245,241,240,1) 0%,rgba(250,248,249,1) 57%,rgba(253,253,253,1) 73%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(245,241,240,1) 0%,rgba(250,248,249,1) 57%,rgba(253,253,253,1) 73%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f1f0', endColorstr='#ffffff',GradientType=0 );
+}
+#pjWrapper .pjMrBNav .dropdown-toggle { border-color: #bebabb; color: #6889b2; 
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(253,253,253,1) 27%, rgba(250,248,249,1) 43%, rgba(245,241,240,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(253,253,253,1) 27%,rgba(250,248,249,1) 43%,rgba(245,241,240,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(253,253,253,1) 27%,rgba(250,248,249,1) 43%,rgba(245,241,240,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f1f0',GradientType=0 );
+}
+#pjWrapper .pjMrBNav .dropdown-toggle:hover,
+#pjWrapper .pjMrBNav .dropdown-toggle:focus { border-color: #bebabb; color: #6889b2; 
+	background: rgb(245,241,240);
+	background: -moz-linear-gradient(top,  rgba(245,241,240,1) 0%, rgba(250,248,249,1) 57%, rgba(253,253,253,1) 73%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(245,241,240,1) 0%,rgba(250,248,249,1) 57%,rgba(253,253,253,1) 73%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(245,241,240,1) 0%,rgba(250,248,249,1) 57%,rgba(253,253,253,1) 73%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f1f0', endColorstr='#ffffff',GradientType=0 );
+}
+#pjWrapper .pjMrBNav.open .dropdown-toggle { border-color: #6889b2; background: #6889b2; color: #fff; }
+#pjWrapper .pjMrBNav .dropdown-toggle .caret { border-top-color: #6889b2; }
+#pjWrapper .pjMrBNav.open .dropdown-toggle .caret,
+#pjWrapper .pjMrBNav .dropdown-toggle:hover .caret { border-top-color: #6889b2; }
+#pjWrapper .pjMrBNav.open .dropdown-toggle .caret { border-top-color: #fff; }
+#pjWrapper .pjMrBNav .dropdown-menu { border-color: #6889b2; background: #6889b2; }
+#pjWrapper .pjMrBNav .dropdown-menu a { color: #fff; }
+#pjWrapper .pjMrBNav .dropdown-menu a:hover,
+#pjWrapper .pjMrBNav .dropdown-menu a:focus { background: #073163; color: #fff; }
+#pjWrapper .pjMrBNav .dropdown-menu .active a { background: #d31f1e; color: #fff; }
+
+/* ==========================================================================
+	#pjMrBRooms
+========================================================================== */
+#pjWrapper .pjMrBRooms .pjMrBRoom { border-color: #c1cedf; background: #fff; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomMeta dt { color: #343839; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomMeta dd { color: #d31f1e; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomContent p { color: #555d5f; }
+#pjWrapper .pjMrBRooms .pjMrBRoom .pjMrBRoomContent .pjMrBRoomTitle { color: #6889b2; }
+
+/* ==========================================================================
+	#pjMrBRoomInner
+========================================================================== */
+#pjWrapper .pjMrBRoomInner { border-color: #c1cedf; background: #fff; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerTitle { color: #6889b2; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerMeta dt { color: #343839; }
+#pjWrapper .pjMrBRoomInner .pjMrBRoomInnerMeta dd { color: #d31f1e; }
+#pjWrapper .pjMrBCustomCheckboxesDuration .pjMrBCustomCheckbox label { border-color: #c1cedf; background: #edf0f5; color: #35393a; }
+#pjWrapper .pjMrBCustomCheckboxesDuration .pjMrBCustomInputChecked label { border-color: #6889b2; background: #6889b2; color: #fff; }
+#pjWrapper .pjMrBCustomCheckboxesDuration .pjMrBCustomInputDisabled label { border-color: #d31f1e; background: #d31f1e; color: rgba(255, 255, 255, .7); }
+
+/* ==========================================================================
+	#pjMrBMain
+========================================================================== */
+#pjWrapper .pjMrBMain { border-color: #c1cedf; background: #f7f7f7; }
+#pjWrapper .pjMrBMain:before { background: #fff; }
+#pjWrapper .pjMrBMain:after { background: #c1cedf; }
+#pjWrapper .pjMrBMain .pjMrBMainTitle { color: #6889b2; }
+
+/* ==========================================================================
+	#pjMrBAside
+========================================================================== */
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductTitle { color: #073163; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductMeta dt { color: #555d5f; }
+#pjWrapper .pjMrBAsideProduct .pjMrBAsideProductContent .pjMrBAsideProductMeta dd { color: #d31f1e; }
+
+/* ==========================================================================
+	#pjMrBContent
+========================================================================== */
+#pjWrapper .pjMrBFormRoomSetup .pjMrBFormSectionTitle { color: #073163; }
+
+/* ==========================================================================
+	#pjMrBCustomRadiosLayout
+========================================================================== */
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio label { border-color: #c1cedf; background: #edf0f5; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio.pjMrBCustomInputChecked label { border-color: #6889b2; background: #6889b2; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio .pjMrBCustomRadioContent strong { color: #35393a; }
+#pjWrapper .pjMrBCustomRadiosLayout .pjMrBCustomRadio.pjMrBCustomInputChecked .pjMrBCustomRadioContent strong { color: #fff; }
+
+/* ==========================================================================
+	#pjMrBCustomCheckboxesExtras
+========================================================================== */
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox p { color: #555d5f; }
+#pjWrapper .pjMrBCustomCheckboxesExtras .pjMrBCustomCheckbox p strong { color: #073163; }
+
+/* ==========================================================================
+	#pjMrBCheckout
+========================================================================== */
+#pjWrapper .pjMrBCheckout,
+#pjWrapper .pjMrBCheckout .panel-heading,
+#pjWrapper .pjMrBCheckout .panel-body,
+#pjWrapper .pjMrBCheckout .panel-footer { border-color: #c1cedf; }
+#pjWrapper .pjMrBCheckout .panel-heading { background: #f7f7f7; }
+#pjWrapper .pjMrBCheckout .pjMrBCheckoutTitle { color: #6889b2; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection p { color: #555d5f; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection p strong { color: #073163; }
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .pjMrBPrice,
+#pjWrapper .pjMrBCheckout .panel-heading .pjMrBCheckoutSection .pjMrBPrice strong { color: #d31f1e; }
+#pjWrapper .pjMrBCheckout .panel-body { background: #fff; }
+#pjWrapper .pjMrBCheckout .panel-body dt { color: #555d5f; }
+#pjWrapper .pjMrBCheckout .panel-body dd { color: #073163; }
+#pjWrapper .pjMrBCheckout .panel-body .pjMrBFormActions p { color: #6889b2; }
+
+@media only screen and (max-width: 767px) {
+	/* ==========================================================================
+		#pjMrBMain
+	========================================================================== */
+	#pjWrapper .pjMrBMain .pjMrBAside { background: #f7f7f7; }
+	#pjWrapper .pjMrBMain .pjMrBContent { border-top-color: #c1cedf; background: #fff; }
+}

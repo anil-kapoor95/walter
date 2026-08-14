@@ -1,0 +1,906 @@
+id,key,1::English (United Kingdom)
+1,adminForgot,Wachtwoord vergeten
+2,adminLogin,Admin Login
+3,backend,Backend titels
+4,booking_confirmation_title,Bevestigingsmail Verzenden
+5,booking_message,E-mailbericht
+6,booking_subject,E-mail onderwerp
+7,btnAdd,Toevoegen
+8,btnAddBooking,+ Aanvraag toevoegen
+9,btnAddEquipment,+ Voeg apparatuur toe
+10,btnAddFoodDrink,+ Toevoegen
+11,btnAddRoom,+ Ruimte toevoegen
+12,btnAddRoomLayout,+ Ruimte indeling toevoegen
+13,btnAddUser,+ Gebruiker toevoegen
+14,btnBack,Terug
+15,btnBackup,Back-up
+16,btnCancel,Annuleren
+17,btnContinue,Doorgaan
+18,btnDelete,Verwijderen
+19,btnLogin,Aanmelden
+20,btnReset,Reset
+21,btnSave,Opslaan
+22,btnSearch,Zoeken
+23,btnSend,Versturen
+24,btnUpdate,Update
+25,btnUseThisTheme,Gebruik dit thema
+26,created,Datum Tijd
+27,dash_add_booking,+ Aanvraag toevoegen
+28,dash_add_room,+ Ruimte toevoegen
+29,dash_bookings_made_today,Aanvraag vandaag gemaakt
+30,dash_bookings_today,Aanvraag voor vandaag
+31,dash_booking_made_today,Aanvraag vandaag gemaakt
+32,dash_booking_today,Aanvraag vandaag gemaakt
+33,dash_configure_booking_form,Aanvraag formulier maken
+34,dash_date,Datum
+35,dash_full_day,Hele dag
+36,dash_latest_bookings,Laatste aanvraag
+37,dash_make_backup,Maak back-ups van bestanden.
+38,dash_manage_equipment,Apparatuur beheren
+39,dash_no_bookings_found,Geen aanvraag gevonden
+40,dash_print,Afdrukken
+41,dash_quick_links,Snelle links
+42,dash_reservations,Aanvragen
+43,dash_setup_languages,Set-up Talen
+44,dash_total_bookings,Totale aanvragen
+45,dash_view_bookings,Aanvragen bekijken
+46,dash_view_rooms,Ruimtes bekijken
+47,delete_confirmation,Bevestiging verwijderen
+48,delete_selected,Verwijder geselecteerden
+49,email,E-mail
+50,emailForgotBody,"Hallo {Name}, Jou wachtwoord {Password}"
+51,emailForgotSubject,Wachtwoord vergeten
+52,email_taken,Er bestaat een klant met een dergelijk e-mailadres.
+53,frontend,Front-end titels
+54,gridActionTitle,Actiebevestiging
+55,gridBtnCancel,Annuleren
+56,gridBtnDelete,Verwijderen
+57,gridBtnOk,Ok
+58,gridChooseAction,Actie
+59,gridConfirmationTitle,Weet u zeker dat u het geselecteerde record wilt verwijderen?
+60,gridDeleteConfirmation,Bevestiging verwijderen
+61,gridEmptyBody,Je moet minimaal een record selecteren.
+62,gridEmptyResult,Geen gegevens gevonden
+63,gridEmptyTitle,Geen gegevens geselecteerd
+64,gridGotoPage,Ga naar pagina:
+65,gridItemsPerPage,Artikelen per pagina
+66,gridNext,Volgende 
+67,gridNextPage,Volgende pagina
+68,gridPrev,Vorige 
+69,gridPrevPage,Vorige pagina
+70,gridTotalItems,Totaal artikelen
+71,infoAddEquipmentItemDesc,"Vul onderstaand formulier in en klik op ""Opslaan"" om een nieuw apparaat toe te voegen."
+72,infoAddEquipmentItemTitle,Een nieuw artikel toevoegen
+73,infoAddFoodDrinkDesc,"Voer de titel en de prijs in en klik op de knop ""Opslaan""."
+74,infoAddFoodDrinkTitle,Voeg eten of drinken toe
+75,infoAddLayoutDesc,Voer een titel in en upload de afbeelding voor uw nieuwe ruimte indeling.
+76,infoAddLayoutTitle,Voeg een plattegrond van de kamer toe
+77,infoAddRoomDesc,"Vul onderstaand formulier in en klik op ""Opslaan"" om een nieuwe ruimte toe te voegen."
+78,infoAddRoomTitle,Voeg een nieuwe ruimte toe
+79,infoAddUserDesc,"Vul onderstaand formulier in en klik op ""Opslaan"" om een nieuwe gebruiker toe te voegen."
+80,infoAddUserTitle,Gebruiker toevoegen
+81,infoBookingDetailsDesc,Selecteer de ruimte die u wilt reserveren en vul alle relevante gegevens in. U kunt ook technische apparatuur reserveren voor uw vergadering of presentatie bestellen.
+82,infoBookingDetailsTitle,Een nieuwe boeking toevoegen
+83,infoBookingFormDesc,Selecteer de velden in het aanvraag formulier die standaard en verplicht moeten zijn.
+84,infoBookingFormTitle,Aanvraag formulier bewerken
+85,infoBookingsDesc,Configureer de aanvraag opties en pas de betalingen aan uw voorkeuren aan.
+86,infoBookingsListDesc,"Bekijk een lijst van alle ruimteboekingen. Met de onderstaande sneltoetsen kunt u handmatig een nieuwe aanvraag toevoegen, de status ervan wijzigen, aanvraag gegevens bewerken, aanvragen bekijken en verwijderen."
+87,infoBookingsListTitle,Aanvraag lijst
+88,infoBookingsTitle,Aanvragen en betalingen
+89,infoClientDetailsDesc,Vul de klantgegevens in voordat u de aanvraag opslaat.
+90,infoClientDetailsTitle,Voeg klantgegevens toe
+91,infoDefaultTimeDesc,"Je kunt voor elke dag van de week een andere werktijd instellen, evenals vrije dagen en een middag- en avondschema."
+92,infoDefaultTimeTitle,Standaard werktijd
+93,infoEquipmentDesc,Bekijk alle beschikbare apparatuur. Je kunt een nieuw item toevoegen of de bestaande bewerken. Vergeet niet je wijzigingen op te slaan.
+94,infoEquipmentTitle,Technische apparatuur
+95,infoFoodDrinksDesc,Als extra service kunt u uw klanten verschillende soorten eten en drinken aanbieden. Pas uw menu aan en voeg prijzen toe.
+96,infoFoodDrinksTitle,Menukaart met eten en drinken
+97,infoGeneralDesc,Configureer de algemene instellingen voor uw ruimte aanvraag systeem.
+98,infoGeneralTitle,Algemene opties
+99,infoInstallCodeDesc,Kopieer de onderstaande installatie code en plaats deze op uw webpagina.
+100,infoInstallCodeTitle,Installeer code
+101,infoPreviewDesc,"Er zijn verschillende kleurschema's beschikbaar voor de front-end. Klik op elk van de miniaturen hieronder om een voorbeeld te bekijken. Klik op de knop ""Dit thema gebruiken"" voor het thema dat u wilt gebruiken."
+102,infoPreviewInstallDesc,"Er zijn verschillende kleurenschema's beschikbaar voor de front-end. Klik op elk van de miniaturen hieronder om de thema's te bekijken. Klik op de knop ""Dit thema gebruiken"" om het te activeren. Scroll vervolgens naar beneden en kopieer/plak de installatiecode op uw webpagina. "
+103,infoPreviewInstallTitle,Voorbeeldweergave en installatie
+104,infoPreviewTitle,Voorbeeld van de front-end
+105,infoRoomLayoutsDesc,"Hieronder vindt u een lijst met alle beschikbare ruimte indelingen. U kunt uw eigen indelingen toevoegen en deze toewijzen aan elk ruimtetype via het menu ""Ruimtes""."
+106,infoRoomLayoutsTitle,Plattegronden van de ruimtes
+107,infoRoomsDesc,"Hieronder vindt u een lijst met alle ruimtes. U kunt ruimtes toevoegen en bewerken, hun status wijzigen en alle aanvragen voor elke ruimte bekijken."
+108,infoRoomsTitle,Ruimtes
+109,infoTermsDesc,Vul je boeking voorwaarden in en klik op 'Opslaan'.
+110,infoTermsTitle,Algemene voorwaarden
+111,infoToAdministratorsDesc,"Pas de geautomatiseerde e-mail- en sms-meldingen aan die naar beheerders worden verzonden. Als u de sms-notificatie functie wilt activeren, moet u een geldige API-sleutel aanvragen en deze invoeren in het daarvoor bestemde sms-menu (zie hierboven)."
+112,infoToAdministratorsTitle,Meldingen aan beheerders
+113,infoToCustomersDesc,"Maak verschillende soorten e-mail- en sms-meldingen aan die worden geactiveerd bij een nieuwe aanvraag, betaling of annulering. Als u de sms-notificatie functie wilt activeren, moet u een geldige API-sleutel aanvragen en deze invoeren in het daarvoor bestemde sms-menu (zie hierboven)."
+114,infoToCustomersTitle,Meldingen aan klanten
+115,infoUpdateEquipmentItemDesc,"U kunt alle wijzigingen in het onderstaande formulier aanbrengen en op de knop ""Opslaan"" klikken om het apparatuuritem bij te werken."
+116,infoUpdateEquipmentItemTitle,Update het apparatuuritem
+117,infoUpdateFoodDrinkDesc,Bewerk de titel of de prijs en klik vervolgens op 'Opslaan'.
+118,infoUpdateFoodDrinkTitle,Update het voedsel- of drankitem
+119,infoUpdateLayoutDesc,"U kunt de titel bewerken en een andere afbeelding voor deze ruimte indeling uploaden. Klik aan het einde gewoon op ""Opslaan""."
+120,infoUpdateLayoutTitle,Ruimte indeling bijwerken
+121,infoUpdateRoomDesc,"U kunt onderstaande formulier wijzigen en op de knop ""Opslaan"" klikken om de ruimte informatie bij te werken."
+122,infoUpdateRoomTitle,Update ruimte
+123,infoUpdateUserDesc,"U kunt onderstaande formulier naar wens wijzigen en op de knop ""Opslaan"" klikken om de gebruikersgegevens bij te werken."
+124,infoUpdateUserTitle,Gebruiker bijwerken
+125,infoUsersDesc,"Hieronder vindt u een lijst met alle gebruikers. U kunt nieuwe gebruikers toevoegen, gebruikersgegevens bewerken en de gebruikersstatus wijzigen."
+126,infoUsersTitle,Gebruikers
+127,lblAddUser,Gebruikers aanmaken
+128,lblAll,Alles
+129,lblAttendees,Aanwezigen
+130,lblAvailableTokens,Gebruik de onderstaande tokens om uw e-mailberichten te personaliseren. <br/><br/><label>{Date}</label><label>{Room}</label><label>{RoomLayout}</label><label>{Duration}</label><label>{Attendees}</label><label>{Equipment}</label><label>{FoodDrinks}</label><label>{UniqueID}</label><label>{SubTotal}</label><label>{Deposit}</label><label>{Total}</label><label>{Tax}</label><label>{PaymentMethod}</label><label>{CCType}</label><label>{CCNum}</label><label>{CCExp}</label><label>{CCSec}</label><label>{Title}</label><label>{Name}</label><label>{Address}</label><label>{Zip}</label><label>{City}</label><label>{State}</label>label>{Country}</label> <label>{Email}</label><label>{Phone}</label><label>{Company}</label><label>{CancelURL}</label>
+131,lblBookBy,Aanvraag voor
+132,lblBookings,Aanvragen
+133,lblBookMultiUnits,Vraag meerdere ruimtes aan
+134,lblCapacity,Capaciteit
+135,lblCCCode,CC-code
+136,lblCCExp,vervaldatum creditcard
+137,lblCCNum,CC-nummer
+138,lblCCType,CC-type
+139,lblChoose,Kiezen
+140,lblChooseTheme,Kies een kleurenthema
+141,lblClient,Opdrachtgever
+142,lblCreatedOn,Gemaakt op
+143,lblCurrentlyInUse,Momenteel in gebruik
+144,lblDashLastLogin,Laatste login
+145,lblDate,Datum
+146,lblDays,Dagen
+147,lblDelete,Verwijderen
+148,lblDeleteImage,Afbeelding verwijderen
+149,lblDeleteImageConfirm,Weet u zeker dat u deze afbeelding wilt verwijderen?
+150,lblDeposit,Storting
+151,lblDescription,Bijschrijving
+152,lblDuration,Duur
+153,lblEndDate,Einddatum en -tijd
+154,lblEquipment,Apparatuur beheren
+155,lblEquipmentPrice,Apparatuur prijs
+156,lblError,Fout
+157,lblExport,Export
+158,lblFoodDrinkPrice,Eten en drink prijs
+159,lblFoodDrinks,Eten en drinken
+160,lblForgot,Wachtwoord vergeten
+161,lblFromTo,Van - naar
+162,lblImage,Afbeelding
+163,lblInstallCode,Code installeren
+164,lblInvalidDateRange,Ongeldige datum bereik
+165,lblIp,IP-adres
+166,lblIpAddress,IP-adres
+167,lblIsActive,IS actief
+168,lblLayout,Indeling
+169,lblLayouts,Indelingen
+170,lblLegendEmails,E-mails
+171,lblLegendSMS,SMS
+172,lblNA,N/A
+173,lblName,Naam
+174,lblNo,Nee
+175,lblNoLayoutsMessage,Geen plattegronden gevonden. Klik {STAG}hier{ETAG} om er een toe te voegen.
+176,lblNotifications,Meldingen
+177,lblOption,Optie
+178,lblOptionList,Optielijst
+179,lblPaymentMethod,Betalingswijze
+180,lblPeople,Personen
+181,lblPerAttendee,Per deelnemer
+182,lblPhone,Telefoon
+183,lblPrice,Prijs
+184,lblPricePerAttendee,Prijs per deelnemer
+185,lblPricePerBooking,Per dagdeel
+186,lblPricePerHour,Per uur
+187,lblRangeDaysOff,Er is een vrije dag in het aanvraag gebied.
+188,lblResvAddress,Adres
+189,lblResvCity,Woonplaats
+190,lblResvCompany,Bedrijf
+191,lblResvCountry,Land
+192,lblResvEmail,E-mail
+193,lblResvName,Naam
+194,lblResvNotes,Notities
+195,lblResvPhone,Telefoon
+196,lblResvState,Provincie
+197,lblResvTitle,Titel
+198,lblResvZip,Postcode
+199,lblRole,Rol
+200,lblRoom,Ruimte
+201,lblRoomPrice,Prijs per ruimte
+202,lblRooms,Ruimtes
+203,lblSelectedDateOff,Geselecteerde datum is uitgeschakeld
+204,lblSendEmailConfirmation,Bevestigingsmail verzenden
+205,lblStatus,Status
+206,lblSubTotal,Subtotaal
+207,lblTax,Belasting
+208,lblTitle,Titel
+209,lblTo,Naar
+210,lblTotal,Totaal
+211,lblType,Type
+212,lblUnits,Ruimte(s)
+213,lblUpdateUser,Update gebruiker
+214,lblUserCreated,Registratie datum en tijd
+215,lblValue,Waarde
+216,lblYes,Ja
+217,legendDateAndRoom,Datum en ruimte
+218,legendEquipment,Apparatuur 
+219,legendFoodAndDrinks,Eten en drinken
+220,lnkBack,Terug
+221,localeArrays,Titels
+222,locales,Talenmenu
+223,locale_flag,Vlag
+224,locale_is_default,Standaard
+225,locale_order,Bestelling niet gevonden!
+226,locale_title,Titel
+227,menuBackup,Back-up
+228,menuBookings,Aanvragen
+229,menuDashboard,Dashboard
+230,menuEquipments,Apparatuur 
+231,menuExtras,Extra's
+232,menuFoodDrinks,Horeca
+233,menuInstall,Installeren
+234,menuInstallPreview,Installeren
+235,menuLang,Meerdere talen
+236,menuLocales,Talen
+237,menuLogout,Uitloggen
+238,menuOptions,Opties
+239,menuPlugins,Invoegen
+240,menuPreview,Voorbeeld
+241,menuProfile,Profiel
+242,menuRoomLayouts,Ruimte indeling
+243,menuRooms,Ruimtes
+244,menuUsers,Gebruikers
+245,menuWorkingTime,Werktijd
+246,multilangTooltip,Klik op het vlagpictogram om de gewenste taalversie van de inhoud te selecteren.
+247,option_days,Dagen
+248,opt_o_admin_email_cancel_text,Selecteer 'Ja' als u een e-mail naar de beheerder wilt ontvangen wanneer een aanvraag wordt geannuleerd.
+249,opt_o_admin_email_confirmation_text,Selecteer 'Ja' als u een e-mail naar de beheerder wilt ontvangen wanneer een aanvraag wordt gemaakt.
+250,opt_o_admin_email_payment_text,  Selecteer 'Ja' als u een e-mail naar de beheerder wilt sturen wanneer een nieuwe betaling wordt gedaan.
+251,opt_o_admin_sms_confirmation_message,Aanvraag bevestiging via sms
+252,opt_o_admin_sms_payment_message,Betalingsbevestiging via sms
+253,opt_o_allow_authorize,Sta betalingen toe met Authorize.net.
+254,opt_o_allow_bank,Geef uw bankrekening gegevens op voor overboekingen.
+255,opt_o_allow_cash,Contante betalingen toestaan
+256,opt_o_allow_creditcard,Verzamel creditcardgegevens voor offline verwerking.
+257,opt_o_allow_paypal,Sta betalingen met PayPal toe.
+258,opt_o_authorize_md5_hash,Authorize.Net MD5-hash
+259,opt_o_authorize_merchant_id,Authorize.Net-handelaars-ID
+260,opt_o_authorize_timezone,Authorize.Net-tijdzone
+261,opt_o_authorize_transkey,Authorize.Net-transactiesleutel
+262,opt_o_bank_account,Bankrekening
+263,opt_o_bf_include_address,Adres
+264,opt_o_bf_include_captcha,Captha
+265,opt_o_bf_include_city,Woonplaats
+266,opt_o_bf_include_company,Bedrijf
+267,opt_o_bf_include_country,Land
+268,opt_o_bf_include_email,E-mail
+269,opt_o_bf_include_name,Naam
+270,opt_o_bf_include_notes,Notities
+271,opt_o_bf_include_phone,Telefoon
+272,opt_o_bf_include_state,Provincie
+273,opt_o_bf_include_title,Titel
+274,opt_o_bf_include_zip,Postcode
+275,opt_o_booking_status,"Alle aanvragen die gemaakt maar NIET betaald zijn, worden als volgt ingesteld:"
+276,opt_o_currency,Valuta
+277,opt_o_date_format,Datum formaat
+278,opt_o_days_earlier,Maak aanvragen vooraf mogelijk - minimaal ... dagen van tevoren.
+279,opt_o_deposit_payment,Storting betaling
+280,opt_o_email_cancel,Verstuur annulering mail
+281,opt_o_email_cancel_message,Bevestiging bericht annuleren
+282,opt_o_email_cancel_subject,Annuleren bevestiging onderwerp
+283,opt_o_email_cancel_text,Verstuur annulering mail
+284,opt_o_email_confirmation,Nieuwe aanvraag ontvangen E-mail
+285,opt_o_email_confirmation_message,Nieuw aanvraag bevestiging bericht
+286,opt_o_email_confirmation_subject,Nieuwe aanvraag bevestiging onderwerp
+287,opt_o_email_confirmation_text,Nieuwe aanvraag ontvangen E-mail
+288,opt_o_email_payment,Betalingsbevestiging E-mail verzenden
+289,opt_o_email_payment_message,Betalingsbevestiging bericht
+290,opt_o_email_payment_subject,Betalingsbevestiging onderwerp
+291,opt_o_email_payment_text,Betalingsbevestiging E-mail verzenden
+292,opt_o_items_per_page,Aantal artikelen per pagina
+293,opt_o_payment_disable,"Selecteer ""Ja"" om betalingen uit te schakelen en alleen aanvraag gegevens te verzamelen."
+294,opt_o_payment_status,Alle gemaakte en betaalde aanvragen worden als volgt ingesteld:
+295,opt_o_paypal_address,PayPal zakelijk e-mailadres
+296,opt_o_send_email,E-mail verzenden
+297,opt_o_sms_confirmation_message,Aanvraag bevestiging SMS
+298,opt_o_sms_payment_message,Betalingsbevestiging SMS
+299,opt_o_smtp_host,SMTP Host
+300,opt_o_smtp_pass,SMTP Wachtwoord
+301,opt_o_smtp_port,SMTP Poort
+302,opt_o_smtp_user,SMTP Gebruikersnaam
+303,opt_o_tax_payment,Belastingbetaling
+304,opt_o_terms,Algemene voorwaarden
+305,opt_o_thankyou_page,URL van de webpagina waarnaar uw klanten worden doorgestuurd na betaling via PayPal of Authorize.Net
+306,opt_o_timezone,Tijdzone
+307,opt_o_time_format,Tijdindeling
+308,opt_o_week_start,eerste dag van de week
+309,pass,Wachtwoord
+310,pj_digits_validation,Gelieve alleen cijfers in te voeren
+311,pj_email_taken,Er bestaat al een gebruiker met dat e-mailadres.
+312,pj_email_validation,Gelieve een geldig E-mailadres in te voeren.
+313,pj_field_required,Dit veld is vereist.
+314,pj_number_validation,Gelieve een geldig nummer in te voeren.
+315,revert_status,Status terugdraaien
+316,tabBookingDetails,Aanvraag gegevens
+317,tabBookingForm,Aanvraag formulier
+318,tabBookings,Aanvragen
+319,tabClientDetails,Klantgegevens
+320,tabGeneral,Algemeen menu
+321,tabNotifications,Meldingen
+322,tabTerms,Voorwaarden
+323,tabToAdministrators,Naar beheerders
+324,tabToCustomers,Aan klanten
+325,tabWorkingTime,Werktijd
+326,time_afternoon,Avond
+327,time_afternoon_from,Avond vanaf
+328,time_afternoon_to,Avond tot
+329,time_custom,Aangepast
+330,time_date,Datum
+331,time_day,Dag van de week
+332,time_default,Standaard
+333,time_from,Starttijd
+334,time_is,Vrije dag
+335,time_morning,Middag
+336,time_morning_from,Middag vanaf
+337,time_morning_to,Middag tot
+338,time_to,Eindtijd
+339,time_update_custom,Update op maat
+340,url,URL
+341,user,Gebruikersnaam
+342,front_address,Adres
+343,front_afternoon,Avond
+344,front_agree_with_terms,Ik ga akkoord met de algemene voorwaarden
+345,front_attendees,Personen
+346,front_bank_account,Bankrekening
+347,front_billing_address,Factuuradres
+348,front_bookings_in_range,De datum in het aangegeven bereik is al door iemand anders gereserveerd.
+349,front_booking_completed,Aanvraag compleet
+350,front_booking_details,Aanvraag details
+351,front_booking_id,Aanvraag-ID
+352,front_btn_back,Terug
+353,front_btn_book_this_room,Boek deze ruimte
+354,front_btn_close,Sluiten
+355,front_btn_confirm,Bevestigen
+356,front_btn_next,Volgende 
+357,front_btn_preview_booking,Voorbeeld aanvraag
+358,front_btn_start_over,Begin opnieuw
+359,front_capacity,Capaciteit
+360,front_captcha,Captcha
+361,front_cc_code,CC-code
+362,front_cc_exp,CC-vervaldatum
+363,front_cc_num,CC-nummer
+364,front_cc_type,CC-type
+365,front_city,Woonplaats
+366,front_company,Bedrijf
+367,front_country,Land
+368,front_date,Datum
+369,front_date_booked_msg,De geselecteerde datum is al door iemand anders geboekt. Kies een andere datum.
+370,front_date_off_in_range,Binnen het geselecteerde tijdsbestek is er een vrije dag.
+371,front_date_off_msg,De geselecteerde datum is een vrije dag. Kies een andere datum.
+372,front_deposit,Storting
+373,front_duration,Duur
+374,front_email,E-mail
+375,front_end_date,Einddatum en -tijd
+376,front_equipment,Apparatuur 
+377,front_food_drinks,Eten en drinken
+378,front_from_to,Van - Naar
+379,front_half_day,Per dagdeel
+380,front_hours,Uren
+381,front_human_verification,Menselijke verificatie
+382,front_label_txn_id,Transactie-ID
+383,front_layout,Indeling
+384,front_layout_error_msg,Selecteer de ruimte indeling.
+385,front_link_change,Aanpassen
+386,front_menu2_step_1,Stap 1 - Beschikbare ruimtes
+387,front_menu2_step_2,Stap 2 - Ruimte
+388,front_menu2_step_3,Stap 3 - Eten en drinken
+389,front_menu2_step_4,Stap 4 - Afrekenen
+390,front_menu2_step_5,Stap 5 - Bevestiging
+391,front_menu3_step_1,Stap 1 - Beschikbare ruimtes
+392,front_menu3_step_2,Stap 2 - Ruimte
+393,front_menu3_step_3,Stap 3 - Ruimte indeling
+394,front_menu3_step_4,Stap 4 - Afrekenen
+395,front_menu3_step_5,Stap 5 - Bevestiging
+396,front_menu4_step_1,Stap 1 - Beschikbare ruimtes
+397,front_menu4_step_2,Stap 2 - Ruimte
+398,front_menu4_step_3,Stap 3 - Afrekenen
+399,front_menu4_step_4,Stap 4 - Bevestiging
+400,front_menu_step_1,Stap 1 - Beschikbare ruimtes
+401,front_menu_step_2,Stap 2 - Ruimte
+402,front_menu_step_3,Stap 3 - Ruimte indeling
+403,front_menu_step_4,Stap 4 - Eten en drinken
+404,front_menu_step_5,Stap 5 - Afrekenen
+405,front_menu_step_6,Stap 6 - Bevestiging
+406,front_menu_step_7,Stap 7 - Definitief
+407,front_morning,Middag
+408,front_name,Naam
+409,front_notes,Notities
+410,front_no_rooms_found,Geen ruimte gevonden
+411,front_order_by,Besteld door
+412,front_params_missing,Ontbrekende parameters. Controleer het alstublieft opnieuw.
+413,front_payment_method,Betaalwijze
+414,front_people,Personen
+415,front_person,Persoon
+416,front_personal_details,Persoonlijke gegevens
+417,front_per_day,Per dag
+418,front_per_hour,Per uur
+419,front_per_person,Per persoon
+420,front_phone,Telefoon
+421,front_price,Prijs
+422,front_processed_on,Verwerkt op
+423,front_room,Ruimte
+424,front_room_layout,Indeling
+425,front_room_setup,Ruimte indeling
+426,front_select_slot_message,Selecteer ten minste een slot
+427,front_start_date,Startdatum en -tijd
+428,front_state,Staat
+429,front_subtotal,Subtotaal
+430,front_tax,Belasting
+431,front_terms_and_conditions,Algemene voorwaarden
+432,front_terms_title,Algemene voorwaarden
+433,front_title,Titel
+434,front_total,Totaal
+435,front_units,Eenheden
+436,front_your_booking,Uw aanvraag
+437,front_your_details,Uw gegevens
+438,front_zip,Postcode
+439,admin_sms_ARRAY_confirmation,Aanvraag bevestiging via sms
+440,admin_sms_ARRAY_payment,Betalingsbevestiging via sms
+441,booking_statuses_ARRAY_cancelled,Geannuleerd
+442,booking_statuses_ARRAY_confirmed,Bevestigd
+443,booking_statuses_ARRAY_pending,In behandeling
+444,book_by_ARRAY_halfday,Per dag deel
+445,book_by_ARRAY_hour,Per uur
+446,book_by_ARRAY_multiday,Per dag
+447,buttons_ARRAY_cancel,Annuleer pagina
+448,buttons_ARRAY_delete,Verwijderen
+449,buttons_ARRAY_send,Verzenden
+450,cancel_err_ARRAY_1,Ontbrekende parameters
+451,cancel_err_ARRAY_2,Een aanvraag met dat ID bestaat niet.
+452,cancel_err_ARRAY_200,De aanvraag is succesvol geannuleerd.
+453,cancel_err_ARRAY_3,De beveiliging hash kwam niet overeen.
+454,cancel_err_ARRAY_4,De aanvraag is reeds geannuleerd.
+455,cc_types_ARRAY_AmericanExpress,American Express
+456,cc_types_ARRAY_Maestro,Maestro
+457,cc_types_ARRAY_MasterCard,Mastercard
+458,cc_types_ARRAY_Visa,Visa
+459,client_email_ARRAY_cancel,Annulering mail verzenden
+460,client_email_ARRAY_confirmation,Nieuwe aanvraag ontvangen via e-mail
+461,client_email_ARRAY_payment,Stuur een e-mail met de betalingsbevestiging.
+462,client_sms_ARRAY_confirmation,Aanvraag bevestiging via sms
+463,client_sms_ARRAY_payment,Betalingsbevestiging via sms
+464,days_ARRAY_0,Zondag
+465,days_ARRAY_1,Maandag
+466,days_ARRAY_2,Dinsdag
+467,days_ARRAY_3,Woensdag
+468,days_ARRAY_4,Donderdag
+469,days_ARRAY_5,Vrijdag
+470,days_ARRAY_6,Zaterdag
+471,day_names_ARRAY_0,Z
+472,day_names_ARRAY_1,M
+473,day_names_ARRAY_2,D
+474,day_names_ARRAY_3,W
+475,day_names_ARRAY_4,D
+476,day_names_ARRAY_5,V
+477,day_names_ARRAY_6,Z
+478,day_short_names_ARRAY_0,Zo
+479,day_short_names_ARRAY_1,Ma
+480,day_short_names_ARRAY_2,Di
+481,day_short_names_ARRAY_3,Wo
+482,day_short_names_ARRAY_4,Do
+483,day_short_names_ARRAY_5,Vr
+484,day_short_names_ARRAY_6,Za
+485,enum_arr_ARRAY_0,Nee
+486,enum_arr_ARRAY_1,Ja
+487,enum_arr_ARRAY_2,Ja (verplicht)
+488,enum_arr_ARRAY_cancelled,Geannuleerd
+489,enum_arr_ARRAY_confirmed,Bevestigd
+490,enum_arr_ARRAY_mail,PHP mail()
+491,enum_arr_ARRAY_No,Nee
+492,enum_arr_ARRAY_pending,In behandeling
+493,enum_arr_ARRAY_smtp,SMTP
+494,enum_arr_ARRAY_Yes,Ja
+495,error_bodies_ARRAY_AA10,Het opgegeven e-mailadres is niet gekoppeld aan een account.
+496,error_bodies_ARRAY_AA11,Controleer uw mailbox voor verdere instructies.
+497,error_bodies_ARRAY_AA12,"Het spijt ons, probeer het later nog eens."
+498,error_bodies_ARRAY_AA13,"Alle wijzigingen die je in je profiel hebt aangebracht, zijn opgeslagen."
+499,error_bodies_ARRAY_AB01,Geen info
+500,error_bodies_ARRAY_AB02,Alle back-up bestanden zijn opgeslagen.
+501,error_bodies_ARRAY_AB03,Er is geen optie geselecteerd.
+502,error_bodies_ARRAY_AB04,Er is geen back-up gemaakt.
+503,error_bodies_ARRAY_AEQ01,Alle wijzigingen aan de apparatuur zijn opgeslagen.
+504,error_bodies_ARRAY_AEQ03,Er is nieuwe apparatuur aan het systeem toegevoegd.
+505,error_bodies_ARRAY_AEQ04,Het apparaat kon niet succesvol worden toegevoegd. Probeer het opnieuw.
+506,error_bodies_ARRAY_AEQ08,"De apparatuur waarnaar u op zoek bent, ontbreekt."
+507,error_bodies_ARRAY_AFD01,Alle wijzigingen aan eten of drinken zijn opgeslagen.
+508,error_bodies_ARRAY_AFD03,Er is een nieuw voedings- of drankproduct aan het systeem toegevoegd.
+509,error_bodies_ARRAY_AFD04,Het toevoegen van eten of drinken is mislukt. Probeer het opnieuw.
+510,error_bodies_ARRAY_AFD08,"Het eten of drinken waarnaar u op zoek bent, is niet beschikbaar."
+511,error_bodies_ARRAY_ALC01,"Alle wijzigingen die u zojuist hebt aangebracht, zijn opgeslagen."
+512,error_bodies_ARRAY_ALY01,Alle wijzigingen in de ruimte indeling zijn opgeslagen.
+513,error_bodies_ARRAY_ALY03,Er is een nieuwe ruimte indeling aan het systeem toegevoegd.
+514,error_bodies_ARRAY_ALY04,Het toevoegen van de ruimte indeling is mislukt. Probeer het opnieuw.
+515,error_bodies_ARRAY_ALY05,De plattegrond kon niet worden toegevoegd omdat de afbeelding te groot is en uw server deze niet kan uploaden. De maximaal toegestane grootte is {SIZE}. Upload alstublieft een kleinere afbeelding.
+516,error_bodies_ARRAY_ALY06,De indeling van de ruimte kan niet succesvol worden bijgewerkt omdat de afbeelding grootte te groot is en uw server deze niet kan uploaden. De maximaal toegestane grootte is {SIZE}. Upload een kleinere afbeelding.
+517,error_bodies_ARRAY_ALY08,De gewenste ruimte indeling ontbreekt.
+518,error_bodies_ARRAY_ALY09,"De plattegrond van de ruimte is toegevoegd, maar de afbeelding kon niet worden doorgevoerd omdat deze te groot is."
+519,error_bodies_ARRAY_ALY10,"De plattegrond van de ruimte is bijgewerkt, maar de afbeelding kon niet worden doorgevoerd omdat deze te groot is."
+520,error_bodies_ARRAY_AO01,Alle wijzigingen in Algemene opties zijn opgeslagen.
+521,error_bodies_ARRAY_AO02,Alle wijzigingen in de boeking opties zijn succesvol opgeslagen.
+522,error_bodies_ARRAY_AO03,Alle wijzigingen in meldingen zijn succesvol opgeslagen.
+523,error_bodies_ARRAY_AO04,Alle wijzigingen in het aanvraag formulier zijn succesvol opgeslagen.
+524,error_bodies_ARRAY_AO05,Alle wijzigingen in de Algemene Voorwaarden zijn succesvol opgeslagen.
+525,error_bodies_ARRAY_AR01,Alle wijzigingen in de aanvraag zijn verwerkt.
+526,error_bodies_ARRAY_AR03,Er is een nieuwe aanvraag aan het systeem toegevoegd.
+527,error_bodies_ARRAY_AR04,Het spijt ons dat de nieuwe aanvraag niet succesvol kon worden toegevoegd. Probeer het alstublieft opnieuw.
+528,error_bodies_ARRAY_AR08,Het spijt ons dat de aanvraag die u zoekt ontbreekt.
+529,error_bodies_ARRAY_ARM01,Alle wijzigingen aan de ruimte zijn opgeslagen.
+530,error_bodies_ARRAY_ARM03,Er is een nieuwe ruimte aan het systeem toegevoegd.
+531,error_bodies_ARRAY_ARM04,Het toevoegen van de ruimte is niet gelukt. Probeer het opnieuw.
+532,error_bodies_ARRAY_ARM05,De ruimte kon niet worden toegevoegd omdat de afbeelding te groot is en uw server deze niet kan uploaden. De maximaal toegestane grootte is {SIZE}. Upload alstublieft een kleinere afbeelding.
+533,error_bodies_ARRAY_ARM06,De ruimte kon niet succesvol worden bijgewerkt omdat de afbeelding te groot is en uw server deze niet kan uploaden. De maximaal toegestane grootte is {SIZE}. Upload alstublieft een kleinere afbeelding.
+534,error_bodies_ARRAY_ARM08,"De ruimte die u zoekt, is niet beschikbaar."
+535,error_bodies_ARRAY_ARM09,"De ruimte is toegevoegd, maar de afbeelding is niet doorgevoerd omdat deze te groot is."
+536,error_bodies_ARRAY_ARM10,"De ruimte is bijgewerkt, maar de afbeelding kon niet succesvol worden doorgevoerd omdat deze te groot is."
+537,error_bodies_ARRAY_AT01,Alle wijzigingen in de werktijd zijn opgeslagen.
+538,error_bodies_ARRAY_AT02,Alle wijzigingen die zijn aangebracht in de aangepaste werktijden zijn opgeslagen.
+539,error_bodies_ARRAY_AT03,Alle wijzigingen die zijn aangebracht in de aangepaste werktijden zijn opgeslagen.
+540,error_bodies_ARRAY_AT04,"Je kunt voor elke dag van de week verschillende werktijden instellen. Je kunt ook vrije dagen, een middagperiode en een avondperiode instellen."
+541,error_bodies_ARRAY_AT05,Met onderstaand formulier kunt u voor elke datum een aangepaste werktijd instellen. U kunt de datum ook als vrije dag markeren. Aanvragen op die datum worden niet geaccepteerd.
+542,error_bodies_ARRAY_AU01,"Alle wijzigingen die voor deze gebruiker zijn aangebracht, zijn opgeslagen."
+543,error_bodies_ARRAY_AU03,"Alle wijzigingen die voor deze gebruiker zijn aangebracht, zijn opgeslagen."
+544,error_bodies_ARRAY_AU04,"Het spijt ons, maar de gebruiker is niet toegevoegd."
+545,error_bodies_ARRAY_AU08,"De gebruiker die u zoekt, is niet beschikbaar."
+546,error_titles_ARRAY_AA10,Account niet gevonden!
+547,error_titles_ARRAY_AA11,Wachtwoord verzonden!
+548,error_titles_ARRAY_AA12,Wachtwoord niet verzonden!
+549,error_titles_ARRAY_AA13,Profiel bijgewerkt!
+550,error_titles_ARRAY_AB01,Back-up
+551,error_titles_ARRAY_AB02,Back-up voltooid!
+552,error_titles_ARRAY_AB03,De back-up is mislukt!
+553,error_titles_ARRAY_AB04,De back-up is mislukt!
+554,error_titles_ARRAY_AEQ01,Apparatuur vernieuwd!
+555,error_titles_ARRAY_AEQ03,Apparatuur toegevoegd!
+556,error_titles_ARRAY_AEQ04,Het apparaat kon niet worden toegevoegd!
+557,error_titles_ARRAY_AEQ08,Apparaat niet gevonden!
+558,error_titles_ARRAY_AFD01,Eten en drinken vernieuwd!
+559,error_titles_ARRAY_AFD03,Eten en drinken toegevoegd!
+560,error_titles_ARRAY_AFD04,Eten en drinken kon niet worden toegevoegd!
+561,error_titles_ARRAY_AFD08,Eten en drinken niet gevonden!
+562,error_titles_ARRAY_ALY01,Ruimte indeling vernieuwd!
+563,error_titles_ARRAY_ALY03,Ruimte indeling toegevoegd!
+564,error_titles_ARRAY_ALY04,Ruimte indeling kon niet worden toegevoegd!
+565,error_titles_ARRAY_ALY05,Afbeelding grootte te groot
+566,error_titles_ARRAY_ALY06,Afbeelding grootte te groot
+567,error_titles_ARRAY_ALY08,Ruimte indeling niet gevonden!
+568,error_titles_ARRAY_ALY09,Uploadfout
+569,error_titles_ARRAY_ALY10,Uploadfout
+570,error_titles_ARRAY_AO01,Opties bijgewerkt!
+571,error_titles_ARRAY_AO02,Aanvraag opties vernieuwd!
+572,error_titles_ARRAY_AO03,Meldingen vernieuwd!
+573,error_titles_ARRAY_AO04,Het aanvraag formulier is vernieuwd!
+574,error_titles_ARRAY_AO05,Algemene voorwaarden vernieuwd!
+575,error_titles_ARRAY_AR01,Aanvraag vernieuwd!
+576,error_titles_ARRAY_AR03,Aanvraag toegevoegd!
+577,error_titles_ARRAY_AR04,Aanvraag kon niet worden toegevoegd!
+578,error_titles_ARRAY_AR08,Aanvraag niet gevonden!
+579,error_titles_ARRAY_ARM01,Ruimte vernieuwd!
+580,error_titles_ARRAY_ARM03,Ruimte toegevoegd!
+581,error_titles_ARRAY_ARM04,Ruimte kon niet worden gevonden!
+582,error_titles_ARRAY_ARM05,Afbeelding grootte te groot
+583,error_titles_ARRAY_ARM06,Afbeelding grootte te groot
+584,error_titles_ARRAY_ARM08,Ruimte niet gevonden!
+585,error_titles_ARRAY_ARM09,Uploadfout
+586,error_titles_ARRAY_ARM10,Uploadfout
+587,error_titles_ARRAY_AT01,Werktijden vernieuwd!
+588,error_titles_ARRAY_AT02,Bespaar tijd met maatwerk!
+589,error_titles_ARRAY_AT03,Aangepaste werktijd vernieuwd!
+590,error_titles_ARRAY_AT04,Werktijd
+591,error_titles_ARRAY_AT05,Aangepaste werktijd
+592,error_titles_ARRAY_AU01,Gebruiker heeft de update vernieuwd!
+593,error_titles_ARRAY_AU03,Gebruiker toegevoegd!
+594,error_titles_ARRAY_AU04,Gebruiker kon niet worden gevonden!
+595,error_titles_ARRAY_AU08,Gebruiker niet gevonden!
+596,filter_ARRAY_active,Actief
+597,filter_ARRAY_inactive,Inactief
+598,front_booking_statuses_ARRAY_0,Even geduld a.u.b. totdat de doorverwijzing naar de beveiligde betaalpagina is voltooid.
+599,front_booking_statuses_ARRAY_1,Bedankt voor uw aanvraag! Klik op de onderstaande knop als u nog een aanvraag wilt maken.
+600,front_booking_statuses_ARRAY_2,Aanvraag opgeslagen. U wordt doorgestuurd naar PayPal.com om de betaling te verwerken. Even geduld alstublieft... 
+601,front_booking_statuses_ARRAY_3,Aanvraag opgeslagen. U wordt doorgestuurd naar Authorize.net om de betaling te verwerken. Even geduld alstublieft?
+602,login_err_ARRAY_1,Verkeerde gebruikersnaam of wachtwoord
+603,login_err_ARRAY_2,Toegang geweigerd
+604,login_err_ARRAY_3,Account is uitgeschakeld
+605,months_ARRAY_1,Januari
+606,months_ARRAY_10,Oktober
+607,months_ARRAY_11,November
+608,months_ARRAY_12,December
+609,months_ARRAY_2,Februari
+610,months_ARRAY_3,Maart
+611,months_ARRAY_4,April
+612,months_ARRAY_5,Mei
+613,months_ARRAY_6,Juni
+614,months_ARRAY_7,Juli
+615,months_ARRAY_8,Augustus
+616,months_ARRAY_9,September
+617,option_themes_ARRAY_1,Thema 1
+618,option_themes_ARRAY_10,Thema 10
+619,option_themes_ARRAY_2,Thema 2
+620,option_themes_ARRAY_3,Thema 3
+621,option_themes_ARRAY_4,Thema 4
+622,option_themes_ARRAY_5,Thema 5
+623,option_themes_ARRAY_6,Thema 6
+624,option_themes_ARRAY_7,Thema 7
+625,option_themes_ARRAY_8,Thema 8
+626,option_themes_ARRAY_9,Thema 9
+627,order_arr_ARRAY_capacity_SORT_ASC,Capaciteit (laag tot hoog)
+628,order_arr_ARRAY_capacity_SORT_DESC,Capaciteit (hoog tot laag)
+629,order_arr_ARRAY_price_per_day_SORT_ASC,Prijs per dag (laag tot hoog)
+630,order_arr_ARRAY_price_per_day_SORT_DESC,Prijs per dag (hoog tot laag)
+631,order_arr_ARRAY_price_per_hour_SORT_ASC,Prijs per dagdeel (laag tot hoog)
+632,order_arr_ARRAY_price_per_hour_SORT_DESC,Prijs per dagdeel (hoog tot laag)
+633,payment_methods_ARRAY_authorize,Authorize.Net
+634,payment_methods_ARRAY_bank,Bankoverschrijving
+635,payment_methods_ARRAY_cash,Contant
+636,payment_methods_ARRAY_creditcard,Credit card
+637,payment_methods_ARRAY_paypal,PayPal
+638,personal_titles_ARRAY_dr,De heer.
+639,personal_titles_ARRAY_miss,Mejuffrouw.
+640,personal_titles_ARRAY_mr,Meneer.
+641,personal_titles_ARRAY_mrs,Mevrouw.
+642,personal_titles_ARRAY_ms,Mevrouw.
+643,personal_titles_ARRAY_other,Anders.
+644,personal_titles_ARRAY_prof,Professor.
+645,personal_titles_ARRAY_rev,Eerwaarde.
+646,price_per_ARRAY_day,Prijs per dag
+647,price_per_ARRAY_half,Prijs per dagdeel
+648,price_per_ARRAY_hour,Prijs per uur
+649,role_arr_ARRAY_1,Administratie
+650,role_arr_ARRAY_2,Maker
+651,short_days_ARRAY_0,Zo
+652,short_days_ARRAY_1,Ma
+653,short_days_ARRAY_2,Di
+654,short_days_ARRAY_3,Wo
+655,short_days_ARRAY_4,Do
+656,short_days_ARRAY_5,Vr
+657,short_days_ARRAY_6,Za
+658,short_months_ARRAY_1,Jan
+659,short_months_ARRAY_10,Okt
+660,short_months_ARRAY_11,Nov
+661,short_months_ARRAY_12,Dec
+662,short_months_ARRAY_2,Feb
+663,short_months_ARRAY_3,Ma
+664,short_months_ARRAY_4,Ap
+665,short_months_ARRAY_5,Mei
+666,short_months_ARRAY_6,Jun
+667,short_months_ARRAY_7,Jul
+668,short_months_ARRAY_8,Aug
+669,short_months_ARRAY_9,Sep
+670,status_ARRAY_1,Je bent niet ingelogd.
+671,status_ARRAY_123,Uw hosting account staat het uploaden van zo'n grote afbeelding niet toe.
+672,status_ARRAY_2,Toegang geweigerd. U beschikt niet over de vereiste rechten.
+673,status_ARRAY_3,Lege resultaten set.
+674,status_ARRAY_7,Deze handeling is niet toegestaan in de demomodus.
+675,status_ARRAY_996,Geen ruimte gevonden voor de aanvraag
+676,status_ARRAY_997,Aanvraag niet gevonden
+677,status_ARRAY_998,Geen toestemming om de aanvraag te wijzigen
+678,status_ARRAY_999,Geen rechten om de ruimte te bewerken.
+679,status_ARRAY_9997,Het e-mailadres bestaat al.
+680,status_ARRAY_9998,Je registratie is gelukt. Je account moet nog worden goedgekeurd.
+681,status_ARRAY_9999,Je registratie is succesvol verlopen.
+682,timezones_ARRAY_-10800,GMT-03:00
+683,timezones_ARRAY_-14400,GMT-04:00
+684,timezones_ARRAY_-18000,GMT-05:00
+685,timezones_ARRAY_-21600,GMT-06:00
+686,timezones_ARRAY_-25200,GMT-07:00
+687,timezones_ARRAY_-28800,GMT-08:00
+688,timezones_ARRAY_-32400,GMT-09:00
+689,timezones_ARRAY_-3600,GMT-01:00
+690,timezones_ARRAY_-36000,GMT-10:00
+691,timezones_ARRAY_-39600,GMT-11:00
+692,timezones_ARRAY_-43200,GMT-12:00
+693,timezones_ARRAY_-7200,GMT-02:00
+694,timezones_ARRAY_0,GMT
+695,timezones_ARRAY_10800,GMT+03:00
+696,timezones_ARRAY_14400,GMT+04:00
+697,timezones_ARRAY_18000,GMT+05:00
+698,timezones_ARRAY_21600,GMT+06:00
+699,timezones_ARRAY_25200,GMT+07:00
+700,timezones_ARRAY_28800,GMT+08:00
+701,timezones_ARRAY_32400,GMT+09:00
+702,timezones_ARRAY_3600,GMT+01:00
+703,timezones_ARRAY_36000,GMT+10:00
+704,timezones_ARRAY_39600,GMT+11:00
+705,timezones_ARRAY_43200,GMT+12:00
+706,timezones_ARRAY_46800,GMT+13:00
+707,timezones_ARRAY_7200,GMT+02:00
+708,u_statarr_ARRAY_F,Inactief
+709,u_statarr_ARRAY_T,Actief
+710,_yesno_ARRAY_F,Nee
+711,_yesno_ARRAY_T,Ja
+712,lblRoomBookedAtDate,De ruimte is niet beschikbaar op de geselecteerde datum.
+713,pj_attendees_validation,Het aantal aanwezigen mag de zaalcapaciteit niet overschrijden.
+714,front_max_attendees_valid,Het aantal aanwezigen mag de zaalcapaciteit niet overschrijden.
+715,front_incorrect_captcha,De Captcha is niet correct.
+716,front_date_in_range_booked,De datum in het aangegeven bereik is al volgeboekt.
+717,plugin_locale_languages,Talenmenu
+718,plugin_locale_titles,Vertalen
+719,plugin_locale_index_title,Landen
+720,plugin_locale_index_body,Voeg zoveel talen toe aan je script als je nodig hebt. Voor elke toegevoegde taal moet je alle teksttitels vertalen.
+721,plugin_locale_titles_title,Titels
+722,plugin_locale_titles_body,"Met behulp van het onderstaande formulier kunt u alle tekst in de software bewerken.<br /><br />Elk stuk tekst dat in de software wordt gebruikt, wordt opgeslagen in de database en heeft zijn eigen unieke ID. In de eerste kolom hieronder ziet u voor elk stukje tekst het ID. Om deze ID's in het script zelf weer te geven, vinkt u het selectievakje ""ID's weergeven"" aan en klikt u op de knop Opslaan ernaast. Hierdoor wordt voor elk sms-bericht de bijbehorende :ID: weergegeven. Houd er rekening mee dat ALLEEN u deze ID's ziet. Nu kunt u naar elk ID zoeken en de tekst eenvoudig wijzigen en/of vertalen. Houd er rekening mee dat u het volgende moet gebruiken: voor en na de ID wanneer u ernaar zoekt. <br /><br />Bekijk onze <a target=""_blank"" href=""http://www.phpjabbers.com/knowledgebase/other"">knowledgebase</a> (kennisbank) en bekijk een video-tutorial over hoe u de tekst kunt wijzigen en/of vertalen."
+723,plugin_locale_lbl_title,Titel
+724,plugin_locale_lbl_flag,Vlag
+725,plugin_locale_lbl_is_default,Standaard
+726,plugin_locale_lbl_order,Bestelling niet gevonden!
+727,plugin_locale_add_lang,Taal toevoegen
+728,plugin_locale_lbl_field,Veldtype
+729,plugin_locale_lbl_value,Waarde
+730,plugin_locale_type_backend,Back-end titel
+731,plugin_locale_type_frontend,Front-end titel
+732,plugin_locale_type_arrays,Speciale titel
+733,error_titles_ARRAY_PAL01,Titel vernieuwd
+734,error_bodies_ARRAY_PAL01,Alle wijzigingen in de titels zijn opgeslagen.
+735,plugin_locale_lbl_rows,Per pagina
+736,error_titles_ARRAY_PAL02,Importfout
+737,error_bodies_ARRAY_PAL02,Importeren mislukt vanwege ontbrekende parameters.
+738,error_titles_ARRAY_PAL03,Import voltooid
+739,error_bodies_ARRAY_PAL03,De import is succesvol verlopen.
+740,error_titles_ARRAY_PAL04,Importfout
+741,error_bodies_ARRAY_PAL04,Importeren mislukt vanwege ontbrekende gegevens.
+742,error_titles_ARRAY_PAL05,Importfout
+743,error_bodies_ARRAY_PAL05,Importeren is mislukt omdat het bestand niet geopend kan worden.
+744,plugin_locale_import_export,Import / Export
+745,plugin_locale_import,Import
+746,plugin_locale_export,Export
+747,plugin_locale_browse,Blader door uw computer
+748,plugin_locale_ie_title,Import / Export
+749,plugin_locale_ie_body,Gebruik onderstaand formulier om een CSV-bestand met alle titels te importeren of exporteren. Wijzig de eerste rij en de eerste en tweede kolom in het CSV-bestand niet.
+750,plugin_locale_lbl_id,ID:
+751,plugin_locale_lbl_show_id,Toon ID's
+752,plugin_locale_separator,Scheidingsteken
+753,plugin_locale_separators_ARRAY_comma,Komma
+754,plugin_locale_separators_ARRAY_semicolon,Puntkomma
+755,plugin_locale_separators_ARRAY_tab,Tab
+756,error_bodies_ARRAY_PAL20,De volgende talen zijn gevonden. Selecteer de talen die u wilt importeren.
+757,error_titles_ARRAY_PAL20,Importbevestiging
+758,error_titles_ARRAY_PAL11,Importeren mislukt
+759,error_bodies_ARRAY_PAL11,"Ontbrekende, lege of ongeldige parameters."
+760,error_titles_ARRAY_PAL12,Importeren mislukt
+761,error_bodies_ARRAY_PAL12,Het bestand is niet doorgevoerd
+762,error_titles_ARRAY_PAL13,Importeren mislukt
+763,error_bodies_ARRAY_PAL13,Het doorgevoerde bestand kan niet worden geopend.
+764,error_titles_ARRAY_PAL14,Importeren mislukt
+765,error_bodies_ARRAY_PAL14,Er zijn nieuwe regels gevonden.
+766,error_titles_ARRAY_PAL15,Importeren mislukt
+767,error_bodies_ARRAY_PAL15,Het doorgevoerde bestand bevat niet de benodigde kolommen.
+768,error_titles_ARRAY_PAL16,Importeren mislukt
+769,error_bodies_ARRAY_PAL16,Het aantal kolommen is niet gelijk in elke rij.
+770,error_titles_ARRAY_PAL17,Importeren mislukt
+771,error_bodies_ARRAY_PAL17,Ongeldige gegevens gevonden.
+772,error_titles_ARRAY_PAL18,Importeren mislukt
+773,error_bodies_ARRAY_PAL18,Ontbrekende kolommen.
+774,error_titles_ARRAY_PAL19,Importeren mislukt
+775,error_bodies_ARRAY_PAL19,Ongeldige gegevens gevonden.
+776,plugin_locale_showid_dialog_title,Toon ID's
+777,plugin_locale_showid_dialog_desc,Naast elke tekst in de software wordt een ID weergegeven. U kunt vervolgens op een ID zoeken om de tekst eenvoudig te wijzigen of te vertalen. 
+778,plugin_locale_button_confirm,Bevestigen
+779,plugin_locale_button_cancel,Annuleren
+780,plugin_locale_default,Standaard
+781,plugin_locale_lbl_dir,Text richting
+782,plugin_locale_lbl_fend,Front-end titel
+783,plugin_locale_dir_ARRAY_ltr,Van links naar rechts
+784,plugin_locale_dir_ARRAY_rtl,Van rechts naar links
+785,plugin_locale_flag_reset_title,Vlag opnieuw instellen
+786,plugin_locale_flag_reset_content,Weet je zeker dat je de geselecteerde vlag opnieuw wilt instellen?
+787,plugin_locale_btn_reset,Opnieuw instellen
+788,plugin_locale_tooltip_upload,Klik om te uploaden
+789,plugin_locale_tooltip_reset,Klik om opnieuw in te stellen
+790,plugin_locale_lbl_language,Taal
+791,plugin_locale_btn_close,Sluiten
+792,plugin_locale_flag_info_title,Info bericht
+793,plugin_locale_error_line,De fout is gevonden op regel: %s
+794,plugin_locale_reset_search,Zoekopdracht opnieuw instellen
+795,error_titles_ARRAY_PBU01,Back-up
+796,error_titles_ARRAY_PBU02,Back-up compleet
+797,error_titles_ARRAY_PBU03,De back-up is mislukt!
+798,error_titles_ARRAY_PBU04,De back-up is mislukt!
+799,error_bodies_ARRAY_PBU01,Wij raden u aan om regelmatig een back-up te maken van uw database en bestanden om gegevensverlies te voorkomen.
+800,error_bodies_ARRAY_PBU02,Alle back-up bestanden zijn opgeslagen.
+801,error_bodies_ARRAY_PBU03,Er is geen optie geselecteerd.
+802,error_bodies_ARRAY_PBU04,Er is geen back-up gemaakt.
+803,plugin_backup_menu_backup,Back-up
+804,plugin_backup_database,Back-up database
+805,plugin_backup_files,Back-up bestanden
+806,plugin_backup_btn_backup,Back-up
+807,error_titles_ARRAY_PBU05,Back-up mislukt!
+808,error_bodies_ARRAY_PBU05,"De back-up map is niet gevonden. Zorg ervoor dat de map ""app/web/backup"" bestaat."
+809,error_titles_ARRAY_PBU06,Back-up mislukt!
+810,error_bodies_ARRAY_PBU06,"Je moet schrijfrechten (chmod 777) instellen voor de map ""app/web/backup""."
+811,plugin_backup_datetime,Datum/tijd
+812,plugin_backup_type,Type
+813,plugin_backup_file,Bestand
+814,plugin_backup_delete_confirmation,Weet je zeker dat je het geselecteerde bestand wilt verwijderen?
+815,plugin_backup_delete_selected,Verwijder geselecteerde
+816,plugin_backup_size,Grootte
+817,plugin_backup_sizeXXXXXX,Grootte XXXX
+818,plugin_log_menu_log,Logboek
+819,plugin_log_menu_config,Configuratie logboek
+820,plugin_log_btn_empty,Maak logboek leeg
+821,error_titles_ARRAY_PLG01,Configuratie logboek vernieuwd.
+822,error_bodies_ARRAY_PLG01,Het configuratie logboek is bijgewerkt.
+823,plugin_one_admin_menu_index,Lijst
+824,plugin_one_admin_btn_add,+ Toevoegen
+825,error_titles_ARRAY_POA01,Informatie
+826,error_bodies_ARRAY_POA01,"Let op: nadat u de scripts in de onderstaande lijst hebt gewijzigd, moet u de pagina vernieuwen om de nieuwe updates in het menu ""One admiN"" toe te passen."
+827,plugin_paypal_dt,Datum/tijd
+828,plugin_paypal_mc_gross,MC Gross
+829,plugin_paypal_mc_currency,MC Valuta
+830,plugin_paypal_payer_email,E-mailadres van de betaler
+831,plugin_paypal_txn_type,Txn type
+832,plugin_paypal_txn_id,Txn ID
+833,plugin_paypal_subscr_id,Abonnements-ID
+834,plugin_paypal_foreign_id,Buitenlands-ID
+835,plugin_paypal_btn_close,Sluiten
+836,plugin_paypal_info_title,Transactiegegevens
+837,plugin_paypal_btn_view,Bekijken
+838,plugin_paypal_menu_ipn,IPN
+839,opt_o_paypal_client_id,PayPal klant-ID
+840,opt_o_paypal_client_secret,PayPal-klant geheim
+841,opt_o_paypal_cancel_url,Annuleer pagina
+842,plugin_paypal_payment_title,PayPal betaling
+843,plugin_country_name,Landnaam
+844,plugin_country_alpha_2,Alpha 2
+845,plugin_country_alpha_3,Alpha 3
+846,plugin_country_status,Status
+847,plugin_country_btn_add,Toevoegen +
+848,plugin_country_statuses_ARRAY_T,Actief
+849,plugin_country_statuses_ARRAY_F,Inactief
+850,plugin_country_btn_save,Opslaan
+851,plugin_country_btn_cancel,Annuleren
+852,plugin_country_menu_countries,Landen
+853,error_titles_ARRAY_PCY01,Land vernieuwd!
+854,error_titles_ARRAY_PCY03,Land toegevoegd!
+855,error_titles_ARRAY_PCY04,Land kon niet worden toegevoegd!
+856,error_titles_ARRAY_PCY08,Land kon niet worden gevonden!
+857,error_titles_ARRAY_PCY10,Land toevoegen!
+858,error_titles_ARRAY_PCY11,Land vernieuwd!
+859,error_titles_ARRAY_PCY12,Land beheren
+860,error_bodies_ARRAY_PCY01,Het land is succesvol vernieuwd.
+861,error_bodies_ARRAY_PCY03,Het land is succesvol toegevoegd.
+862,error_bodies_ARRAY_PCY04,Het land is niet succesvol toegevoegd.
+863,error_bodies_ARRAY_PCY08,"Het land dat u zoekt, is niet gevonden."
+864,error_bodies_ARRAY_PCY10,Gebruik onderstaand formulier om een land toe te voegen.
+865,error_bodies_ARRAY_PCY11,Gebruik onderstaand formulier om een land te vernieuwen.
+866,error_bodies_ARRAY_PCY12,Gebruik onderstaand raster om uw landenlijst te ordenen.
+867,plugin_country_delete_confirmation,Weet u zeker dat u het geselecteerde land wilt verwijderen?
+868,plugin_country_delete_selected,Verwijder geselecteerde
+869,plugin_country_btn_all,Alles
+870,plugin_country_btn_search,Zoeken
+871,plugin_country_revert_status,Status terugzetten
+872,plugin_sms_menu_sms,SMS
+873,plugin_sms_config,SMS-configuratie
+874,plugin_sms_number,Telefoonnummer
+875,plugin_sms_text,Bericht
+876,plugin_sms_status,Status
+877,plugin_sms_created,Datum/tijd verzenden
+878,plugin_sms_api,API-sleutel
+879,error_titles_ARRAY_PSS01,SMS
+880,error_bodies_ARRAY_PSS01,"Om sms'jes te versturen, heb je een geldige API-sleutel van <a href=""https://clicksend.com/?u=366773"" target=""_blank"">ClickSend</a> nodig. Als je er een hebt, voer deze dan in het onderstaande vak in."
+881,error_titles_ARRAY_PSS02,De API-sleutel voor sms is bijgewerkt!
+882,error_bodies_ARRAY_PSS02,Alle wijzigingen zijn opgeslagen.
+883,plugin_sms_reset_search,Zoekopdracht opnieuw instellen
+884,plugin_sms_api_username,SMS API-gebruikersnaam
+885,plugin_sms_api_key,SMS API-sleutel
+886,plugin_sms_statuses_ARRAY_SUCCESS,Bericht verzonden
+887,plugin_sms_statuses_ARRAY_MISSING_CREDENTIALS,138 Er is onvoldoende informatie verstrekt voor authenticatie. Zorg ervoor dat u uw gebruikersnaam en unieke sleutel in uw aanvraag vermeldt. 
+888,plugin_sms_statuses_ARRAY_ACCOUNT_NOT_ACTIVATED,Je account is nog niet geactiveerd.
+889,plugin_sms_statuses_ARRAY_INVALID_RECIPIENT,Het mobiele nummer van de bestemming is ongeldig.
+890,plugin_sms_statuses_ARRAY_THROTTLED,Een identiek bericht is onlangs naar dezelfde ontvanger verzonden. Probeer het over een paar seconden opnieuw.
+891,plugin_sms_statuses_ARRAY_INVALID_SENDER_ID,Ongeldige afzender-ID. Zorg ervoor dat de afzender-ID niet langer is dan 11 tekens (indien alfanumeriek) en geen spaties bevat.
+892,plugin_sms_statuses_ARRAY_INSUFFICIENT_CREDIT,Je hebt je berichten tegoed opgebruikt. Je moet nieuw berichten tegoed kopen.
+893,plugin_sms_statuses_ARRAY_INVALID_CREDENTIALS,Uw gebruikersnaam of unieke sleutel is onjuist.
+894,plugin_sms_statuses_ARRAY_ALREADY_EXISTS,"De bron die u probeert toe te voegen, bestaat al."
+895,plugin_sms_statuses_ARRAY_EMPTY_MESSAGE,Het bericht is leeg.
+896,plugin_sms_statuses_ARRAY_TOO_MANY_RECIPIENTS,Te veel ontvangers.
+897,plugin_sms_statuses_ARRAY_MISSING_REQUIRED_FIELDS,Sommige verplichte velden ontbreken.
+898,plugin_sms_statuses_ARRAY_INVALID_SCHEDULE,"Het opgegeven schema is ongeldig. Gebruik een Unix-tijdstempel, bijvoorbeeld 1429170372."
+899,plugin_sms_statuses_NOT_ENOUGH_PERMISSION_TO_LIST_ID,Ik heb onvoldoende rechten om toegang te krijgen tot een lijst-ID of er berichten naar te verzenden.
+900,plugin_sms_statuses_ARRAY_INTERNAL_ERROR,Interne fout.
+901,plugin_sms_statuses_ARRAY_INVALID_LANG,Er is een ongeldige taaloptie opgegeven.
+902,plugin_sms_statuses_ARRAY_INVALID_VOICE,Er is een ongeldige stemoptie (geslacht) opgegeven.
+903,plugin_sms_statuses_ARRAY_SUBJECT_REQUIRED,Dit gebeurt meestal wanneer het onderwerp van het MMS-bericht leeg is.
+904,plugin_sms_statuses_ARRAY_INVALID_MEDIA_FILE,MMS-mediabestanden zijn doorgaans ongeldig.
+905,plugin_sms_statuses_ARRAY_SOMETHING_IS_WRONG,Er is een algemene fout opgetreden.

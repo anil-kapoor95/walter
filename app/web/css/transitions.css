@@ -1,0 +1,13 @@
+/* ==========================================================================
+	#Transitions
+========================================================================== */
+#pjWrapper .btn,
+#pjWrapper .pjMrBNav .dropdown-toggle .caret,
+#pjWrapper .pjMrBNav .dropdown-menu a,
+#pjWrapper .pjMrBForm .form-control,
+#pjWrapper .pjMrBPaging .pagination a,
+#pjWrapper .pjMrBPaging .pagination span,
+#pjWrapper .pjMrBDatePicker .input-group-addon,
+#pjWrapper .pjMrBCustomCheckboxFake .glyphicon,
+#pjWrapper .pjMrBCustomCheckboxFake,
+#pjWrapper .pjMrBCustomCheckbox label { -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; -ms-transition: all .5s ease-in-out; -o-transition: all .5s ease-in-out; transition: all .5s ease-in-out; }
