@@ -514,8 +514,11 @@ class pjAdminBookings extends pjAdmin
 				$this->set('multi_day_booked', $duration_info_arr['multi_day_booked']);
 				$this->set('halfday_morning', $duration_info_arr['halfday_morning']);
 				$this->set('halfday_afternoon', $duration_info_arr['halfday_afternoon']);
+				$this->set('halfday_evening', $duration_info_arr['halfday_evening']);
 				$this->set('hourly_morning', $duration_info_arr['hourly_morning']);
 				$this->set('hourly_afternoon', $duration_info_arr['hourly_afternoon']);
+				$this->set('hourly_evening', $duration_info_arr['hourly_evening']);
+				$this->set('evening_arr', $duration_info_arr['evening_arr']);
 				$this->set('country_arr', $country_arr);
 				$this->set('equipment_arr', $equipment_arr);
 				$this->set('food_drink_arr', $food_drink_arr);
@@ -633,8 +636,11 @@ class pjAdminBookings extends pjAdmin
 				$this->set('from_to_arr', $duration_info_arr['from_to_arr']);
 				$this->set('halfday_morning', $duration_info_arr['halfday_morning']);
 				$this->set('halfday_afternoon', $duration_info_arr['halfday_afternoon']);
+				$this->set('halfday_evening', $duration_info_arr['halfday_evening']);
 				$this->set('hourly_morning', $duration_info_arr['hourly_morning']);
 				$this->set('hourly_afternoon', $duration_info_arr['hourly_afternoon']);
+				$this->set('hourly_evening', $duration_info_arr['hourly_evening']);
+				$this->set('evening_arr', $duration_info_arr['evening_arr']);
 			}
 		}
 	}

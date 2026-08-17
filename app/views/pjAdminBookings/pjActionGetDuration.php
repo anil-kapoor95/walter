@@ -11,7 +11,7 @@ ob_start();
 				?>
 				<option value="">-- <?php __('lblChoose'); ?> --</option>
 				<?php
-			}else if($tpl['halfday_morning'] == 0 || $tpl['halfday_afternoon'] == 0) {
+			}else if($tpl['halfday_morning'] == 0 || $tpl['halfday_afternoon'] == 0 || $tpl['halfday_evening'] == 0) {
 				?>
 				<option value="">-- <?php __('lblChoose'); ?> --</option>
 				<?php
@@ -41,12 +41,18 @@ ob_start();
 						<option value="afternoon"><?php echo $book_by['halfday']; ?> - <?php __('time_afternoon');?></option>
 						<?php
 					}
+					if($tpl['halfday_evening'] == 0 && $tpl['hourly_evening'] == 0 && !empty($tpl['evening_arr']))
+					{
+						?>
+						<option value="evening"><?php echo $book_by['halfday']; ?> - <?php __('time_evening');?></option>
+						<?php
+					}
 				}
 				if($tpl['arr']['book_by_multiday'] == 'T' && $tpl['multi_day_booked'] == 0)
 				{
 					?><option value="multiday"><?php echo $book_by['multiday']; ?></option><?php
 				}
-			}else if($tpl['halfday_morning'] == 0 || $tpl['halfday_afternoon'] == 0) {
+			}else if($tpl['halfday_morning'] == 0 || $tpl['halfday_afternoon'] == 0 || $tpl['halfday_evening'] == 0) {
 				if($tpl['arr']['book_by_hour'] == 'T')
 				{
 					$book_by = __('book_by', true);
@@ -64,6 +70,12 @@ ob_start();
 					{
 						?>
 						<option value="afternoon"><?php echo $book_by['halfday']; ?> - <?php __('time_afternoon');?></option>
+						<?php
+					}
+					if($tpl['halfday_evening'] == 0 && $tpl['hourly_evening'] == 0 && !empty($tpl['evening_arr']))
+					{
+						?>
+						<option value="evening"><?php echo $book_by['halfday']; ?> - <?php __('time_evening');?></option>
 						<?php
 					}
 				}

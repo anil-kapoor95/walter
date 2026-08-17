@@ -16,7 +16,7 @@
 			if($STORE['book_by'] == 'multiday')
 			{
 				$price = pjUtil::formatCurrencySign($tpl['arr']['price_per_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_per_day', true);
-			}elseif($STORE['book_by'] == 'morning' || $STORE['book_by'] == 'afternoon'){
+			}elseif($STORE['book_by'] == 'morning' || $STORE['book_by'] == 'afternoon' || $STORE['book_by'] == 'evening'){
 				$price = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
 			}else{
 				$price = pjUtil::formatCurrencySign($tpl['arr']['price_per_hour'], $tpl['option_arr']['o_currency']) . ' ' . __('front_per_hour', true);

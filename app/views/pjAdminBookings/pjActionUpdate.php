@@ -128,6 +128,12 @@ if (isset($tpl['status']))
 													<option value="afternoon"<?php echo $tpl['arr']['book_by'] == 'afternoon' ? ' selected="selected"' : NULL;?>><?php echo $book_by['halfday']; ?> - <?php __('time_afternoon');?></option>
 													<?php
 												}
+												if($tpl['halfday_evening'] == 0)
+												{
+													?>
+													<option value="evening"<?php echo $tpl['arr']['book_by'] == 'evening' ? ' selected="selected"' : NULL;?>><?php echo $book_by['halfday']; ?> - <?php __('time_evening');?></option>
+													<?php
+												}
 											}
 											if($tpl['room']['book_by_multiday'] == 'T' && $tpl['multi_day_booked'] == 0)
 											{

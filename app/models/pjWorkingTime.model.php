@@ -19,6 +19,8 @@ class pjWorkingTimeModel extends pjAppModel
 		array('name' => 'monday_morning_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'monday_afternoon_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'monday_afternoon_to', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'monday_evening_from', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'monday_evening_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'monday_dayoff', 'type' => 'enum', 'default' => 'F'),
 		array('name' => 'tuesday_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'tuesday_to', 'type' => 'time', 'default' => ':NULL'),
@@ -26,6 +28,8 @@ class pjWorkingTimeModel extends pjAppModel
 		array('name' => 'tuesday_morning_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'tuesday_afternoon_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'tuesday_afternoon_to', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'tuesday_evening_from', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'tuesday_evening_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'tuesday_dayoff', 'type' => 'enum', 'default' => 'F'),
 		array('name' => 'wednesday_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'wednesday_to', 'type' => 'time', 'default' => ':NULL'),
@@ -33,6 +37,8 @@ class pjWorkingTimeModel extends pjAppModel
 		array('name' => 'wednesday_morning_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'wednesday_afternoon_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'wednesday_afternoon_to', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'wednesday_evening_from', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'wednesday_evening_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'wednesday_dayoff', 'type' => 'enum', 'default' => 'F'),
 		array('name' => 'thursday_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'thursday_to', 'type' => 'time', 'default' => ':NULL'),
@@ -40,6 +46,8 @@ class pjWorkingTimeModel extends pjAppModel
 		array('name' => 'thursday_morning_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'thursday_afternoon_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'thursday_afternoon_to', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'thursday_evening_from', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'thursday_evening_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'thursday_dayoff', 'type' => 'enum', 'default' => 'F'),
 		array('name' => 'friday_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'friday_to', 'type' => 'time', 'default' => ':NULL'),
@@ -47,6 +55,8 @@ class pjWorkingTimeModel extends pjAppModel
 		array('name' => 'friday_morning_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'friday_afternoon_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'friday_afternoon_to', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'friday_evening_from', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'friday_evening_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'friday_dayoff', 'type' => 'enum', 'default' => 'F'),
 		array('name' => 'saturday_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'saturday_to', 'type' => 'time', 'default' => ':NULL'),
@@ -54,6 +64,8 @@ class pjWorkingTimeModel extends pjAppModel
 		array('name' => 'saturday_morning_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'saturday_afternoon_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'saturday_afternoon_to', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'saturday_evening_from', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'saturday_evening_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'saturday_dayoff', 'type' => 'enum', 'default' => 'F'),
 		array('name' => 'sunday_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'sunday_to', 'type' => 'time', 'default' => ':NULL'),
@@ -61,6 +73,8 @@ class pjWorkingTimeModel extends pjAppModel
 		array('name' => 'sunday_morning_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'sunday_afternoon_from', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'sunday_afternoon_to', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'sunday_evening_from', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'sunday_evening_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'sunday_dayoff', 'type' => 'enum', 'default' => 'F')
 	);
 	
@@ -152,7 +166,25 @@ class pjWorkingTimeModel extends pjAppModel
 				$wt['afternoon_end_ts'] = strtotime($date . " " . $v);
 				continue;
 			}
-				
+
+			if (strpos($k, $day . '_evening_from') !== false && !is_null($v))
+			{
+				$d = getdate(strtotime($v));
+				$wt['evening_start_hour'] = $d['hours'];
+				$wt['evening_start_minutes'] = $d['minutes'];
+				$wt['evening_start_ts'] = strtotime($date . " " . $v);
+				continue;
+			}
+
+			if (strpos($k, $day . '_evening_to') !== false && !is_null($v))
+			{
+				$d = getdate(strtotime($v));
+				$wt['evening_end_hour'] = $d['hours'];
+				$wt['evening_end_minutes'] = $d['minutes'];
+				$wt['evening_end_ts'] = strtotime($date . " " . $v);
+				continue;
+			}
+
 			if (strpos($k, $day . '_from') !== false && !is_null($v))
 			{
 				$d = getdate(strtotime($v));

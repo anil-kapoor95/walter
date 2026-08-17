@@ -26,6 +26,8 @@ class pjAdminTime extends pjAdmin
 						$data[$day . '_morning_to'] = date('H:i', strtotime($_POST[$day . '_morning_to']));
 						$data[$day . '_afternoon_from'] = date('H:i', strtotime($_POST[$day . '_afternoon_from']));
 						$data[$day . '_afternoon_to'] = date('H:i', strtotime($_POST[$day . '_afternoon_to']));
+						$data[$day . '_evening_from'] = date('H:i', strtotime($_POST[$day . '_evening_from']));
+						$data[$day . '_evening_to'] = date('H:i', strtotime($_POST[$day . '_evening_to']));
 						$data[$day . '_dayoff'] = "F";
 					} else {
 						$data[$day . '_from'] = ":NULL";
@@ -34,6 +36,8 @@ class pjAdminTime extends pjAdmin
 						$data[$day . '_morning_to'] = ":NULL";
 						$data[$day . '_afternoon_from'] = ":NULL";
 						$data[$day . '_afternoon_to'] = ":NULL";
+						$data[$day . '_evening_from'] = ":NULL";
+						$data[$day . '_evening_to'] = ":NULL";
 						$data[$day . '_dayoff'] = "T";
 					}
 				}
@@ -96,6 +100,8 @@ class pjAdminTime extends pjAdmin
 				$data['end_morning'] = !empty($_POST['end_morning']) ? date('H:i', strtotime($_POST['end_morning'])) : '00:00';
 				$data['start_afternoon'] = !empty($_POST['start_afternoon']) ? date('H:i', strtotime($_POST['start_afternoon'])) : '00:00';
 				$data['end_afternoon'] = !empty($_POST['end_afternoon']) ? date('H:i', strtotime($_POST['end_afternoon'])) : '00:00';
+				$data['start_evening'] = !empty($_POST['start_evening']) ? date('H:i', strtotime($_POST['start_evening'])) : '00:00';
+				$data['end_evening'] = !empty($_POST['end_evening']) ? date('H:i', strtotime($_POST['end_evening'])) : '00:00';
 				$data['date'] = $date;
 				
 				$pjDateModel->reset()->setAttributes(array_merge($_POST, $data))->insert();
@@ -169,7 +175,7 @@ class pjAdminTime extends pjAdmin
 				
 			$column = 'date';
 			$direction = 'ASC';
-			$allowed_columns = array('date', 'start_time', 'end_time', 'morning', 'afternoon', 'is_dayoff');
+			$allowed_columns = array('date', 'start_time', 'end_time', 'morning', 'afternoon', 'evening', 'is_dayoff');
 			if (isset($_GET['direction']) && isset($_GET['column']) && in_array($_GET['column'], $allowed_columns) && in_array(strtoupper($_GET['direction']), array('ASC', 'DESC')))
 			{
 				$column = $_GET['column'];
@@ -197,12 +203,14 @@ class pjAdminTime extends pjAdmin
 					$v['end_time'] = '--';
 					$v['morning'] = '--';
 					$v['afternoon'] = '--';
+					$v['evening'] = '--';
 				}else{
 					$v['date'] = date($this->option_arr['o_date_format'], strtotime($v['date']));
 					$v['start_time'] = date($this->option_arr['o_time_format'], strtotime($v['date'] . ' ' . $v['start_time']));
 					$v['end_time'] = date($this->option_arr['o_time_format'], strtotime($v['date'] . ' ' . $v['end_time']));
 					$v['morning'] = date($this->option_arr['o_time_format'], strtotime($v['date'] . ' ' . $v['start_morning'])) . '<br/>' . date($this->option_arr['o_time_format'], strtotime($v['date'] . ' ' . $v['end_morning']));
 					$v['afternoon'] = date($this->option_arr['o_time_format'], strtotime($v['date'] . ' ' . $v['start_afternoon'])) . '<br/>' . date($this->option_arr['o_time_format'], strtotime($v['date'] . ' ' . $v['end_afternoon']));
+					$v['evening'] = date($this->option_arr['o_time_format'], strtotime($v['date'] . ' ' . $v['start_evening'])) . '<br/>' . date($this->option_arr['o_time_format'], strtotime($v['date'] . ' ' . $v['end_evening']));
 				}
 				$data[$k] = $v;
 			}	
@@ -244,6 +252,8 @@ class pjAdminTime extends pjAdmin
 				$data['end_morning'] = !empty($_POST['end_morning']) ? date('H:i', strtotime($_POST['end_morning'])) : '00:00';
 				$data['start_afternoon'] = !empty($_POST['start_afternoon']) ? date('H:i', strtotime($_POST['start_afternoon'])) : '00:00';
 				$data['end_afternoon'] = !empty($_POST['end_afternoon']) ? date('H:i', strtotime($_POST['end_afternoon'])) : '00:00';
+				$data['start_evening'] = !empty($_POST['start_evening']) ? date('H:i', strtotime($_POST['start_evening'])) : '00:00';
+				$data['end_evening'] = !empty($_POST['end_evening']) ? date('H:i', strtotime($_POST['end_evening'])) : '00:00';
 				$data['is_dayoff'] = isset($_POST['is_dayoff']) ? 'T' : 'F';
 				
 				pjDateModel::factory()->set('id', $_POST['id'])->modify($data);

@@ -73,13 +73,14 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 				          {text: myLabel.time_end, type: "text", sortable: true, editable: false, width: 90},
 				          {text: myLabel.time_morning, type: "text", sortable: false, editable: false, width: 100},
 				          {text: myLabel.time_afternoon, type: "text", sortable: false, editable: false, width: 100},
+				          {text: myLabel.time_evening, type: "text", sortable: false, editable: false, width: 100},
 				          {text: myLabel.time_dayoff, type: "select", sortable: true, editable: true, options: [
 			     				       {label: myLabel.time_yesno.T, value: 'T'}, 
 			     				       {label: myLabel.time_yesno.F, value: 'F'}
 			     				       ], applyClass: "pj-status"}],
 				dataUrl: "index.php?controller=pjAdminTime&action=pjActionGetDate" + qs,
 				dataType: "json",
-				fields: ['date', 'start_time', 'end_time', 'morning', 'afternoon', 'is_dayoff'],
+				fields: ['date', 'start_time', 'end_time', 'morning', 'afternoon', 'evening', 'is_dayoff'],
 				paginator: {
 					actions: [
 					   {text: myLabel.delete_selected, url: "index.php?controller=pjAdminTime&action=pjActionDeleteDateBulk", render: true, confirmation: myLabel.delete_confirmation}

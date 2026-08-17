@@ -11,6 +11,8 @@ if(count($tpl['booking_arr']) > 0)
 			$book_by = __('time_morning', true);
 		}else if($v['book_by'] == 'afternoon'){
 			$book_by = __('time_afternoon', true);
+		}else if($v['book_by'] == 'evening'){
+			$book_by = __('time_evening', true);
 		}else{
 			if(!empty($v['min_slot']) && !empty($v['max_slot']))
 			{

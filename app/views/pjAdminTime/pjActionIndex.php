@@ -34,7 +34,8 @@ if (isset($tpl['status']))
 			?><input type="hidden" name="foreign_id" value="<?php echo (int) $tpl['wt_arr']['foreign_id']; ?>" /><?php
 		}
 		?>
-		<table class="pj-table" cellpadding="0" cellspacing="0" style="width: 100%;">
+		<div class="pj-table-responsive">
+		<table class="pj-table pj-worktime-table" cellpadding="0" cellspacing="0" style="width: 100%;">
 			<thead>
 				<tr>
 					<th><?php __('time_day'); ?></th>
@@ -45,6 +46,8 @@ if (isset($tpl['status']))
 					<th><?php __('time_morning_to'); ?></th>
 					<th><?php __('time_afternoon_from'); ?></th>
 					<th><?php __('time_afternoon_to'); ?></th>
+					<th><?php __('time_evening_from'); ?></th>
+					<th><?php __('time_evening_to'); ?></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -80,6 +83,8 @@ if (isset($tpl['status']))
 					$tpl['wt_arr'][$k.'_morning_to'] = empty($tpl['wt_arr'][$k.'_morning_to']) ? '13:30:00' : $tpl['wt_arr'][$k.'_morning_to'];
 					$tpl['wt_arr'][$k.'_afternoon_from'] = empty($tpl['wt_arr'][$k.'_afternoon_from']) ? '12:30:00' : $tpl['wt_arr'][$k.'_afternoon_from'];
 					$tpl['wt_arr'][$k.'_afternoon_to'] = empty($tpl['wt_arr'][$k.'_afternoon_to']) ? '13:30:00' : $tpl['wt_arr'][$k.'_afternoon_to'];
+					$tpl['wt_arr'][$k.'_evening_from'] = empty($tpl['wt_arr'][$k.'_evening_from']) ? '19:00:00' : $tpl['wt_arr'][$k.'_evening_from'];
+					$tpl['wt_arr'][$k.'_evening_to'] = empty($tpl['wt_arr'][$k.'_evening_to']) ? '23:00:00' : $tpl['wt_arr'][$k.'_evening_to'];
 					
 					$from = date('H:i', strtotime($tpl['wt_arr'][$k.'_from']));
 					$to = date('H:i', strtotime($tpl['wt_arr'][$k.'_to']));
@@ -87,6 +92,8 @@ if (isset($tpl['status']))
 					$morning_to = date('H:i', strtotime($tpl['wt_arr'][$k.'_morning_to']));
 					$afternoon_from = date('H:i', strtotime($tpl['wt_arr'][$k.'_afternoon_from']));
 					$afternoon_to = date('H:i', strtotime($tpl['wt_arr'][$k.'_afternoon_to']));
+					$evening_from = date('H:i', strtotime($tpl['wt_arr'][$k.'_evening_from']));
+					$evening_to = date('H:i', strtotime($tpl['wt_arr'][$k.'_evening_to']));
 					
 					if($show_period == 'true')
 					{
@@ -98,6 +105,8 @@ if (isset($tpl['status']))
 							$morning_to = date('h:i A', strtotime($tpl['wt_arr'][$k.'_morning_to']));
 							$afternoon_from = date('h:i A', strtotime($tpl['wt_arr'][$k.'_afternoon_from']));
 							$afternoon_to = date('h:i A', strtotime($tpl['wt_arr'][$k.'_afternoon_to']));
+							$evening_from = date('h:i A', strtotime($tpl['wt_arr'][$k.'_evening_from']));
+							$evening_to = date('h:i A', strtotime($tpl['wt_arr'][$k.'_evening_to']));
 						}else{
 							$from = date('h:i a', strtotime($tpl['wt_arr'][$k.'_from']));
 							$to = date('h:i a', strtotime($tpl['wt_arr'][$k.'_to']));
@@ -105,6 +114,8 @@ if (isset($tpl['status']))
 							$morning_to = date('h:i a', strtotime($tpl['wt_arr'][$k.'_morning_to']));
 							$afternoon_from = date('h:i a', strtotime($tpl['wt_arr'][$k.'_afternoon_from']));
 							$afternoon_to = date('h:i a', strtotime($tpl['wt_arr'][$k.'_afternoon_to']));
+							$evening_from = date('h:i a', strtotime($tpl['wt_arr'][$k.'_evening_from']));
+							$evening_to = date('h:i a', strtotime($tpl['wt_arr'][$k.'_evening_to']));
 						}
 					}
 					
@@ -123,6 +134,8 @@ if (isset($tpl['status']))
 					$morning_to = NULL;
 					$afternoon_from = NULL;
 					$afternoon_to = NULL;
+					$evening_from = NULL;
+					$evening_to = NULL;
 					$checked = NULL;
 				}
 				?>
@@ -130,44 +143,58 @@ if (isset($tpl['status']))
 					<td><?php echo $day; ?></td>
 					<td class="align_center"><input type="checkbox" class="working_day" name="<?php echo $k; ?>_dayoff" value="T"<?php echo $checked; ?> /></td>
 					<td>
-						<p class="w80 tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
+						<p class="pj-worktime-cell tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
 							<span class="inline-block">
-								<input name="<?php echo $k?>_from" value="<?php echo $from;?>" class="pj-timepicker pj-form-field w60"/>
+								<input name="<?php echo $k?>_from" value="<?php echo $from;?>" class="pj-timepicker pj-form-field pj-worktime-input"/>
 							</span>
 						</p>
 					</td>
 					<td>
-						<p class="w80 tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
+						<p class="pj-worktime-cell tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
 							<span class="inline-block">
-								<input name="<?php echo $k?>_to" value="<?php echo $to;?>" class="pj-timepicker pj-form-field w60"/>
+								<input name="<?php echo $k?>_to" value="<?php echo $to;?>" class="pj-timepicker pj-form-field pj-worktime-input"/>
 							</span>
 						</p>
 					</td>
 					<td>
-						<p class="w80 tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
+						<p class="pj-worktime-cell tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
 							<span class="inline-block">
-								<input name="<?php echo $k?>_morning_from" value="<?php echo $morning_from;?>" class="pj-timepicker pj-form-field w60"/>
+								<input name="<?php echo $k?>_morning_from" value="<?php echo $morning_from;?>" class="pj-timepicker pj-form-field pj-worktime-input"/>
 							</span>
 						</p>
 					</td>
 					<td>
-						<p class="w80 tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
+						<p class="pj-worktime-cell tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
 							<span class="inline-block">
-								<input name="<?php echo $k?>_morning_to" value="<?php echo $morning_to;?>" class="pj-timepicker pj-form-field w60"/>
+								<input name="<?php echo $k?>_morning_to" value="<?php echo $morning_to;?>" class="pj-timepicker pj-form-field pj-worktime-input"/>
 							</span>
 						</p>
 					</td>
 					<td>
-						<p class="w80 tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
+						<p class="pj-worktime-cell tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
 							<span class="inline-block">
-								<input name="<?php echo $k?>_afternoon_from" value="<?php echo $afternoon_from;?>" class="pj-timepicker pj-form-field w60"/>
+								<input name="<?php echo $k?>_afternoon_from" value="<?php echo $afternoon_from;?>" class="pj-timepicker pj-form-field pj-worktime-input"/>
 							</span>
 						</p>
 					</td>
 					<td>
-						<p class="w80 tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
+						<p class="pj-worktime-cell tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
 							<span class="inline-block">
-								<input name="<?php echo $k?>_afternoon_to" value="<?php echo $afternoon_to;?>" class="pj-timepicker pj-form-field w60"/>
+								<input name="<?php echo $k?>_afternoon_to" value="<?php echo $afternoon_to;?>" class="pj-timepicker pj-form-field pj-worktime-input"/>
+							</span>
+						</p>
+					</td>
+					<td>
+						<p class="pj-worktime-cell tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
+							<span class="inline-block">
+								<input name="<?php echo $k?>_evening_from" value="<?php echo $evening_from;?>" class="pj-timepicker pj-form-field pj-worktime-input"/>
+							</span>
+						</p>
+					</td>
+					<td>
+						<p class="pj-worktime-cell tsWorkingDay_<?php echo $k;?><?php echo $dayoff_class;?>">
+							<span class="inline-block">
+								<input name="<?php echo $k?>_evening_to" value="<?php echo $evening_to;?>" class="pj-timepicker pj-form-field pj-worktime-input"/>
 							</span>
 						</p>
 					</td>
@@ -179,10 +206,11 @@ if (isset($tpl['status']))
 			</tbody>
 			<tfoot>
 				<tr>
-					<td colspan="8"><input type="submit" value="<?php __('btnSave', false, true); ?>" class="pj-button" /></td>
+					<td colspan="10"><input type="submit" value="<?php __('btnSave', false, true); ?>" class="pj-button" /></td>
 				</tr>
 			</tfoot>
 		</table>
+		</div><!-- /.pj-table-responsive -->
 	</form>
 	<script type="text/javascript">
 	var myLabel = myLabel || {};

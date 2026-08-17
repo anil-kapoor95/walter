@@ -114,6 +114,24 @@ if (isset($tpl['status']))
 						<input name="end_afternoon" value="<?php echo $end_afternoon;?>" class="pj-timepicker pj-form-field w80 required"/>
 					</span>
 				</p>
+				<p class="business" style="display: <?php echo $business; ?>">
+					<label class="title"><?php __('time_evening_from'); ?></label>
+					<?php
+					$start_evening = date($tpl['option_arr']['o_time_format'], strtotime($tpl['arr']['date'] . ' ' . $tpl['arr']['start_evening']));
+					?>
+					<span class="inline-block">
+						<input name="start_evening" value="<?php echo $start_evening;?>" class="pj-timepicker pj-form-field w80 required"/>
+					</span>
+				</p>
+				<p class="business" style="display: <?php echo $business; ?>">
+					<label class="title"><?php __('time_evening_to'); ?></label>
+					<?php
+					$end_evening = date($tpl['option_arr']['o_time_format'], strtotime($tpl['arr']['date'] . ' ' . $tpl['arr']['end_evening']));
+					?>
+					<span class="inline-block">
+						<input name="end_evening" value="<?php echo $end_evening;?>" class="pj-timepicker pj-form-field w80 required"/>
+					</span>
+				</p>
 			</div>
 			<br class="clear_both" />
 		</fieldset>

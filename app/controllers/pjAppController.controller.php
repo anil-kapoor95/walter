@@ -358,11 +358,12 @@ class pjAppController extends pjController
 		{
 			$price = pjUtil::formatCurrencySign($room_arr['price_per_day'], $option_arr['o_currency']) . ' ' . __('front_per_day', true);
 			$duration = date($option_arr['o_date_format'], strtotime($data['start_date'])) . ' - ' . date($option_arr['o_date_format'], strtotime($data['end_date']));
-		}elseif($data['book_by'] == 'morning' || $data['book_by'] == 'afternoon'){
+		}elseif($data['book_by'] == 'morning' || $data['book_by'] == 'afternoon' || $data['book_by'] == 'evening'){
 			$price = pjUtil::formatCurrencySign($room_arr['price_half_day'], $option_arr['o_currency']) . ' ' . __('front_half_day', true);
 			
 			$morning_arr = array();
 			$afternoon_arr = array();
+			$evening_arr = array();
 			
 			if($data['start_date'] != '')
 			{
@@ -379,6 +380,11 @@ class pjAppController extends pjController
 						$morning_arr['end_ts'] = $wt_arr['morning_end_ts'];
 						$afternoon_arr['start_ts'] = $wt_arr['afternoon_start_ts'];
 						$afternoon_arr['end_ts'] = $wt_arr['afternoon_end_ts'];
+						if (isset($wt_arr['evening_start_ts'], $wt_arr['evening_end_ts']))
+						{
+							$evening_arr['start_ts'] = $wt_arr['evening_start_ts'];
+							$evening_arr['end_ts'] = $wt_arr['evening_end_ts'];
+						}
 					}
 				} else {
 					if (count($date_arr) > 0)
@@ -387,6 +393,11 @@ class pjAppController extends pjController
 						$morning_arr['end_ts'] = $date_arr['morning_end_ts'];
 						$afternoon_arr['start_ts'] = $date_arr['afternoon_start_ts'];
 						$afternoon_arr['end_ts'] = $date_arr['afternoon_end_ts'];
+						if (isset($date_arr['evening_start_ts'], $date_arr['evening_end_ts']))
+						{
+							$evening_arr['start_ts'] = $date_arr['evening_start_ts'];
+							$evening_arr['end_ts'] = $date_arr['evening_end_ts'];
+						}
 					}
 				}
 			}
@@ -398,6 +409,10 @@ class pjAppController extends pjController
 			if($data['book_by'] == 'afternoon' && !empty($afternoon_arr))
 			{
 				$duration .= ' ('.date($option_arr['o_time_format'], $afternoon_arr['start_ts']) . ' - ' . date($option_arr['o_time_format'], $afternoon_arr['end_ts']) .')';
+			}
+			if($data['book_by'] == 'evening' && !empty($evening_arr))
+			{
+				$duration .= ' ('.date($option_arr['o_time_format'], $evening_arr['start_ts']) . ' - ' . date($option_arr['o_time_format'], $evening_arr['end_ts']) .')';
 			}
 		}else{
 			$price = pjUtil::formatCurrencySign($room_arr['price_per_hour'], $option_arr['o_currency']) . ' ' . __('front_per_hour', true);
@@ -567,7 +582,15 @@ class pjAppController extends pjController
 			->where("t1.status <>", 'cancelled')
 			->findCount()
 			->getData();
-		if($cnt_morning > 0 && $cnt_afternoon > 0)
+		$cnt_evening = $pjBookingModel
+			->reset()
+			->where('t1.room_id', $room_id)
+			->where("(t1.start_date='$date')")
+			->where("t1.book_by", 'evening')
+			->where("t1.status <>", 'cancelled')
+			->findCount()
+			->getData();
+		if($cnt_morning > 0 && $cnt_afternoon > 0 && $cnt_evening > 0)
 		{
 			return true;
 		}else{
@@ -663,12 +686,15 @@ class pjAppController extends pjController
 		$from_to_arr = array();
 		$halfday_morning = 0;
 		$halfday_afternoon = 0;
+		$halfday_evening = 0;
 		$hourly_morning = 0;
 		$hourly_afternoon = 0;
+		$hourly_evening = 0;
 		$full_day_booked = 0;
 		$multi_day_booked = 0;
 		$morning_arr = array();
 		$afternoon_arr = array();
+		$evening_arr = array();
 		
 		if($start_date != '')
 		{
@@ -689,6 +715,11 @@ class pjAppController extends pjController
 					$morning_arr['end_ts'] = $wt_arr['morning_end_ts'];
 					$afternoon_arr['start_ts'] = $wt_arr['afternoon_start_ts'];
 					$afternoon_arr['end_ts'] = $wt_arr['afternoon_end_ts'];
+					if (isset($wt_arr['evening_start_ts']) && isset($wt_arr['evening_end_ts']))
+					{
+						$evening_arr['start_ts'] = $wt_arr['evening_start_ts'];
+						$evening_arr['end_ts'] = $wt_arr['evening_end_ts'];
+					}
 				}
 			} else {
 				if (count($date_arr) > 0)
@@ -699,6 +730,11 @@ class pjAppController extends pjController
 					$morning_arr['end_ts'] = $date_arr['morning_end_ts'];
 					$afternoon_arr['start_ts'] = $date_arr['afternoon_start_ts'];
 					$afternoon_arr['end_ts'] = $date_arr['afternoon_end_ts'];
+					if (isset($date_arr['evening_start_ts']) && isset($date_arr['evening_end_ts']))
+					{
+						$evening_arr['start_ts'] = $date_arr['evening_start_ts'];
+						$evening_arr['end_ts'] = $date_arr['evening_end_ts'];
+					}
 				}
 			}
 			
@@ -722,12 +758,15 @@ class pjAppController extends pjController
 			{
 				$pjBookingModel->where('t1.id <>', $id);
 			}
-			$hourly_morning = $pjBookingModel
-				->where("(t1.start_date='$start_date')")
-				->where('t1.status <>', 'cancelled')
-				->where("(t1.book_by='hour' AND t1.id IN(SELECT `TBS`.`booking_id` FROM `".$pjBookingSlotModel->getTable()."` AS `TBS` WHERE `TBS`.start_ts >=".$morning_arr['start_ts']." AND `TBS`.`start_ts`<".$morning_arr['end_ts']." ))")
-				->where('t1.room_id', $room_id)
-				->findCount()->getData();
+			if (isset($morning_arr['start_ts']) && isset($morning_arr['end_ts']))
+			{
+				$hourly_morning = $pjBookingModel
+					->where("(t1.start_date='$start_date')")
+					->where('t1.status <>', 'cancelled')
+					->where("(t1.book_by='hour' AND t1.id IN(SELECT `TBS`.`booking_id` FROM `".$pjBookingSlotModel->getTable()."` AS `TBS` WHERE `TBS`.start_ts >=".(int) $morning_arr['start_ts']." AND `TBS`.`start_ts`<".(int) $morning_arr['end_ts']." ))")
+					->where('t1.room_id', $room_id)
+					->findCount()->getData();
+			}
 			
 			$pjBookingModel->reset();
 			if(isset($id) && (int) $id > 0)
@@ -745,14 +784,44 @@ class pjAppController extends pjController
 			{
 				$pjBookingModel->where('t1.id <>', $id);
 			}
-			$hourly_afternoon = $pjBookingModel
+			if (isset($afternoon_arr['start_ts']) && isset($afternoon_arr['end_ts']))
+			{
+				$hourly_afternoon = $pjBookingModel
+					->where("(t1.start_date='$start_date')")
+					->where('t1.status <>', 'cancelled')
+					->where("(t1.book_by='hour' AND t1.id IN(SELECT `TBS`.`booking_id` FROM `".$pjBookingSlotModel->getTable()."` AS `TBS` WHERE `TBS`.start_ts >=".(int) $afternoon_arr['start_ts']." AND `TBS`.`start_ts`<".(int) $afternoon_arr['end_ts']." ))")
+					->where('t1.room_id', $room_id)
+					->findCount()->getData();
+			}
+			
+			$pjBookingModel->reset();
+			if(isset($id) && (int) $id > 0)
+			{
+				$pjBookingModel->where('t1.id <>', $id);
+			}
+			$halfday_evening = $pjBookingModel
 				->where("(t1.start_date='$start_date')")
 				->where('t1.status <>', 'cancelled')
-				->where("(t1.book_by='hour' AND t1.id IN(SELECT `TBS`.`booking_id` FROM `".$pjBookingSlotModel->getTable()."` AS `TBS` WHERE `TBS`.start_ts >=".$afternoon_arr['start_ts']." AND `TBS`.`start_ts`<".$afternoon_arr['end_ts']." ))")
+				->where("(t1.book_by='evening')")
 				->where('t1.room_id', $room_id)
 				->findCount()->getData();
-			
-			if($halfday_morning > 0 || $halfday_afternoon > 0 || $hourly_morning > 0 || $hourly_afternoon > 0)
+
+			if (isset($evening_arr['start_ts']) && isset($evening_arr['end_ts']))
+			{
+				$pjBookingModel->reset();
+				if(isset($id) && (int) $id > 0)
+				{
+					$pjBookingModel->where('t1.id <>', $id);
+				}
+				$hourly_evening = $pjBookingModel
+					->where("(t1.start_date='$start_date')")
+					->where('t1.status <>', 'cancelled')
+					->where("(t1.book_by='hour' AND t1.id IN(SELECT `TBS`.`booking_id` FROM `".$pjBookingSlotModel->getTable()."` AS `TBS` WHERE `TBS`.start_ts >=".(int) $evening_arr['start_ts']." AND `TBS`.`start_ts`<".(int) $evening_arr['end_ts']." ))")
+					->where('t1.room_id', $room_id)
+					->findCount()->getData();
+			}
+
+			if($halfday_morning > 0 || $halfday_afternoon > 0 || $halfday_evening > 0 || $hourly_morning > 0 || $hourly_afternoon > 0 || $hourly_evening > 0)
 			{
 				$full_day_booked = 1;
 			}
@@ -772,8 +841,10 @@ class pjAppController extends pjController
 				$full_day_booked = 1;
 				$halfday_morning = 1;
 				$halfday_afternoon = 1;
+				$halfday_evening = 1;
 				$hourly_morning = 1;
 				$hourly_afternoon = 1;
+				$hourly_evening = 1;
 			}
 			
 			$pjBookingModel->reset();
@@ -788,8 +859,8 @@ class pjAppController extends pjController
 				->findCount()->getData();
 			
 			if(isset($start_ts) && isset($end_ts) && ($full_day_booked == 0 || 
-					($full_day_booked == 1 && ($halfday_morning == 0 || $halfday_afternoon == 0) ) ||
-					($full_day_booked == 1 && ($hourly_morning == 0 || $hourly_afternoon == 0) ) ))
+					($full_day_booked == 1 && ($halfday_morning == 0 || $halfday_afternoon == 0 || $halfday_evening == 0) ) ||
+					($full_day_booked == 1 && ($hourly_morning == 0 || $hourly_afternoon == 0 || $hourly_evening == 0) ) ))
 			{
 				$pjBookingModel->reset();
 				$date_iso = date('Y-m-d', $start_ts);
@@ -834,6 +905,16 @@ class pjAppController extends pjController
 						}
 					}
 				}
+				if($halfday_evening > 0)
+				{
+					if(isset($evening_arr['start_ts']) && isset($evening_arr['end_ts']))
+					{
+						for($i = $evening_arr['start_ts']; $i < $evening_arr['end_ts']; $i += 3600)
+						{
+							$halfday_arr[] = date($option_arr['o_time_format'], $i);
+						}
+					}
+				}
 				
 				for($i = $start_ts; $i < $end_ts; $i += 3600)
 				{
@@ -855,7 +936,7 @@ class pjAppController extends pjController
 				}
 			}
 		}
-		return compact('arr', 'layout_arr', 'from_to_arr', 'halfday_morning', 'halfday_afternoon', 'hourly_morning', 'hourly_afternoon', 'morning_arr', 'afternoon_arr', 'full_day_booked', 'multi_day_booked');
+		return compact('arr', 'layout_arr', 'from_to_arr', 'halfday_morning', 'halfday_afternoon', 'halfday_evening', 'hourly_morning', 'hourly_afternoon', 'hourly_evening', 'morning_arr', 'afternoon_arr', 'evening_arr', 'full_day_booked', 'multi_day_booked');
 	}
 	public static function getPrices($start_date, $end_date, $room_id, $book_by, $slots, $equipment_id, $units, $food_drink_id, $people, $foreign_id, $option_arr)
 	{
@@ -936,6 +1017,26 @@ class pjAppController extends pjController
 				if (count($date_arr) > 0)
 				{
 					$hours = floor(abs($date_arr['afternoon_end_ts'] - $date_arr['afternoon_start_ts']) / 3600);
+				}
+			}
+		}else if($book_by == 'evening'){
+			$room_price = (float) $room_arr['price_half_day'];
+
+			$pjDateModel = pjDateModel::factory();
+			$date_arr = $pjDateModel->getDailyWorkingTime($foreign_id, $start_date);
+			if ($date_arr === false)
+			{
+				$pjWorkingTimeModel = pjWorkingTimeModel::factory();
+				$wt_data = $pjWorkingTimeModel->getWorkingTime($foreign_id);
+				$wt_arr = $pjWorkingTimeModel->filterDate($wt_data, $start_date);
+				if (!empty($wt_arr) && isset($wt_arr['evening_start_ts'], $wt_arr['evening_end_ts']))
+				{
+					$hours = floor(abs($wt_arr['evening_end_ts'] - $wt_arr['evening_start_ts']) / 3600);
+				}
+			} else {
+				if (count($date_arr) > 0 && isset($date_arr['evening_start_ts'], $date_arr['evening_end_ts']))
+				{
+					$hours = floor(abs($date_arr['evening_end_ts'] - $date_arr['evening_start_ts']) / 3600);
 				}
 			}
 		}else{

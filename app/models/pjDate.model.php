@@ -20,6 +20,8 @@ class pjDateModel extends pjAppModel
 		array('name' => 'end_morning', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'start_afternoon', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'end_afternoon', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'start_evening', 'type' => 'time', 'default' => ':NULL'),
+		array('name' => 'end_evening', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'is_dayoff', 'type' => 'enum', 'default' => 'F')
 	);
 
@@ -92,6 +94,17 @@ class pjDateModel extends pjAppModel
 		$wt['afternoon_start_ts'] = strtotime($date . " " . $arr['start_afternoon']);
 		$wt['afternoon_end_ts'] = strtotime($date . " " . $arr['end_afternoon']);
 
+		$d = getdate(strtotime($arr['start_evening']));
+		$wt['evening_start_hour'] = $d['hours'];
+		$wt['evening_start_minutes'] = $d['minutes'];
+
+		$d = getdate(strtotime($arr['end_evening']));
+		$wt['evening_end_hour'] = $d['hours'];
+		$wt['evening_end_minutes'] = $d['minutes'];
+
+		$wt['evening_start_ts'] = strtotime($date . " " . $arr['start_evening']);
+		$wt['evening_end_ts'] = strtotime($date . " " . $arr['end_evening']);
+
 		return $wt;
 	}
 	
@@ -156,6 +169,17 @@ class pjDateModel extends pjAppModel
 				
 			$_arr [$item ['date']] ['afternoon_start_ts'] = strtotime ( $item ['date'] . " " . $item ['start_afternoon'] );
 			$_arr [$item ['date']] ['afternoon_end_ts'] = strtotime ( $item ['date'] . " " . $item ['end_afternoon'] );
+
+			$d = getdate ( strtotime ( $item ['start_evening'] ) );
+			$_arr [$item ['date']] ['evening_start_hour'] = $d ['hours'];
+			$_arr [$item ['date']] ['evening_start_minutes'] = $d ['minutes'];
+
+			$d = getdate ( strtotime ( $item ['end_evening'] ) );
+			$_arr [$item ['date']] ['evening_end_hour'] = $d ['hours'];
+			$_arr [$item ['date']] ['evening_end_minutes'] = $d ['minutes'];
+
+			$_arr [$item ['date']] ['evening_start_ts'] = strtotime ( $item ['date'] . " " . $item ['start_evening'] );
+			$_arr [$item ['date']] ['evening_end_ts'] = strtotime ( $item ['date'] . " " . $item ['end_evening'] );
 		}	
 	
 		return $_arr;

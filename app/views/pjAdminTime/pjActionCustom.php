@@ -93,6 +93,18 @@ if (isset($tpl['status']))
 						<input name="end_afternoon" class="pj-timepicker pj-form-field w80 required"/>
 					</span>
 				</p>
+				<p class="business">
+					<label class="title"><?php __('time_evening_from'); ?></label>
+					<span class="inline-block">
+						<input name="start_evening" class="pj-timepicker pj-form-field w80 required"/>
+					</span>
+				</p>
+				<p class="business">
+					<label class="title"><?php __('time_evening_to'); ?></label>
+					<span class="inline-block">
+						<input name="end_evening" class="pj-timepicker pj-form-field w80 required"/>
+					</span>
+				</p>
 			</div>
 			<br class="clear_both" />
 		</fieldset>
@@ -127,10 +139,13 @@ if (isset($tpl['status']))
 	myLabel.time_end = "<?php __('time_to', false, true); ?>";
 	myLabel.time_morning = "<?php __('time_morning', false, true); ?>";
 	myLabel.time_afternoon = "<?php __('time_afternoon', false, true); ?>";
+	myLabel.time_evening = "<?php __('time_evening', false, true); ?>";
 	myLabel.time_morning_start = "<?php __('time_morning_from', false, true); ?>";
 	myLabel.time_morning_end = "<?php __('time_morning_to', false, true); ?>";
 	myLabel.time_afternoon_start = "<?php __('time_afternoon_from', false, true); ?>";
 	myLabel.time_afternoon_end = "<?php __('time_afternoon_to', false, true); ?>";
+	myLabel.time_evening_start = "<?php __('time_evening_from', false, true); ?>";
+	myLabel.time_evening_end = "<?php __('time_evening_to', false, true); ?>";
 	myLabel.time_dayoff = "<?php __('time_is', false, true); ?>";
 	myLabel.time_yesno = <?php echo pjAppController::jsonEncode(__('_yesno', true)); ?>;
 	myLabel.delete_selected = "<?php __('delete_selected', false, true); ?>";

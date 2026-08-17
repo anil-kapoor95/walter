@@ -1023,3 +1023,62 @@ td.ui-timepicker-minutes{display: none !important;}
 .tsDayOff{
 	display: none;
 }
+/* ------------------------------------------------------------------
+   Working hours table (Options -> Working hours -> Standard)
+   Ten columns (day, day off, start, end, morning x2, afternoon x2,
+   evening x2) no longer fit the default .pj-table metrics, so the
+   table is scoped down here and wrapped in a scrolling container.
+   ------------------------------------------------------------------ */
+.pj-table-responsive{
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: visible;
+	-webkit-overflow-scrolling: touch;
+}
+.pj-worktime-table{
+	min-width: 680px;          /* below this the wrapper scrolls instead of clipping */
+	table-layout: fixed;
+}
+.pj-worktime-table th,
+.pj-worktime-table td{
+	padding: 5px 3px;
+	white-space: normal;       /* let two-word headers wrap instead of stretching */
+	word-wrap: break-word;
+	vertical-align: middle;
+}
+.pj-worktime-table th{
+	font-size: 11px;
+	line-height: 14px;
+	text-align: center;
+}
+.pj-worktime-table td{
+	text-align: center;
+}
+.pj-worktime-table td:first-child,
+.pj-worktime-table th:first-child{
+	text-align: left;
+	width: 11%;
+}
+.pj-worktime-table th:nth-child(2),
+.pj-worktime-table td:nth-child(2){
+	width: 7%;
+}
+.pj-worktime-cell{
+	width: auto;
+	margin: 0;
+	text-align: center;
+}
+.pj-worktime-input{
+	width: 100%;
+	max-width: 62px;
+	min-width: 46px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: center;
+	box-sizing: border-box;
+}
+/* the timepicker dropdown is fixed-width in the shared css; keep it
+   aligned to the narrower field */
+.pj-worktime-table .ui-timepicker-wrapper{
+	width: 92px !important;
+}

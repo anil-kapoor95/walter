@@ -37,7 +37,7 @@ $index = pjObject::escapeString($_GET['index']);
 							<dd><?php echo $price;?></dd>
 						</dl><!-- /.dl-horizontal pjMrBRoomInnerMeta -->
 						<?php
-					}elseif($STORE['book_by'] == 'morning' || $STORE['book_by'] == 'afternoon'){
+					}elseif($STORE['book_by'] == 'morning' || $STORE['book_by'] == 'afternoon' || $STORE['book_by'] == 'evening'){
 						$price = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
 						?>
 						<dl class="dl-horizontal pjMrBAsideProductMeta">
