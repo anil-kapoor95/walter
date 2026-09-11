@@ -265,7 +265,7 @@
 			{
 				pjQ.$('#pjMrbEndDateWrapper_' + self.opts.index).show();
 				pjQ.$('#pjMrbFromTo_' + self.opts.index).hide();
-			}else if(book_by == 'morning' || book_by == 'afternoon' || book_by == 'evening'){
+			}else if(book_by == 'morning' || book_by == 'afternoon' || book_by == 'evening' || book_by == 'morningafternoon' || book_by == 'afternoonevening'){
 				pjQ.$('#pjMrbEndDateWrapper_' + self.opts.index).hide();
 				pjQ.$('#pjMrbFromTo_' + self.opts.index).hide();
 			}else{
@@ -577,7 +577,7 @@
 						
 						self.disableButtons.call(self);
 						var book_by =  pjQ.$('#pjMrbBookBy_' + self.opts.index).val();
-						if(book_by == 'morning' || book_by == 'afternoon' || book_by == 'evening')
+						if(book_by == 'morning' || book_by == 'afternoon' || book_by == 'evening' || book_by == 'morningafternoon' || book_by == 'afternoonevening')
 						{
 							self.saveBookForm.call(self);
 						}else if(book_by == 'hour'){

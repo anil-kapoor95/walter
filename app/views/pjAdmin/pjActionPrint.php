@@ -29,14 +29,18 @@
 							if($v['book_by'] == 'multiday')
 							{
 								echo date($tpl['option_arr']['o_date_format'], strtotime($v['end_date']));
-							}else if($v['book_by'] == 'morning' || $v['book_by'] == 'afternoon' || $v['book_by'] == 'evening'){
+							}else if($v['book_by'] == 'morning' || $v['book_by'] == 'afternoon' || $v['book_by'] == 'evening' || $v['book_by'] == 'morningafternoon' || $v['book_by'] == 'afternoonevening'){
 								if($v['book_by'] == 'morning')
 								{
 									__('time_morning');
 								}else if($v['book_by'] == 'afternoon'){
 									__('time_afternoon');
-								}else{
+								}else if($v['book_by'] == 'evening'){
 									__('time_evening');
+								}else if($v['book_by'] == 'morningafternoon'){
+									__('time_morningafternoon');
+								}else{
+									__('time_afternoonevening');
 								}
 							}else{
 								if(isset($tpl['booking_slot_arr'][$v['id']]) && count($tpl['booking_slot_arr'][$v['id']]) > 0)

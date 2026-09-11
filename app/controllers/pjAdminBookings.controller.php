@@ -519,6 +519,8 @@ class pjAdminBookings extends pjAdmin
 				$this->set('hourly_afternoon', $duration_info_arr['hourly_afternoon']);
 				$this->set('hourly_evening', $duration_info_arr['hourly_evening']);
 				$this->set('evening_arr', $duration_info_arr['evening_arr']);
+				$this->set('combo_morningafternoon_available', $duration_info_arr['combo_morningafternoon_available']);
+				$this->set('combo_afternoonevening_available', $duration_info_arr['combo_afternoonevening_available']);
 				$this->set('country_arr', $country_arr);
 				$this->set('equipment_arr', $equipment_arr);
 				$this->set('food_drink_arr', $food_drink_arr);
@@ -641,6 +643,8 @@ class pjAdminBookings extends pjAdmin
 				$this->set('hourly_afternoon', $duration_info_arr['hourly_afternoon']);
 				$this->set('hourly_evening', $duration_info_arr['hourly_evening']);
 				$this->set('evening_arr', $duration_info_arr['evening_arr']);
+				$this->set('combo_morningafternoon_available', $duration_info_arr['combo_morningafternoon_available']);
+				$this->set('combo_afternoonevening_available', $duration_info_arr['combo_afternoonevening_available']);
 			}
 		}
 	}

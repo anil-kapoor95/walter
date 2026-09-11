@@ -52,7 +52,7 @@ class pjAdmin extends pjAppController
 			
 			$total_bookings = $pjBookingModel->findCount()->getData();
 			$cnt_bookings_made = $pjBookingModel->reset()->where("DATE(t1.created)=CURDATE()")->findCount()->getData();
-			$cnt_bookings_today = $pjBookingModel->reset()->where("( (t1.book_by='multiday' AND CURDATE() BETWEEN t1.start_date AND t1.end_date) OR ( (t1.book_by='hour' OR t1.book_by='afternoon' OR t1.book_by='morning') AND t1.start_date=CURDATE() ) )")->findCount()->getData();
+			$cnt_bookings_today = $pjBookingModel->reset()->where("( (t1.book_by='multiday' AND CURDATE() BETWEEN t1.start_date AND t1.end_date) OR ( (t1.book_by='hour' OR t1.book_by='afternoon' OR t1.book_by='morning' OR t1.book_by='evening' OR t1.book_by='morningafternoon' OR t1.book_by='afternoonevening') AND t1.start_date=CURDATE() ) )")->findCount()->getData();
 			
 			$latest_bookings = $pjBookingModel
 				->reset()
@@ -341,7 +341,7 @@ class pjAdmin extends pjAppController
 						(SELECT MAX(TBS2.end_iso) FROM `".$bookign_slots_table."` AS `TBS2` WHERE `TBS2`.booking_id=t1.id) AS max_slot ")
 			->join('pjMultiLang', "t2.model='pjRoom' AND t2.foreign_id=t1.room_id AND t2.field='title' AND t2.locale='".$locale_id."'", 'left outer')
 			->join('pjMultiLang', "t3.model='pjLayout' AND t3.foreign_id=t1.layout_id AND t3.field='title' AND t3.locale='".$locale_id."'", 'left outer')
-			->where("( (t1.book_by='multiday' AND '$date' BETWEEN t1.start_date AND t1.end_date) OR ( (t1.book_by='hour' OR t1.book_by='afternoon' OR t1.book_by='morning') AND t1.start_date='$date' ) )")
+			->where("( (t1.book_by='multiday' AND '$date' BETWEEN t1.start_date AND t1.end_date) OR ( (t1.book_by='hour' OR t1.book_by='afternoon' OR t1.book_by='morning' OR t1.book_by='evening' OR t1.book_by='morningafternoon' OR t1.book_by='afternoonevening') AND t1.start_date='$date' ) )")
 			->findAll()
 			->getData();
 		

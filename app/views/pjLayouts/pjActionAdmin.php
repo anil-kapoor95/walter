@@ -1,4 +1,4 @@
-octype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Ruimte Boeking Systeem</title>

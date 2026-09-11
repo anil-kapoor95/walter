@@ -18,6 +18,8 @@
 				$price = pjUtil::formatCurrencySign($tpl['arr']['price_per_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_per_day', true);
 			}elseif($STORE['book_by'] == 'morning' || $STORE['book_by'] == 'afternoon' || $STORE['book_by'] == 'evening'){
 				$price = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
+			}elseif($STORE['book_by'] == 'morningafternoon' || $STORE['book_by'] == 'afternoonevening'){
+				$price = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'] * 2, $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
 			}else{
 				$price = pjUtil::formatCurrencySign($tpl['arr']['price_per_hour'], $tpl['option_arr']['o_currency']) . ' ' . __('front_per_hour', true);
 			}
@@ -58,6 +60,24 @@
 		if($STORE['book_by'] == 'hour')
 		{
 			$selected_slots = isset($STORE['slots']) ? $STORE['slots'] : array();
+			$slot_pairs = array();
+			foreach($selected_slots as $k => $pair)
+			{
+				list($start_ts, $end_ts) = explode("|", $pair);
+				$slot_pairs[] = array((int) $start_ts, (int) $end_ts);
+			}
+			usort($slot_pairs, function($a, $b){ return $a[0] - $b[0]; });
+			$slot_ranges = array();
+			foreach($slot_pairs as $pair)
+			{
+				$last = count($slot_ranges) - 1;
+				if($last >= 0 && $slot_ranges[$last][1] == $pair[0])
+				{
+					$slot_ranges[$last][1] = $pair[1];
+				}else{
+					$slot_ranges[] = $pair;
+				}
+			}
 			?>
 			<div class="row">
 				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6">
@@ -66,13 +86,12 @@
 
 				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-6">
 					<?php
-					foreach($selected_slots as $k => $pair)
-					{ 
-						list($start_ts, $end_ts) = explode("|", $pair);
+					foreach($slot_ranges as $range)
+					{
 						?>
-						<p><strong><?php echo date($tpl['option_arr']['o_time_format'],$start_ts);?> - <?php echo date($tpl['option_arr']['o_time_format'],$end_ts);?></strong></p>
+						<p><strong><?php echo date($tpl['option_arr']['o_time_format'],$range[0]);?> - <?php echo date($tpl['option_arr']['o_time_format'],$range[1]);?></strong></p>
 						<?php
-					} 
+					}
 					?>
 				</div><!-- /.col-lg-7 col-md-7 col-sm-7 col-xs-6 -->
 			</div><!-- /.row -->

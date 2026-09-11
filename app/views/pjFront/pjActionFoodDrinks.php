@@ -46,6 +46,14 @@ $index = pjObject::escapeString($_GET['index']);
 							<dd><?php echo $price;?></dd>
 						</dl><!-- /.dl-horizontal pjMrBRoomInnerMeta -->
 						<?php
+					}elseif($STORE['book_by'] == 'morningafternoon' || $STORE['book_by'] == 'afternoonevening'){
+						$price = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'] * 2, $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
+						?>
+						<dl class="dl-horizontal pjMrBAsideProductMeta">
+							<dt><?php __('front_price');?>: </dt>
+							<dd><?php echo $price;?></dd>
+						</dl><!-- /.dl-horizontal pjMrBRoomInnerMeta -->
+						<?php
 					}else{
 						$price = pjUtil::formatCurrencySign($tpl['arr']['price_per_hour'], $tpl['option_arr']['o_currency']) . ' ' . __('front_per_hour', true);
 						?>
@@ -73,18 +81,35 @@ $index = pjObject::escapeString($_GET['index']);
 					if($STORE['book_by'] == 'hour')
 					{ 
 						$selected_slots = isset($STORE['slots']) ? $STORE['slots'] : array();
+						$slot_pairs = array();
+						foreach($selected_slots as $pair)
+						{
+							list($start_ts, $end_ts) = explode("|", $pair);
+							$slot_pairs[] = array((int) $start_ts, (int) $end_ts);
+						}
+						usort($slot_pairs, function($a, $b){ return $a[0] - $b[0]; });
+						$slot_ranges = array();
+						foreach($slot_pairs as $pair)
+						{
+							$last = count($slot_ranges) - 1;
+							if($last >= 0 && $slot_ranges[$last][1] == $pair[0])
+							{
+								$slot_ranges[$last][1] = $pair[1];
+							}else{
+								$slot_ranges[] = $pair;
+							}
+						}
 						?>
 						<dl class="dl-horizontal pjMrBAsideProductMeta">
 							<dt><?php __('front_from_to');?>: </dt>
 							<?php
-							foreach($selected_slots as $k => $pair)
-							{ 
-								list($start_ts, $end_ts) = explode("|", $pair);
-								?>
-								<dd><?php echo date($tpl['option_arr']['o_time_format'],$start_ts);?> - <?php echo date($tpl['option_arr']['o_time_format'],$end_ts);?></dd>
-								<?php
-							} 
+							$slots_arr = array();
+							foreach($slot_ranges as $range)
+							{
+								$slots_arr[] = date($tpl['option_arr']['o_time_format'],$range[0]) . ' - ' . date($tpl['option_arr']['o_time_format'],$range[1]);
+							}
 							?>
+							<dd><?php echo join('<br/>', $slots_arr);?></dd>
 						</dl><!-- /.dl-horizontal pjMrBAsideProductMeta -->
 						<?php
 					} 

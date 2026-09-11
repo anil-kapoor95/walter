@@ -251,7 +251,7 @@ class pjFront extends pjAppController
 	
 		if($this->isXHR())
 		{
-			if (isset($_GET['book_by']) && in_array($_GET['book_by'], array('multiday', 'hour', 'morning', 'afternoon', 'evening') ))
+			if (isset($_GET['book_by']) && in_array($_GET['book_by'], array('multiday', 'hour', 'morning', 'afternoon', 'evening', 'morningafternoon', 'afternoonevening') ))
 			{
 				$this->_set('book_by', $_GET['book_by']);
 				pjAppController::jsonResponse(array('status' => 'OK', 'code' => 200, 'text' => ''));
@@ -473,6 +473,8 @@ class pjFront extends pjAppController
 					$this->set('morning_arr', $duration_info_arr['morning_arr']);
 					$this->set('afternoon_arr', $duration_info_arr['afternoon_arr']);
 					$this->set('evening_arr', $duration_info_arr['evening_arr']);
+					$this->set('combo_morningafternoon_available', $duration_info_arr['combo_morningafternoon_available']);
+					$this->set('combo_afternoonevening_available', $duration_info_arr['combo_afternoonevening_available']);
 					$this->set('find_menu', $find_menu);
 				}else{
 					$arr = pjRoomModel::factory()
