@@ -21,6 +21,8 @@ class pjRoomModel extends pjAppModel
 		array('name' => 'price_per_day', 'type' => 'decimal', 'default' => ':NULL'),
 		array('name' => 'price_half_day', 'type' => 'decimal', 'default' => ':NULL'),
 		array('name' => 'price_per_hour', 'type' => 'decimal', 'default' => ':NULL'),
+		array('name' => 'price_morning_afternoon', 'type' => 'decimal', 'default' => ':NULL'),
+		array('name' => 'price_afternoon_evening', 'type' => 'decimal', 'default' => ':NULL'),
 		array('name' => 'status', 'type' => 'enum', 'default' => 'T')
 	);
 	

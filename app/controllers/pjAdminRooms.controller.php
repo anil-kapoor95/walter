@@ -34,9 +34,13 @@ class pjAdminRooms extends pjAdmin
 				{
 					$data['book_by_halfday'] = 'T';
 					$data['price_half_day'] = $_POST['price_half_day'];
+					$data['price_morning_afternoon'] = $_POST['price_morning_afternoon'];
+					$data['price_afternoon_evening'] = $_POST['price_afternoon_evening'];
 				}else{
 					$data['book_by_halfday'] = 'F';
 					$data['price_half_day'] = ':NULL';
+					$data['price_morning_afternoon'] = ':NULL';
+					$data['price_afternoon_evening'] = ':NULL';
 				}
 				if(isset($_POST['book_by_hour']))
 				{
@@ -46,7 +50,7 @@ class pjAdminRooms extends pjAdmin
 					$data['book_by_hour'] = 'F';
 					$data['price_per_hour'] = ':NULL';
 				}
-				
+
 				$id = $pjRoomModel->setAttributes(array_merge($_POST, $data))->insert()->getInsertId();
 				
 				if ($id !== false && (int) $id > 0)
@@ -381,9 +385,13 @@ class pjAdminRooms extends pjAdmin
 				{
 					$data['book_by_halfday'] = 'T';
 					$data['price_half_day'] = $_POST['price_half_day'];
+					$data['price_morning_afternoon'] = $_POST['price_morning_afternoon'];
+					$data['price_afternoon_evening'] = $_POST['price_afternoon_evening'];
 				}else{
 					$data['book_by_halfday'] = 'F';
 					$data['price_half_day'] = ':NULL';
+					$data['price_morning_afternoon'] = ':NULL';
+					$data['price_afternoon_evening'] = ':NULL';
 				}
 				if(isset($_POST['book_by_hour']))
 				{

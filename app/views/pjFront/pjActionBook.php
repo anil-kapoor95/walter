@@ -42,6 +42,14 @@ $index = pjObject::escapeString($_GET['index']);
 						if($tpl['arr']['book_by_halfday'] == 'T')
 						{
 							$price_arr[] = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
+							if(isset($tpl['arr']['price_morning_afternoon']) && $tpl['arr']['price_morning_afternoon'] !== NULL && $tpl['arr']['price_morning_afternoon'] !== '')
+							{
+								$price_arr[] = pjUtil::formatCurrencySign($tpl['arr']['price_morning_afternoon'], $tpl['option_arr']['o_currency']) . ' ' . __('front_morningafternoon', true);
+							}
+							if(isset($tpl['arr']['price_afternoon_evening']) && $tpl['arr']['price_afternoon_evening'] !== NULL && $tpl['arr']['price_afternoon_evening'] !== '')
+							{
+								$price_arr[] = pjUtil::formatCurrencySign($tpl['arr']['price_afternoon_evening'], $tpl['option_arr']['o_currency']) . ' ' . __('front_afternoonevening', true);
+							}
 						}
 						if($tpl['arr']['book_by_multiday'] == 'T')
 						{

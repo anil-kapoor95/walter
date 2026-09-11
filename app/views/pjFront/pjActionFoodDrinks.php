@@ -46,8 +46,16 @@ $index = pjObject::escapeString($_GET['index']);
 							<dd><?php echo $price;?></dd>
 						</dl><!-- /.dl-horizontal pjMrBRoomInnerMeta -->
 						<?php
-					}elseif($STORE['book_by'] == 'morningafternoon' || $STORE['book_by'] == 'afternoonevening'){
-						$price = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'] * 2, $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
+					}elseif($STORE['book_by'] == 'morningafternoon'){
+						$price = pjUtil::formatCurrencySign($tpl['arr']['price_morning_afternoon'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
+						?>
+						<dl class="dl-horizontal pjMrBAsideProductMeta">
+							<dt><?php __('front_price');?>: </dt>
+							<dd><?php echo $price;?></dd>
+						</dl><!-- /.dl-horizontal pjMrBRoomInnerMeta -->
+						<?php
+					}elseif($STORE['book_by'] == 'afternoonevening'){
+						$price = pjUtil::formatCurrencySign($tpl['arr']['price_afternoon_evening'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
 						?>
 						<dl class="dl-horizontal pjMrBAsideProductMeta">
 							<dt><?php __('front_price');?>: </dt>

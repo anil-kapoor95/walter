@@ -115,6 +115,20 @@ if (isset($tpl['status']))
 				<input type="text" id="price_per_hour" name="price_per_hour" value="<?php echo $tpl['arr']['price_per_hour'];?>" class="pj-form-field number w108" data-msg-number="<?php __('pj_number_validation');?>"/>
 			</span>
 		</p>
+		<p id="morningAfternoonPrice" class="priceTitle none">
+			<label class="title"><?php echo $price_per['morningafternoon']; ?></label>
+			<span class="pj-form-field-custom pj-form-field-custom-before">
+				<span class="pj-form-field-before"><abbr class="pj-form-field-icon-text"><?php echo pjUtil::formatCurrencySign(NULL, $tpl['option_arr']['o_currency'], ""); ?></abbr></span>
+				<input type="text" id="price_morning_afternoon" name="price_morning_afternoon" value="<?php echo $tpl['arr']['price_morning_afternoon'];?>" class="pj-form-field number w108" data-msg-number="<?php __('pj_number_validation');?>"/>
+			</span>
+		</p>
+		<p id="afternoonEveningPrice" class="priceTitle none">
+			<label class="title"><?php echo $price_per['afternoonevening']; ?></label>
+			<span class="pj-form-field-custom pj-form-field-custom-before">
+				<span class="pj-form-field-before"><abbr class="pj-form-field-icon-text"><?php echo pjUtil::formatCurrencySign(NULL, $tpl['option_arr']['o_currency'], ""); ?></abbr></span>
+				<input type="text" id="price_afternoon_evening" name="price_afternoon_evening" value="<?php echo $tpl['arr']['price_afternoon_evening'];?>" class="pj-form-field number w108" data-msg-number="<?php __('pj_number_validation');?>"/>
+			</span>
+		</p>
 		<p>
 			<label class="title"><?php __('lblLayouts'); ?></label>
 			<span class="inline_block">

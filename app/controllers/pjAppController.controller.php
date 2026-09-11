@@ -359,8 +359,15 @@ class pjAppController extends pjController
 			$price = pjUtil::formatCurrencySign($room_arr['price_per_day'], $option_arr['o_currency']) . ' ' . __('front_per_day', true);
 			$duration = date($option_arr['o_date_format'], strtotime($data['start_date'])) . ' - ' . date($option_arr['o_date_format'], strtotime($data['end_date']));
 		}elseif($data['book_by'] == 'morning' || $data['book_by'] == 'afternoon' || $data['book_by'] == 'evening' || $data['book_by'] == 'morningafternoon' || $data['book_by'] == 'afternoonevening'){
-			$is_combo = ($data['book_by'] == 'morningafternoon' || $data['book_by'] == 'afternoonevening');
-			$price = pjUtil::formatCurrencySign($is_combo ? $room_arr['price_half_day'] * 2 : $room_arr['price_half_day'], $option_arr['o_currency']) . ' ' . __('front_half_day', true);
+			if($data['book_by'] == 'morningafternoon')
+			{
+				$combo_price = $room_arr['price_morning_afternoon'];
+			}elseif($data['book_by'] == 'afternoonevening'){
+				$combo_price = $room_arr['price_afternoon_evening'];
+			}else{
+				$combo_price = $room_arr['price_half_day'];
+			}
+			$price = pjUtil::formatCurrencySign($combo_price, $option_arr['o_currency']) . ' ' . __('front_half_day', true);
 
 			$morning_arr = array();
 			$afternoon_arr = array();
@@ -1054,7 +1061,7 @@ class pjAppController extends pjController
 				}
 			}
 		}else if($book_by == 'morningafternoon'){
-			$room_price = (float) $room_arr['price_half_day'] * 2;
+			$room_price = (float) $room_arr['price_morning_afternoon'];
 
 			$pjDateModel = pjDateModel::factory();
 			$date_arr = $pjDateModel->getDailyWorkingTime($foreign_id, $start_date);
@@ -1076,7 +1083,7 @@ class pjAppController extends pjController
 				}
 			}
 		}else if($book_by == 'afternoonevening'){
-			$room_price = (float) $room_arr['price_half_day'] * 2;
+			$room_price = (float) $room_arr['price_afternoon_evening'];
 
 			$pjDateModel = pjDateModel::factory();
 			$date_arr = $pjDateModel->getDailyWorkingTime($foreign_id, $start_date);

@@ -18,8 +18,10 @@
 				$price = pjUtil::formatCurrencySign($tpl['arr']['price_per_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_per_day', true);
 			}elseif($STORE['book_by'] == 'morning' || $STORE['book_by'] == 'afternoon' || $STORE['book_by'] == 'evening'){
 				$price = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
-			}elseif($STORE['book_by'] == 'morningafternoon' || $STORE['book_by'] == 'afternoonevening'){
-				$price = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'] * 2, $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
+			}elseif($STORE['book_by'] == 'morningafternoon'){
+				$price = pjUtil::formatCurrencySign($tpl['arr']['price_morning_afternoon'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
+			}elseif($STORE['book_by'] == 'afternoonevening'){
+				$price = pjUtil::formatCurrencySign($tpl['arr']['price_afternoon_evening'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
 			}else{
 				$price = pjUtil::formatCurrencySign($tpl['arr']['price_per_hour'], $tpl['option_arr']['o_currency']) . ' ' . __('front_per_hour', true);
 			}

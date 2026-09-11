@@ -181,10 +181,18 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 			{
 				$('#halfdayPrice').show();
 				$('#price_half_day').addClass('required');
+				$('#morningAfternoonPrice').show();
+				$('#price_morning_afternoon').addClass('required');
+				$('#afternoonEveningPrice').show();
+				$('#price_afternoon_evening').addClass('required');
 				book_by_valid = true;
 			}else{
 				$('#halfdayPrice').hide();
 				$('#price_half_day').removeClass('required');
+				$('#morningAfternoonPrice').hide();
+				$('#price_morning_afternoon').removeClass('required');
+				$('#afternoonEveningPrice').hide();
+				$('#price_afternoon_evening').removeClass('required');
 			}
 			if($('#book_by_hour').is(':checked'))
 			{
