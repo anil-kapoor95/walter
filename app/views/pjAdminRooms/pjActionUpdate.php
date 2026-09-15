@@ -90,10 +90,19 @@ if (isset($tpl['status']))
 				<span class="block t5 float_left r20"><input type="checkbox" id="book_by_multiday" name="book_by_multiday" value="T" class="block float_left r5"<?php echo $tpl['arr']['book_by_multiday'] == 'T' ? ' checked="checked"' : NULL;?>/><label class="block float_left" for="book_by_multiday"><?php echo $book_by['multiday'];?></label></span>
 				<span class="block t5 float_left r20"><input type="checkbox" id="book_by_halfday" name="book_by_halfday" value="T" class="block float_left r5"<?php echo $tpl['arr']['book_by_halfday'] == 'T' ? ' checked="checked"' : NULL;?>/><label class="block float_left" for="book_by_halfday"><?php echo $book_by['halfday'];?></label></span>
 				<span class="block t5 float_left r20"><input type="checkbox" id="book_by_hour" name="book_by_hour" value="T" class="block float_left r5"<?php echo $tpl['arr']['book_by_hour'] == 'T' ? ' checked="checked"' : NULL;?>/><label class="block float_left" for="book_by_hour"><?php echo $book_by['hour'];?></label></span>
+				<span class="block t5 float_left r20"><input type="checkbox" id="book_by_combo" class="block float_left r5"<?php echo ($tpl['arr']['book_by_morningafternoon'] == 'T' || $tpl['arr']['book_by_afternoonevening'] == 'T') ? ' checked="checked"' : NULL;?>/><label class="block float_left" for="book_by_combo"><?php echo $book_by['combo'];?></label></span>
 				<input type="hidden" id="book_by" name="bookby" value="" class="required"/>
 			</span>
 		</p>
-		
+
+		<p id="comboSubOptions" class="priceTitle none">
+			<label class="title">&nbsp;</label>
+			<span class="inline_block">
+				<span class="block t5 float_left r20"><input type="checkbox" id="book_by_morningafternoon" name="book_by_morningafternoon" value="T" class="block float_left r5"<?php echo $tpl['arr']['book_by_morningafternoon'] == 'T' ? ' checked="checked"' : NULL;?>/><label class="block float_left" for="book_by_morningafternoon"><?php echo $book_by['morningafternoon'];?></label></span>
+				<span class="block t5 float_left r20"><input type="checkbox" id="book_by_afternoonevening" name="book_by_afternoonevening" value="T" class="block float_left r5"<?php echo $tpl['arr']['book_by_afternoonevening'] == 'T' ? ' checked="checked"' : NULL;?>/><label class="block float_left" for="book_by_afternoonevening"><?php echo $book_by['afternoonevening'];?></label></span>
+			</span>
+		</p>
+
 		<p id="multidayPrice" class="priceTitle none">
 			<label class="title"><?php echo $price_per['day']; ?></label>
 			<span class="pj-form-field-custom pj-form-field-custom-before">

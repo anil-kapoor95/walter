@@ -42,14 +42,14 @@ $index = pjObject::escapeString($_GET['index']);
 						if($tpl['arr']['book_by_halfday'] == 'T')
 						{
 							$price_arr[] = pjUtil::formatCurrencySign($tpl['arr']['price_half_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
-							if(isset($tpl['arr']['price_morning_afternoon']) && $tpl['arr']['price_morning_afternoon'] !== NULL && $tpl['arr']['price_morning_afternoon'] !== '')
-							{
-								$price_arr[] = pjUtil::formatCurrencySign($tpl['arr']['price_morning_afternoon'], $tpl['option_arr']['o_currency']) . ' ' . __('front_morningafternoon', true);
-							}
-							if(isset($tpl['arr']['price_afternoon_evening']) && $tpl['arr']['price_afternoon_evening'] !== NULL && $tpl['arr']['price_afternoon_evening'] !== '')
-							{
-								$price_arr[] = pjUtil::formatCurrencySign($tpl['arr']['price_afternoon_evening'], $tpl['option_arr']['o_currency']) . ' ' . __('front_afternoonevening', true);
-							}
+						}
+						if($tpl['arr']['book_by_morningafternoon'] == 'T' && isset($tpl['arr']['price_morning_afternoon']) && $tpl['arr']['price_morning_afternoon'] !== NULL && $tpl['arr']['price_morning_afternoon'] !== '')
+						{
+							$price_arr[] = pjUtil::formatCurrencySign($tpl['arr']['price_morning_afternoon'], $tpl['option_arr']['o_currency']) . ' ' . __('front_morningafternoon', true);
+						}
+						if($tpl['arr']['book_by_afternoonevening'] == 'T' && isset($tpl['arr']['price_afternoon_evening']) && $tpl['arr']['price_afternoon_evening'] !== NULL && $tpl['arr']['price_afternoon_evening'] !== '')
+						{
+							$price_arr[] = pjUtil::formatCurrencySign($tpl['arr']['price_afternoon_evening'], $tpl['option_arr']['o_currency']) . ' ' . __('front_afternoonevening', true);
 						}
 						if($tpl['arr']['book_by_multiday'] == 'T')
 						{
@@ -132,20 +132,20 @@ $index = pjObject::escapeString($_GET['index']);
 														<option value="evening"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'evening' ? ' selected="selected"' : NULL) : NULL;?>><?php echo $book_by['halfday']; ?> - <?php __('front_evening');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['evening_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['evening_arr']['end_ts']);?>)</option>
 														<?php
 													}
-													if($tpl['combo_morningafternoon_available'] == 1 && !empty($tpl['morning_arr']) && !empty($tpl['afternoon_arr']))
-													{
-														$has_duration_option = true;
-														?>
-														<option value="morningafternoon"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'morningafternoon' ? ' selected="selected"' : NULL) : NULL;?>><?php __('front_morningafternoon');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['morning_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['afternoon_arr']['end_ts']);?>)</option>
-														<?php
-													}
-													if($tpl['combo_afternoonevening_available'] == 1 && !empty($tpl['afternoon_arr']) && !empty($tpl['evening_arr']))
-													{
-														$has_duration_option = true;
-														?>
-														<option value="afternoonevening"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'afternoonevening' ? ' selected="selected"' : NULL) : NULL;?>><?php __('front_afternoonevening');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['afternoon_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['evening_arr']['end_ts']);?>)</option>
-														<?php
-													}
+												}
+												if($tpl['combo_morningafternoon_available'] == 1 && !empty($tpl['morning_arr']) && !empty($tpl['afternoon_arr']))
+												{
+													$has_duration_option = true;
+													?>
+													<option value="morningafternoon"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'morningafternoon' ? ' selected="selected"' : NULL) : NULL;?>><?php __('front_morningafternoon');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['morning_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['afternoon_arr']['end_ts']);?>)</option>
+													<?php
+												}
+												if($tpl['combo_afternoonevening_available'] == 1 && !empty($tpl['afternoon_arr']) && !empty($tpl['evening_arr']))
+												{
+													$has_duration_option = true;
+													?>
+													<option value="afternoonevening"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'afternoonevening' ? ' selected="selected"' : NULL) : NULL;?>><?php __('front_afternoonevening');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['afternoon_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['evening_arr']['end_ts']);?>)</option>
+													<?php
 												}
 												if($tpl['arr']['book_by_multiday'] == 'T' && $tpl['multi_day_booked'] == 0)
 												{
@@ -181,27 +181,27 @@ $index = pjObject::escapeString($_GET['index']);
 														<option value="evening"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'evening' ? ' selected="selected"' : NULL) : NULL;?>><?php echo $book_by['halfday']; ?> - <?php __('front_evening');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['evening_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['evening_arr']['end_ts']);?>)</option>
 														<?php
 													}
-													if($tpl['combo_morningafternoon_available'] == 1 && !empty($tpl['morning_arr']) && !empty($tpl['afternoon_arr']))
-													{
-														$has_duration_option = true;
-														?>
-														<option value="morningafternoon"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'morningafternoon' ? ' selected="selected"' : NULL) : NULL;?>><?php __('front_morningafternoon');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['morning_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['afternoon_arr']['end_ts']);?>)</option>
-														<?php
-													}
-													if($tpl['combo_afternoonevening_available'] == 1 && !empty($tpl['afternoon_arr']) && !empty($tpl['evening_arr']))
-													{
-														$has_duration_option = true;
-														?>
-														<option value="afternoonevening"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'afternoonevening' ? ' selected="selected"' : NULL) : NULL;?>><?php __('front_afternoonevening');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['afternoon_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['evening_arr']['end_ts']);?>)</option>
-														<?php
-													}
+												}
+												if($tpl['combo_morningafternoon_available'] == 1 && !empty($tpl['morning_arr']) && !empty($tpl['afternoon_arr']))
+												{
+													$has_duration_option = true;
+													?>
+													<option value="morningafternoon"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'morningafternoon' ? ' selected="selected"' : NULL) : NULL;?>><?php __('front_morningafternoon');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['morning_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['afternoon_arr']['end_ts']);?>)</option>
+													<?php
+												}
+												if($tpl['combo_afternoonevening_available'] == 1 && !empty($tpl['afternoon_arr']) && !empty($tpl['evening_arr']))
+												{
+													$has_duration_option = true;
+													?>
+													<option value="afternoonevening"<?php echo isset($STORE['book_by']) ? ($STORE['book_by'] == 'afternoonevening' ? ' selected="selected"' : NULL) : NULL;?>><?php __('front_afternoonevening');?> (<?php echo date($tpl['option_arr']['o_time_format'], $tpl['afternoon_arr']['start_ts']);?> - <?php echo date($tpl['option_arr']['o_time_format'], $tpl['evening_arr']['end_ts']);?>)</option>
+													<?php
 												}
 											}else{
 												$has_duration_option = true;
 												?>
 												<option value="">-- <?php __('lblRoomBookedAtDate'); ?> --</option>
 												<?php
-											} 
+											}
 											if($has_duration_option == false)
 											{
 												?>

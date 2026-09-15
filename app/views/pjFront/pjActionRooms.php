@@ -24,11 +24,11 @@ if(!empty($tpl['arr']))
 				{
 					$price_arr[] = pjUtil::formatCurrencySign($v['price_half_day'], $tpl['option_arr']['o_currency']) . ' ' . __('front_half_day', true);
 				}
-				if(!empty($v['price_morning_afternoon']))
+				if($v['book_by_morningafternoon'] == 'T' && !empty($v['price_morning_afternoon']))
 				{
 					$price_arr[] = pjUtil::formatCurrencySign($v['price_morning_afternoon'], $tpl['option_arr']['o_currency']) . ' ' . __('front_morningafternoon', true);
 				}
-				if(!empty($v['price_afternoon_evening']))
+				if($v['book_by_afternoonevening'] == 'T' && !empty($v['price_afternoon_evening']))
 				{
 					$price_arr[] = pjUtil::formatCurrencySign($v['price_afternoon_evening'], $tpl['option_arr']['o_currency']) . ' ' . __('front_afternoonevening', true);
 				}

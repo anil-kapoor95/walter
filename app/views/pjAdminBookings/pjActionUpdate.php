@@ -134,18 +134,18 @@ if (isset($tpl['status']))
 													<option value="evening"<?php echo $tpl['arr']['book_by'] == 'evening' ? ' selected="selected"' : NULL;?>><?php echo $book_by['halfday']; ?> - <?php __('time_evening');?></option>
 													<?php
 												}
-												if($tpl['combo_morningafternoon_available'] == 1)
-												{
-													?>
-													<option value="morningafternoon"<?php echo $tpl['arr']['book_by'] == 'morningafternoon' ? ' selected="selected"' : NULL;?>><?php __('time_morningafternoon');?></option>
-													<?php
-												}
-												if($tpl['combo_afternoonevening_available'] == 1)
-												{
-													?>
-													<option value="afternoonevening"<?php echo $tpl['arr']['book_by'] == 'afternoonevening' ? ' selected="selected"' : NULL;?>><?php __('time_afternoonevening');?></option>
-													<?php
-												}
+											}
+											if($tpl['combo_morningafternoon_available'] == 1)
+											{
+												?>
+												<option value="morningafternoon"<?php echo $tpl['arr']['book_by'] == 'morningafternoon' ? ' selected="selected"' : NULL;?>><?php __('time_morningafternoon');?></option>
+												<?php
+											}
+											if($tpl['combo_afternoonevening_available'] == 1)
+											{
+												?>
+												<option value="afternoonevening"<?php echo $tpl['arr']['book_by'] == 'afternoonevening' ? ' selected="selected"' : NULL;?>><?php __('time_afternoonevening');?></option>
+												<?php
 											}
 											if($tpl['room']['book_by_multiday'] == 'T' && $tpl['multi_day_booked'] == 0)
 											{

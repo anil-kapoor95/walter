@@ -181,18 +181,10 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 			{
 				$('#halfdayPrice').show();
 				$('#price_half_day').addClass('required');
-				$('#morningAfternoonPrice').show();
-				$('#price_morning_afternoon').addClass('required');
-				$('#afternoonEveningPrice').show();
-				$('#price_afternoon_evening').addClass('required');
 				book_by_valid = true;
 			}else{
 				$('#halfdayPrice').hide();
 				$('#price_half_day').removeClass('required');
-				$('#morningAfternoonPrice').hide();
-				$('#price_morning_afternoon').removeClass('required');
-				$('#afternoonEveningPrice').hide();
-				$('#price_afternoon_evening').removeClass('required');
 			}
 			if($('#book_by_hour').is(':checked'))
 			{
@@ -203,7 +195,32 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 				$('#hourPrice').hide();
 				$('#price_per_hour').removeClass('required');
 			}
-			
+			if($('#book_by_combo').is(':checked'))
+			{
+				$('#comboSubOptions').show();
+				book_by_valid = true;
+			}else{
+				$('#comboSubOptions').hide();
+				$('#book_by_morningafternoon').prop('checked', false);
+				$('#book_by_afternoonevening').prop('checked', false);
+			}
+			if($('#book_by_morningafternoon').is(':checked'))
+			{
+				$('#morningAfternoonPrice').show();
+				$('#price_morning_afternoon').addClass('required');
+			}else{
+				$('#morningAfternoonPrice').hide();
+				$('#price_morning_afternoon').removeClass('required');
+			}
+			if($('#book_by_afternoonevening').is(':checked'))
+			{
+				$('#afternoonEveningPrice').show();
+				$('#price_afternoon_evening').addClass('required');
+			}else{
+				$('#afternoonEveningPrice').hide();
+				$('#price_afternoon_evening').removeClass('required');
+			}
+
 			if(book_by_valid == true)
 			{
 				$('#book_by').val(1).valid();
@@ -317,7 +334,7 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 				$dp.trigger("focusin").datepicker("show");
 			}
 			
-		}).on("change", '#book_by_multiday, #book_by_halfday, #book_by_hour', function (e) {
+		}).on("change", '#book_by_multiday, #book_by_halfday, #book_by_hour, #book_by_combo, #book_by_morningafternoon, #book_by_afternoonevening', function (e) {
 			priceSelection();
 		});
 	});

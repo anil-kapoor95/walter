@@ -18,6 +18,8 @@ class pjRoomModel extends pjAppModel
 		array('name' => 'book_by_multiday', 'type' => 'enum', 'default' => ':NULL'),
 		array('name' => 'book_by_halfday', 'type' => 'enum', 'default' => ':NULL'),
 		array('name' => 'book_by_hour', 'type' => 'enum', 'default' => ':NULL'),
+		array('name' => 'book_by_morningafternoon', 'type' => 'enum', 'default' => ':NULL'),
+		array('name' => 'book_by_afternoonevening', 'type' => 'enum', 'default' => ':NULL'),
 		array('name' => 'price_per_day', 'type' => 'decimal', 'default' => ':NULL'),
 		array('name' => 'price_half_day', 'type' => 'decimal', 'default' => ':NULL'),
 		array('name' => 'price_per_hour', 'type' => 'decimal', 'default' => ':NULL'),

@@ -362,12 +362,15 @@ class pjAppController extends pjController
 			if($data['book_by'] == 'morningafternoon')
 			{
 				$combo_price = $room_arr['price_morning_afternoon'];
+				$combo_label = __('front_morningafternoon', true);
 			}elseif($data['book_by'] == 'afternoonevening'){
 				$combo_price = $room_arr['price_afternoon_evening'];
+				$combo_label = __('front_afternoonevening', true);
 			}else{
 				$combo_price = $room_arr['price_half_day'];
+				$combo_label = __('front_half_day', true);
 			}
-			$price = pjUtil::formatCurrencySign($combo_price, $option_arr['o_currency']) . ' ' . __('front_half_day', true);
+			$price = pjUtil::formatCurrencySign($combo_price, $option_arr['o_currency']) . ' ' . $combo_label;
 
 			$morning_arr = array();
 			$afternoon_arr = array();
@@ -876,8 +879,8 @@ class pjAppController extends pjController
 				->where('t1.room_id', $room_id)
 				->findCount()->getData();
 
-			$combo_morningafternoon_available = ($halfday_morning == 0 && $halfday_afternoon == 0 && $hourly_morning == 0 && $hourly_afternoon == 0) ? 1 : 0;
-			$combo_afternoonevening_available = ($halfday_afternoon == 0 && $halfday_evening == 0 && $hourly_afternoon == 0 && $hourly_evening == 0) ? 1 : 0;
+			$combo_morningafternoon_available = ($arr['book_by_morningafternoon'] == 'T' && $halfday_morning == 0 && $halfday_afternoon == 0 && $hourly_morning == 0 && $hourly_afternoon == 0) ? 1 : 0;
+			$combo_afternoonevening_available = ($arr['book_by_afternoonevening'] == 'T' && $halfday_afternoon == 0 && $halfday_evening == 0 && $hourly_afternoon == 0 && $hourly_evening == 0) ? 1 : 0;
 
 			if(isset($start_ts) && isset($end_ts) && ($full_day_booked == 0 || 
 					($full_day_booked == 1 && ($halfday_morning == 0 || $halfday_afternoon == 0 || $halfday_evening == 0) ) ||
